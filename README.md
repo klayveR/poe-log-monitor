@@ -1,4 +1,6 @@
 # poe-log-monitor
+[![NPM version](https://img.shields.io/npm/v/poe-log-monitor.svg)](https://www.npmjs.com/package/poe-log-monitor)
+
 Monitors Path of Exile's log file and emits events containing the most important data when something happens in game.
 
 ## Contents
@@ -18,8 +20,7 @@ $ npm install poe-log-monitor
 var PathOfExileLog = require("poe-log-monitor");
 
 var poeLog = new PathOfExileLog({
-    logfile: "C:/Program Files (x86)/Grinding Gear Games/Path of Exile/logs/Client.txt",
-    interval: 100
+    logfile: "C:/Program Files (x86)/Grinding Gear Games/Path of Exile/logs/Client.txt"
 });
 
 poeLog.on("message", (data) => {
@@ -32,7 +33,9 @@ poeLog.on("message", (data) => {
 ### Constructor([options])
 - `options` - An optional object containing some of the following options
     - `logfile` - The path to Path of Exile's Client.txt
-    - `interval` - (default: 1000) Interval, in milliseconds, to check for changes in the log file
+    	- default: `C:/Program Files (x86)/Grinding Gear Games/Path of Exile/logs/Client.txt`
+    - `interval` - The interval, in milliseconds, to check for changes in the log file
+    	- default: `1000`
 
 Constructs a new `PathOfExileLog`. If the path to the log file is valid, the script will automatically start monitoring it. You can pause or resume monitoring using the `pause()` or `start()` method respectively.
 
@@ -48,11 +51,11 @@ The parameters listed below each event are stored in an object emitted by the ev
 
 ### start
 
-Emitted when the script resumes monitoring the log file.
+Emitted when the script resumes monitoring the log file. This event emits no additional object.
 
 ### pause
 
-Emitted when the script pauses monitoring the log file.
+Emitted when the script pauses monitoring the log file. This event emits no additional object.
 
 ### area
 - `area` - The name of the area that has been entered
