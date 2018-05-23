@@ -15,15 +15,15 @@ $ npm install poe-log-monitor
 
 **Usage:**
 ```javascript
-var PathOfExileLog = require('poe-log-monitor');
+var PathOfExileLog = require("poe-log-monitor");
 
 var poeLog = new PathOfExileLog({
     logfile: "C:/Program Files (x86)/Grinding Gear Games/Path of Exile/logs/Client.txt",
     interval: 100
 });
 
-poeLog.on('message', (data) => {
-    console.log(data.name + ' sent a message in ' + data.channel + ' chat: ' + data.message);
+poeLog.on("message", (data) => {
+    console.log(data.name + " sent a message in " + data.channel + " chat: " + data.message);
 });
 ```
 
