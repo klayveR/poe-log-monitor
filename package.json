@@ -1,0 +1,30 @@
+{
+  "name": "poe-log-monitor",
+  "version": "1.0.0",
+  "description": "Monitors Path of Exile's log file and emits events when something happens",
+  "main": "index.js",
+  "keywords": [
+    "poe",
+    "path of exile",
+    "log",
+    "client",
+    "monitor"
+  ],
+  "homepage": "https://github.com/klayveR/poe-log-monitor#readme",
+  "bugs": {
+    "url": "https://github.com/klayveR/poe-log-monitor/issues"
+  },
+  "author": {
+    "name": "Tobias H.",
+    "email": "tobiashoffmann7@gmail.com",
+    "url": "http://klayver.de"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/klayveR/poe-log-monitor.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "always-tail2": "^1.0.0"
+  }
+}
