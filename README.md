@@ -1,5 +1,7 @@
 # poe-log-monitor
 [![NPM version](https://img.shields.io/npm/v/poe-log-monitor.svg)](https://www.npmjs.com/package/poe-log-monitor)
+[![NPM Downloads](https://img.shields.io/npm/dt/poe-log-monitor.svg)](https://www.npmjs.com/package/poe-log-monitor)
+[![NPM License](https://img.shields.io/npm/l/poe-log-monitor.svg)](https://www.npmjs.com/package/poe-log-monitor)
 
 Monitors Path of Exile's log file and emits events containing the most important data when something happens in game.
 
