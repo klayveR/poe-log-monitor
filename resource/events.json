@@ -1,0 +1,60 @@
+{
+  "area": {
+    "regex": "\\[INFO Client [0-9]*] : You have entered (.*)\\.",
+    "matches": {
+      "1": "area"
+    }
+  },
+  "away": {
+    "regex": "\\[INFO Client [0-9]*] : (DND|AFK) mode is now (?:(ON)\\. Autoreply \"(.*)\"|(OFF))",
+    "function": "evalAway"
+  },
+  "level": {
+    "regex": "\\[INFO Client [0-9]*] : (.*) \\((.*)\\) is now level ([0-9]+)",
+    "matches": {
+      "1": "name",
+      "2": "characterClass",
+      "3": "level"
+    }
+  },
+  "message": {
+    "regex": "\\[INFO Client [0-9]*] (#|\\$|%|&|)(?:<(\\S+)> )*(\\S+): (.*)",
+    "function": "evalMessage"
+  },
+  "whisper": {
+    "regex": "\\[INFO Client [0-9]*] @(To|From) (?:<(\\S+)> )*(\\S+): (.*)",
+    "matches": {
+      "1": "direction",
+      "2": "guild",
+      "3": "name",
+      "4": "message"
+    }
+  },
+  "login": {
+    "regex": "\\[INFO Client [0-9]*] Connected to ([a-z]+[0-9]*\\.login\\.pathofexile\\.com) in ([0-9]*)ms\\.",
+    "matches": {
+      "1": "server",
+      "2": "latency"
+    }
+  },
+  "joinChat": {
+    "regex": "\\[INFO Client [0-9]*] : You have joined ([a-zA-Z0-9]+) chat channel ([0-9]+) ([a-zA-Z0-9]+)\\.",
+    "matches": {
+      "1": "chat",
+      "2": "channel",
+      "3": "language"
+    }
+  },
+  "deaths": {
+    "regex": "\\[INFO Client [0-9]*] : You have died ([0-9]+) times\\.",
+    "matches": {
+      "1": "deaths"
+    }
+  },
+  "remaining": {
+    "regex": "\\[INFO Client [0-9]*] : ([0-9]+) monsters remain\\.",
+    "matches": {
+      "1": "monsters"
+    }
+  }
+}

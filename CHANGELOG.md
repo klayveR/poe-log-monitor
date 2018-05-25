@@ -3,9 +3,19 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 
+## [1.1.1] - 2018-05-25
+### Added
+- The following events have been added
+    - `remaining` emits when the player uses the `/remaining` command in game
+    
+### Changes
+- Eliminated the use of `undefined` in code
+- Methods that simply renamed match groups and emitted them as a new object are now handled in a single method (events which require additional evaluation of the data are still in separate functions)
+- Events as well as their corresponding regular expressions and functions/group names are now stored in a JSON file
+
 ## [1.1.0] - 2018-05-25
 ### Added
-- The following events have been added, more will
+- The following events have been added
     - `login` emits when the player logs into the game
     - `deaths` emits when the player uses the `/deaths` command in game
     - `joinChat` emits when the player joins a chat channel

@@ -3,8 +3,6 @@
 [![NPM Downloads](https://img.shields.io/npm/dt/poe-log-monitor.svg)](https://www.npmjs.com/package/poe-log-monitor)
 [![NPM License](https://img.shields.io/npm/l/poe-log-monitor.svg)](https://www.npmjs.com/package/poe-log-monitor)
 
-Monitors Path of Exile's log file and emits events containing the most important data when something happens in game.
-
 ## Contents
 
 - [Getting Started](#getting-started)
@@ -26,7 +24,7 @@ var poeLog = new PathOfExileLog({
 });
 
 poeLog.on("message", (data) => {
-    console.log(data.name + " sent a message in " + data.channel + " chat: " + data.message);
+    console.log(data.name + " sent a message in " + data.chat + " chat: " + data.message);
 });
 ```
 
@@ -81,6 +79,11 @@ Emitted when the player levels up.
 - `deaths` - Times the player died
 
 Emitted when the player uses the `/deaths` command in game.
+
+### remaining
+- `monsters` - The amount of remaining monsters in an area
+
+Emitted when the player uses the `/remaining` command in game.
 
 ### afk
 - `status` - `true` if the player is AFK

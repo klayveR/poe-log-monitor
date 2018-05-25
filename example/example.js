@@ -21,6 +21,10 @@ poeLog.on("deaths", (data) => {
     console.log("The death command was used, you died " + data.deaths + " times");
 });
 
+poeLog.on("remaining", (data) => {
+    console.log("The remaining command was used, " + data.monsters + " monsters remain");
+});
+
 poeLog.on("afk", (data) => {
     console.log("AFK status is now " + data.status + ", auto reply is set to \'" + data.autoreply + "\'");
 });
