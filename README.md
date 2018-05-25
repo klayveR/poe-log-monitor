@@ -53,22 +53,22 @@ The parameters listed below each event are stored in an object emitted by the ev
 
 ### start
 
-Emitted when the script resumes monitoring the log file. This event emits no additional object.
+Emitted when the script resumes monitoring the log file. This event emits no additional data.
 
 ### pause
 
-Emitted when the script pauses monitoring the log file. This event emits no additional object.
+Emitted when the script pauses monitoring the log file. This event emits no additional data.
+
+### login
+- `server` - The gateway the player logged into
+- `latency` - The time, in milliseconds, it took to log in
+
+Emitted when the player logs into the game.
 
 ### area
 - `area` - The name of the area that has been entered
 
 Emitted when the player enters an area.
-
-### afk
-- `isAfk` - `true` if the player is AFK
-- `autoReply` - The auto reply set by the player
-
-Emitted when the players AFK status changes.
 
 ### level
 - `name` - Name of the player
@@ -77,8 +77,32 @@ Emitted when the players AFK status changes.
 
 Emitted when the player levels up.
 
+### deaths
+- `deaths` - Times the player died
+
+Emitted when the player uses the `/deaths` command in game.
+
+### afk
+- `status` - `true` if the player is AFK
+- `autoreply` - The auto reply set by the player
+
+Emitted when the players AFK status changes.
+
+### dnd
+- `status` - `true` if the player enabled DND mode
+- `autoreply` - The auto reply set by the player
+
+Emitted when the players changes their DND mode status.
+
+### joinChat
+- `chat` - Chat which the player joined
+- `channel` - Channel the player joined
+- `language` - Language of the channel
+
+Emitted when the player joins a chat channel.
+
 ### message
-- `channel` - Channel in which the message appeared
+- `chat` - Chat in which the message appeared
     - Can be `global`, `trade`, `party`, `guild`, `local`
 - `guild` - Guild tag of the player who sent the message, if present
 - `name` - Name of the player who sent the message
