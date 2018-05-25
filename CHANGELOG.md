@@ -39,6 +39,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 ### Added
 - Initial release
 
+[1.1.1]: https://www.npmjs.com/package/poe-log-monitor/v/1.1.1
 [1.1.0]: https://www.npmjs.com/package/poe-log-monitor/v/1.1.0
 [1.0.1]: https://www.npmjs.com/package/poe-log-monitor/v/1.0.1
 [1.0.0]: https://www.npmjs.com/package/poe-log-monitor/v/1.0.0
