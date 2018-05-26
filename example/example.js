@@ -25,6 +25,14 @@ poeLog.on("remaining", (data) => {
     console.log("The remaining command was used, " + data.monsters + " monsters remain");
 });
 
+poeLog.on("age", (data) => {
+    console.log("Your character was created " + data.days + " days ago");
+});
+
+poeLog.on("played", (data) => {
+    console.log("You have played for " + data.days + " days and " + data.hours + " hours");
+});
+
 poeLog.on("afk", (data) => {
     console.log("AFK status is now " + data.status + ", auto reply is set to \'" + data.autoreply + "\'");
 });

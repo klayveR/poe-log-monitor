@@ -75,27 +75,10 @@ Emitted when the player enters an area.
 
 Emitted when the player levels up.
 
-### deaths
-- `deaths` - Times the player died
+### death
+- `name` - Name of the player that died
 
-Emitted when the player uses the `/deaths` command in game.
-
-### remaining
-- `monsters` - The amount of remaining monsters in an area
-
-Emitted when the player uses the `/remaining` command in game.
-
-### afk
-- `status` - `true` if the player is AFK
-- `autoreply` - The auto reply set by the player
-
-Emitted when the players AFK status changes.
-
-### dnd
-- `status` - `true` if the player enabled DND mode
-- `autoreply` - The auto reply set by the player
-
-Emitted when the players changes their DND mode status.
+Emitted when the player dies.
 
 ### joinChat
 - `chat` - Chat which the player joined
@@ -121,3 +104,41 @@ Emitted when a message appears in any of the active chat channels.
 - `message` - Message the player sent
 
 Emitted when a whisper is received or sent.
+
+### afk
+- `status` - `true` if the player is AFK
+- `autoreply` - The auto reply set by the player
+
+Emitted when the players AFK status changes.
+
+### dnd
+- `status` - `true` if the player enabled DND mode
+- `autoreply` - The auto reply set by the player
+
+Emitted when the players changes their DND mode status.
+
+### deaths
+- `deaths` - Times the player died
+
+Emitted when the player uses the `/deaths` command in game.
+
+### remaining
+- `monsters` - The amount of remaining monsters in an area
+
+Emitted when the player uses the `/remaining` command in game.
+
+### age
+- `days` - Days since the character has been created
+- `hours` - Hours since the character has been created
+- `minutes` - Minutes since the character has been created
+- `seconds` - Seconds since the character has been created
+
+Emitted when the player uses the `/age` command in game.
+
+### played
+- `days` - Days spent playing the character
+- `hours` - Hours spent playing the character
+- `minutes` - Minutes spent playing the character
+- `seconds` - Seconds spent playing the character
+
+Emitted when the player uses the `/played` command in game.

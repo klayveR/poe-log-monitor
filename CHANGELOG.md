@@ -3,6 +3,17 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 
+## [1.1.2] - 2018-05-26
+### Added
+- The following events have been added
+    - `death` emits when the player dies
+    - `played` emits when the player uses the `/played` command in game
+    - `age` emits when the player uses the `/age` command in game
+
+### Fixed
+- The script now prevents executing not defined functions specified in the Events JSON
+
+
 ## [1.1.1] - 2018-05-25
 ### Added
 - The following events have been added
@@ -39,6 +50,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 ### Added
 - Initial release
 
+[1.1.2]: https://www.npmjs.com/package/poe-log-monitor/v/1.1.2
+[1.1.1]: https://www.npmjs.com/package/poe-log-monitor/v/1.1.1
 [1.1.0]: https://www.npmjs.com/package/poe-log-monitor/v/1.1.0
 [1.0.1]: https://www.npmjs.com/package/poe-log-monitor/v/1.0.1
 [1.0.0]: https://www.npmjs.com/package/poe-log-monitor/v/1.0.0

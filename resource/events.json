@@ -56,5 +56,29 @@
     "matches": {
       "1": "monsters"
     }
+  },
+  "death": {
+    "regex": "\\[INFO Client [0-9]*] : (\\S+) has been slain\\.",
+    "matches": {
+      "1": "name"
+    }
+  },
+  "played": {
+    "regex": "\\[INFO Client [0-9]*] : You have played for (?:([0-9]*) days?)?(?:, )?(?:([0-9]*) hours?)?(?:, )?(?:([0-9]*) minutes?)?(?:, )?(?:and )?(?:([0-9]*) seconds?)",
+    "matches": {
+      "1": "days",
+      "2": "hours",
+      "3": "minutes",
+      "4": "seconds"
+    }
+  },
+  "age": {
+    "regex": "\\[INFO Client [0-9]*] : Your character was created (?:([0-9]*) days?)?(?:, )?(?:([0-9]*) hours?)?(?:, )?(?:([0-9]*) minutes?)?(?:, )?(?:and )?(?:([0-9]*) seconds?)",
+    "matches": {
+      "1": "days",
+      "2": "hours",
+      "3": "minutes",
+      "4": "seconds"
+    }
   }
 }
