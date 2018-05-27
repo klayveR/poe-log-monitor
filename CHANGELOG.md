@@ -14,7 +14,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 
 ### Changes
 - The `name` and `guild` elements of the `message` and `whisper` event are now stored in the `player` object
-- The `area` elements of the `area` event is now `name`
+- The `area` element of the `area` event is now `name`
 
 ### Fixed
 - Fixed a bug that caused the DND/AFK status to always be false

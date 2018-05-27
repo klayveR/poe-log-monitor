@@ -2,9 +2,11 @@
 [![NPM version](https://img.shields.io/npm/v/poe-log-monitor.svg)](https://www.npmjs.com/package/poe-log-monitor)
 [![NPM Downloads](https://img.shields.io/npm/dt/poe-log-monitor.svg)](https://www.npmjs.com/package/poe-log-monitor)
 [![NPM License](https://img.shields.io/npm/l/poe-log-monitor.svg)](https://www.npmjs.com/package/poe-log-monitor)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/7f4451528a46499cb7b297e3081e2188)](https://www.codacy.com/app/klayveR/poe-log-monitor?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=klayveR/poe-log-monitor&amp;utm_campaign=Badge_Grade)
 
 ## Contents
 
+- [Changelog](https://github.com/klayveR/poe-log-monitor/blob/master/CHANGELOG.md)
 - [Getting Started](#getting-started)
 - [Methods](#methods)
 - [Events](#events)
