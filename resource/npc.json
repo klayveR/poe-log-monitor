@@ -1,0 +1,18 @@
+{
+  "npcs": {
+    "Einhar Frey": ["Haha! You are captured, stupid beast."],
+    "Piety": ["Kill me!"],
+    "Daresso": ["People of the gutters, steel your bellies, for the slaughter is at hand!"],
+    "Izaro": ["Argus? Fetch!"],
+    "Helena": ["That thing... It slaughtered everyone. Help me!"]
+  },
+  "masters": {
+    "Haku, Armourmaster": ["Tala moana, warrior!"],
+    "Elreon, Loremaster": ["God bless you on this fine day, exile!"],
+    "Catarina, Master of the Dead": ["Come to me, exile. Let us speak of death and desire."],
+    "Tora, Master of the Hunt": ["Over here, exile!"],
+    "Zana, Master Cartographer": ["Still sane, exile?"],
+    "Vagan, Weaponmaster": ["You there! Let me bend your ear for a moment."],
+    "Vorici, Master Assassin": ["You there. A moment of your time."]
+  }
+}

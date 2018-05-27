@@ -49,14 +49,6 @@ Resumes monitoring the logfile.
 
 The parameters listed below each event are stored in an object emitted by the event.
 
-### start
-
-Emitted when the script resumes monitoring the log file. This event emits no additional data.
-
-### pause
-
-Emitted when the script pauses monitoring the log file. This event emits no additional data.
-
 ### login
 - `server` - The gateway the player logged into
 - `latency` - The time, in milliseconds, it took to log in
@@ -64,21 +56,11 @@ Emitted when the script pauses monitoring the log file. This event emits no addi
 Emitted when the player logs into the game.
 
 ### area
-- `area` - The name of the area that has been entered
+- `name` - The name of the area that has been entered
+- `info` - An array of objects containing additional information about the area and their variants, if data is available (See `examples/area.js` for an example)
 
 Emitted when the player enters an area.
-
-### level
-- `name` - Name of the player
-- `characterClass` - Character class of the player
-- `level` - Level of the player after level up
-
-Emitted when the player levels up.
-
-### death
-- `name` - Name of the player that died
-
-Emitted when the player dies.
+>⚠ In the current version [1.2.0], only story areas have additional information. The other areas such as maps, hideouts and others will follow soon.
 
 ### joinChat
 - `chat` - Chat which the player joined
@@ -89,21 +71,49 @@ Emitted when the player joins a chat channel.
 
 ### message
 - `chat` - Chat in which the message appeared
-    - Can be `global`, `trade`, `party`, `guild`, `local`
-- `guild` - Guild tag of the player who sent the message, if present
-- `name` - Name of the player who sent the message
+- `player`
+    - `guild` - Guild tag of the player who sent the message, if present
+    - `name` - Name of the player who sent the message
 - `message` - Message the player sent
 
 Emitted when a message appears in any of the active chat channels.
 
 ### whisper
 - `direction` - Direction of the whispered message
-	- `To` if the whisper is outgoing or `From` if the whisper is incoming
-- `guild` - Guild tag of the player who sent the whisper, if present
-- `name` - Name of the player who sent the whisper
+- `player`
+    - `guild` - Guild tag of the player who sent the whisper, if present
+    - `name` - Name of the player who sent the whisper
 - `message` - Message the player sent
 
 Emitted when a whisper is received or sent.
+
+### death
+- `name` - Name of the player that died
+
+Emitted when the player dies.
+
+### level
+- `name` - Name of the player
+- `characterClass` - Character class of the player
+- `level` - Level of the player after level up
+
+Emitted when the player levels up.
+
+### npcEncounter
+- `name` - Name of the NPC
+- `message` - Dialogue of the NPC
+
+Emitted when when the player encounters a talking NPC in the wild.
+>⚠ `Output Dialogue To Game` must be activated in the game UI options for this to work.    
+
+>⚠ The list of supported NPCs is currently incomplete. Feel free to add NPCs that a player might encounter in the wild to the `resource/npc.json` file.
+
+### masterEncounter
+- `name` - Name of the Master
+- `message` - Dialogue of the Master
+
+Emitted when the player encounters a master in an area.
+>⚠ `Output Dialogue To Game` must be activated in the game UI options for this to work
 
 ### afk
 - `status` - `true` if the player is AFK
@@ -142,3 +152,13 @@ Emitted when the player uses the `/age` command in game.
 - `seconds` - Seconds spent playing the character
 
 Emitted when the player uses the `/played` command in game.
+
+### start
+
+Emitted when the script resumes monitoring the log file. This event emits no additional data.
+
+### pause
+
+Emitted when the script pauses monitoring the log file. This event emits no additional data.
+
+[1.2.0]: https://www.npmjs.com/package/poe-log-monitor/v/1.2.0
