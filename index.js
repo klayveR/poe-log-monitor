@@ -30,7 +30,7 @@ function PathOfExileLog(options) {
     this.tail.on("line", function (line) {
         // Try matching the line with a regular expression from the Events JSON
         for (var eventName in Events) {
-            if (!Events.hasOwnProperty(eventName)) continue;
+            if (!Events.hasOwnProperty(eventName)) { continue; }
 
             var event = Events[eventName];
             var match = line.match(new RegExp(event.regex));
@@ -57,20 +57,20 @@ function PathOfExileLog(options) {
 PathOfExileLog.prototype.start = function () {
     this.tail.watch();
     this.emit("start");
-}
+};
 
 // Pauses monitoring the log file
 PathOfExileLog.prototype.pause = function () {
     this.tail.unwatch();
     this.emit("pause");
-}
+};
 
 // This function simply puts match groups into a new object with the correct identifiers defined in the Events JSON and emits it
 PathOfExileLog.prototype.evalMatch = function (match, eventKeys, event) {
     var data = {};
 
     for (var key in eventKeys) {
-        if (!eventKeys.hasOwnProperty(key)) continue;
+        if (!eventKeys.hasOwnProperty(key)) { continue; }
 
         // Check if the eventKeys should be in an additional object
         if(typeof eventKeys[key] === "object") {
@@ -79,7 +79,7 @@ PathOfExileLog.prototype.evalMatch = function (match, eventKeys, event) {
             // Iterate through each object key
             var nestedObject = eventKeys[key];
             for (var nestedKey in nestedObject) {
-                if (!eventKeys[key].hasOwnProperty(nestedKey)) continue;
+                if (!eventKeys[key].hasOwnProperty(nestedKey)) { continue; }
 
                 var nestedMatchIndex = nestedObject[nestedKey];
                 data[key][nestedKey] = match[nestedMatchIndex];
@@ -91,7 +91,7 @@ PathOfExileLog.prototype.evalMatch = function (match, eventKeys, event) {
     }
 
     this.emit(event, data);
-}
+};
 
 // Area match
 PathOfExileLog.prototype.evalArea = function (match) {
@@ -106,7 +106,7 @@ PathOfExileLog.prototype.evalArea = function (match) {
     }
 
     this.emit("area", area);
-}
+};
 
 // AFK/DND match
 PathOfExileLog.prototype.evalAway = function (match) {
@@ -123,7 +123,7 @@ PathOfExileLog.prototype.evalAway = function (match) {
     }
 
     this.emit(type, away);
-}
+};
 
 // Message
 PathOfExileLog.prototype.evalMessage = function (match) {
@@ -157,7 +157,18 @@ PathOfExileLog.prototype.evalMessage = function (match) {
     }
 
     this.emit("message", message);
-}
+};
+
+PathOfExileLog.prototype.evalTrade = function (match) {
+    var trade = {};
+    trade.accepted = false;
+
+    if(typeof match[1] !== "undefined" && match[1] === "accepted") {
+        trade.accepted = true;
+    }
+
+    this.emit("trade", trade);
+};
 
 PathOfExileLog.prototype.evalMasterEncounter = function (name, message) {
     var master = {};
@@ -167,7 +178,7 @@ PathOfExileLog.prototype.evalMasterEncounter = function (name, message) {
     if(NPC.masters.hasOwnProperty(master.name)) {
         this.emit("masterEncounter", master);
     }
-}
+};
 
 PathOfExileLog.prototype.evalNpcDialogue = function (name, message) {
     var npc = {};
@@ -177,7 +188,7 @@ PathOfExileLog.prototype.evalNpcDialogue = function (name, message) {
     if(NPC.npcs.hasOwnProperty(npc.name)) {
         this.emit("npcEncounter", npc);
     }
-}
+};
 
 util.inherits(PathOfExileLog, EventEmitter);
 

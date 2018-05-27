@@ -25,6 +25,10 @@ poeLog.on("deaths", (data) => {
     console.log("The death command was used, you died " + data.deaths + " times");
 });
 
+poeLog.on("trade", (trade) => {
+    console.log("A trade has been detected, you", trade.accepted ? "accepted" : "cancelled", "it");
+});
+
 poeLog.on("remaining", (remaining) => {
     console.log("The remaining command was used, " + remaining.monsters + " monsters remain");
 });

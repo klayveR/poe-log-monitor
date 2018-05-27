@@ -73,6 +73,7 @@ Emitted when the player joins a chat channel.
 
 ### message
 - `chat` - Chat in which the message appeared
+    - Possible values: `global`, `trade`, `guild`, `party`, `local`
 - `player`
     - `guild` - Guild tag of the player who sent the message, if present
     - `name` - Name of the player who sent the message
@@ -82,6 +83,7 @@ Emitted when a message appears in any of the active chat channels.
 
 ### whisper
 - `direction` - Direction of the whispered message
+    - Possible values: `To`, `From`
 - `player`
     - `guild` - Guild tag of the player who sent the whisper, if present
     - `name` - Name of the player who sent the whisper
@@ -100,6 +102,11 @@ Emitted when the player dies.
 - `level` - Level of the player after level up
 
 Emitted when the player levels up.
+
+### trade
+- `accepted` - `true` if the player accepted the trade
+
+Emitted when the player finishes a trade.
 
 ### npcEncounter
 - `name` - Name of the NPC

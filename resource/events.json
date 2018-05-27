@@ -3,18 +3,6 @@
     "regex":"\\[INFO Client [0-9]*] : You have entered (.*)\\.",
     "function":"evalArea"
   },
-  "away":{
-    "regex":"\\[INFO Client [0-9]*] : (DND|AFK) mode is now (?:(ON)\\. Autoreply \"(.*)\"|(OFF))",
-    "function":"evalAway"
-  },
-  "level":{
-    "regex":"\\[INFO Client [0-9]*] : (.*) \\((.*)\\) is now level ([0-9]+)",
-    "keys":{
-      "name": 1,
-      "characterClass":2,
-      "level":3
-    }
-  },
   "message":{
     "regex":"\\[INFO Client [0-9]*] (#|\\$|%|&|)(?:<(.+)> )?((?!Enumerated )[a-zA-Z_, ]+): (.+)",
     "function":"evalMessage"
@@ -30,6 +18,10 @@
       "message":4
     }
   },
+  "away":{
+    "regex":"\\[INFO Client [0-9]*] : (DND|AFK) mode is now (?:(ON)\\. Autoreply \"(.*)\"|(OFF))",
+    "function":"evalAway"
+  },
   "login":{
     "regex":"\\[INFO Client [0-9]*] Connected to ([a-z]+[0-9]*\\.login\\.pathofexile\\.com) in ([0-9]*)ms\\.",
     "keys":{
@@ -44,6 +36,10 @@
       "channel":2,
       "language":3
     }
+  },
+  "trade":{
+    "regex":"\\[INFO Client [0-9]*] : Trade (cancelled|accepted)",
+    "function":"evalTrade"
   },
   "deaths":{
     "regex":"\\[INFO Client [0-9]*] : You have died ([0-9]+) times\\.",
@@ -61,6 +57,14 @@
     "regex":"\\[INFO Client [0-9]*] : (\\S+) has been slain\\.",
     "keys":{
       "name":1
+    }
+  },
+  "level":{
+    "regex":"\\[INFO Client [0-9]*] : (.*) \\((.*)\\) is now level ([0-9]+)",
+    "keys":{
+      "name": 1,
+      "characterClass":2,
+      "level":3
     }
   },
   "played":{
