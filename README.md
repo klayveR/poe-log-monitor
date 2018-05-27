@@ -25,8 +25,8 @@ var poeLog = new PathOfExileLog({
     logfile: "C:/Program Files (x86)/Grinding Gear Games/Path of Exile/logs/Client.txt"
 });
 
-poeLog.on("message", (data) => {
-    console.log(data.player.name + " sent a message in " + data.chat + " chat: " + data.message);
+poeLog.on("message", (message) => {
+    console.log("(" + message.chat + ") " + message.player.name + ": " + message.message);
 });
 ```
 
