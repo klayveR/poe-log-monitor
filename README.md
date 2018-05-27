@@ -26,7 +26,7 @@ var poeLog = new PathOfExileLog({
 });
 
 poeLog.on("message", (data) => {
-    console.log(data.name + " sent a message in " + data.chat + " chat: " + data.message);
+    console.log(data.player.name + " sent a message in " + data.chat + " chat: " + data.message);
 });
 ```
 
