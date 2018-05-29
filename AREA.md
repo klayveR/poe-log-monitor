@@ -1,7 +1,7 @@
 ## Area event
 
 - [Properties](#properties)
-- [Area information format](#area-information-format)
+- [Area information structure](#area-information-structure)
 - [Usage example](#usage-example)
 
 ## Properties
@@ -17,16 +17,16 @@ The properties listed below are stored in an object emitted by the `area` event.
         - `labyrinth` - Labyrinth areas *(currently unused)*
         - `unknown` - Areas of this type are currently unknown by the script
 - `info` 
-    - An array of objects containing additional information about the area and their variants, if data is available. The emitted object has a different format based on the `type`. See [Area information format](#area-information-format).
+    - An array of objects containing additional information about the area and their variants, if data is available. The emitted object has a different structure based on the `type`. See [Area information structure](#area-information-structure).
     
         >⚠ In the current version [1.2.2], only story, hideout and vaal side areas have additional information. All the other areas will follow shortly.
 
-## Area information format
+## Area information structure
 The `info` object always contains an array of objects, because some areas have different properties, but the same name (this is usually only the case for story areas). Currently, it is not possible to get the exact area the player is in based on the Path of Exile log file, so the script just gives you every possible variant.
 
-The `info` object has different formats based on the area `type`. Below, you can find a list of those formats of each area `type`.
+The `info` object has different structures based on the area `type`. Below, you can find a list of those structures of each area `type`.
 
->⚠ These formats are subject to change. Please make sure to come back to this file if you plan on updating this module, in case there have been any changes.
+>⚠ These structures are subject to change. Please make sure to come back to this file if you plan on updating this module, in case there have been any changes.
 
 ### `area`
 - `act` - Act the area is in
@@ -79,7 +79,6 @@ poeLog.on("area", (area) => {
                 process.stdout.write("\t- Act " + area.act + " (Zone level: " + area.level + ")");
                 process.stdout.write(area.town ? " [Town]" : "");
                 process.stdout.write(area.waypoint ? " [Waypoint]" : "");
-                process.stdout.write(area.map ? " [Map Area]" : "");
                 process.stdout.write(area.bosses.length ? " Has " + area.bosses.length + " unique monsters: " : "");
 
                 // Display bosses, if there are any

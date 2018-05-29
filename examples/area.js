@@ -22,7 +22,6 @@ poeLog.on("area", (area) => {
                 process.stdout.write("\t- Act " + area.act + " (Zone level: " + area.level + ")");
                 process.stdout.write(area.town ? " [Town]" : "");
                 process.stdout.write(area.waypoint ? " [Waypoint]" : "");
-                process.stdout.write(area.map ? " [Map Area]" : "");
                 process.stdout.write(area.bosses.length ? " Has " + area.bosses.length + " unique monsters: " : "");
 
                 // Display bosses, if there are any
