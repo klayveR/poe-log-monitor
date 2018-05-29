@@ -1,7 +1,4 @@
-## Event: `area`
-This ReadMe contains additional information about the `area` event.
-
-## Contents
+## Area event
 
 - [Properties](#properties)
 - [Area information format](#area-information-format)
@@ -14,53 +11,42 @@ The properties listed below are stored in an object emitted by the `area` event.
     - The name of the area that has been entered
 - `type` 
     - The type of the area
-        - `area` 
-            - Regular areas, such as act areas or hideouts
-        - `vaal` 
-            - Vaal side areas
-        - `map` 
-            - Map areas *(currently unused)*
-        - `labyrinth` 
-            - Labyrinth areas *(currently unused)*
-        - `unknown` 
-            - Areas of this type are currently unknown by the script
+        - `area` - Regular areas, such as act areas or hideouts
+        - `vaal` - Vaal side areas
+        - `map` - Map areas *(currently unused)*
+        - `labyrinth` - Labyrinth areas *(currently unused)*
+        - `unknown` - Areas of this type are currently unknown by the script
 - `info` 
     - An array of objects containing additional information about the area and their variants, if data is available. The emitted object has a different format based on the `type`. See [Area information format](#area-information-format).
     
         >⚠ In the current version [1.2.2], only story, hideout and vaal side areas have additional information. All the other areas will follow shortly.
 
 ## Area information format
-The `info` object has different formats based on the area `type`. Below, you can find a list of those formats of each area `type`.
+The `info` object always contains an array of objects, because some areas have different properties, but the same name (this is usually only the case for story areas). Currently, it is not possible to get the exact area the player is in based on the Path of Exile log file, so the script just gives you every possible variant.
 
-The object always contains an array of objects, because some areas have different properties, but the same name (this is usually only the case for story areas). Currently, it is not possible to get the exact area the player is in based on the Path of Exile log file, so the script just gives you every possible variant.
+The `info` object has different formats based on the area `type`. Below, you can find a list of those formats of each area `type`.
 
 >⚠ These formats are subject to change. Please make sure to come back to this file if you plan on updating this module, in case there have been any changes.
 
-### type: `area`
-- `act` 
-    - Act the area is in
-- `level` 
-    - Zone/monster level of the area
-- `town` 
-    - `true` if the area is a town
-- `waypoint` 
-    - `true` if the area has a waypoint
-- `bosses` is an array of objects containing the name of the boss
-    - `name` 
-        - Name of the boss
+### `area`
+- `act` - Act the area is in
+- `level` - Zone/monster level of the area
+- `town` - `true` if the area is a town
+- `waypoint` - `true` if the area has a waypoint
+- `bosses` - An array of objects containing the name of the boss
+    - `name` - Name of the boss
             
-### type: `vaal`
-- `bosses` is an array of objects containing additional information for each boss in the area
-    - `name` 
-        - Name of the boss
+### `vaal`
+- `bosses` - An array of objects containing additional information for each boss in the area
+    - `name` - Name of the boss
             
-### type: `labyrinth`
+### `labyrinth`
 - *There's no data for this area type yet, I'll add the data as soon as possible.*
             
-### type: `map`
+### `map`
 - *There's no data for this area type yet, I'll add the data as soon as possible.*
 
-### type: `unknown`
+### `unknown`
 - Areas of this type are currently unknown by the script. They will emit no additional data in the `info` object.
     
 In case all this doesn't make any sense to you, simply print out the `info` object you receive when the event triggers and see what it contains. Alternatively, you can take a look at the [areas.json].
