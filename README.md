@@ -59,10 +59,10 @@ Emitted when the player logs into the game.
 
 ### area
 - `name` - The name of the area that has been entered
-- `info` - An array of objects containing additional information about the area and their variants, if data is available (See `examples/area.js` for an example)
+- `type` - The type of the area
+- `info` - An array of objects containing additional information about the area and their variants, if data is available. The emitted object has a different format based on the `type`.
 
-Emitted when the player enters an area.
->⚠ In the current version [1.2.0], only story areas have additional information. The other areas such as maps, hideouts and others will follow soon.
+Emitted when the player enters an area. See [AREA.md] for more information about this event.
 
 ### joinChat
 - `chat` - Chat which the player joined
@@ -170,4 +170,4 @@ Emitted when the script resumes monitoring the log file. This event emits no add
 
 Emitted when the script pauses monitoring the log file. This event emits no additional data.
 
-[1.2.0]: https://www.npmjs.com/package/poe-log-monitor/v/1.2.0
+[AREA.md]: https://github.com/klayveR/poe-log-monitor/blob/master/AREA.md

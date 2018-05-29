@@ -9,10 +9,10 @@
   },
   "whisper":{
     "regex":"\\[INFO Client [0-9]*] @(To|From) (?:<(.+)> )?([a-zA-Z_, ]+): (.+)",
-    "keys":{
+    "properties":{
       "direction":1,
-      "player": {
-        "guild": 2,
+      "player":{
+        "guild":2,
         "name":3
       },
       "message":4
@@ -24,14 +24,14 @@
   },
   "login":{
     "regex":"\\[INFO Client [0-9]*] Connected to ([a-z]+[0-9]*\\.login\\.pathofexile\\.com) in ([0-9]*)ms\\.",
-    "keys":{
+    "properties":{
       "server":1,
       "latency":2
     }
   },
   "joinChat":{
     "regex":"\\[INFO Client [0-9]*] : You have joined ([a-zA-Z0-9]+) chat channel ([0-9]+) ([a-zA-Z0-9]+)\\.",
-    "keys":{
+    "properties":{
       "chat":1,
       "channel":2,
       "language":3
@@ -43,33 +43,33 @@
   },
   "deaths":{
     "regex":"\\[INFO Client [0-9]*] : You have died ([0-9]+) times\\.",
-    "keys":{
+    "properties":{
       "deaths":1
     }
   },
   "remaining":{
     "regex":"\\[INFO Client [0-9]*] : (?:More than )?([0-9]+) monsters? remain\\.",
-    "keys":{
+    "properties":{
       "monsters":1
     }
   },
   "death":{
     "regex":"\\[INFO Client [0-9]*] : (\\S+) has been slain\\.",
-    "keys":{
+    "properties":{
       "name":1
     }
   },
   "level":{
     "regex":"\\[INFO Client [0-9]*] : (.*) \\((.*)\\) is now level ([0-9]+)",
-    "keys":{
-      "name": 1,
+    "properties":{
+      "name":1,
       "characterClass":2,
       "level":3
     }
   },
   "played":{
     "regex":"\\[INFO Client [0-9]*] : You have played for (?:([0-9]*) days?)?(?:, )?(?:([0-9]*) hours?)?(?:, )?(?:([0-9]*) minutes?)?(?:, )?(?:and )?(?:([0-9]*) seconds?)",
-    "keys":{
+    "properties":{
       "days":1,
       "hours":2,
       "minutes":3,
@@ -78,7 +78,7 @@
   },
   "age":{
     "regex":"\\[INFO Client [0-9]*] : Your character was created (?:([0-9]*) days?)?(?:, )?(?:([0-9]*) hours?)?(?:, )?(?:([0-9]*) minutes?)?(?:, )?(?:and )?(?:([0-9]*) seconds?)",
-    "keys":{
+    "properties":{
       "days":1,
       "hours":2,
       "minutes":3,

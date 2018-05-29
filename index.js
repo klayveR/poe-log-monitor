@@ -35,8 +35,8 @@ function PathOfExileLog(options) {
             var event = Events[eventName];
             var match = line.match(new RegExp(event.regex));
             if(match) {
-                if(event.hasOwnProperty("keys")) { // Assign eventKeys to matching groups
-                    self.evalMatch(match, event.keys, eventName);
+                if(event.hasOwnProperty("properties")) { // Assign properties to matching groups
+                    self.evalMatch(match, event.properties, eventName);
                 } else if(event.hasOwnProperty("function")) { // Execute a function to further evaluate the matching data
                     // Check if the specified function is actually a function
                     if (typeof self[event.function] === "function") {
@@ -66,26 +66,26 @@ PathOfExileLog.prototype.pause = function () {
 };
 
 // This function simply puts match groups into a new object with the correct identifiers defined in the Events JSON and emits it
-PathOfExileLog.prototype.evalMatch = function (match, eventKeys, event) {
+PathOfExileLog.prototype.evalMatch = function (match, properties, event) {
     var data = {};
 
-    for (var key in eventKeys) {
-        if (!eventKeys.hasOwnProperty(key)) { continue; }
+    for (var key in properties) {
+        if (!properties.hasOwnProperty(key)) { continue; }
 
-        // Check if the eventKeys should be in an additional object
-        if(typeof eventKeys[key] === "object") {
+        // Check if the properties should be in an additional object
+        if(typeof properties[key] === "object") {
             data[key] = {}; // Create new object in the data object
 
             // Iterate through each object key
-            var nestedObject = eventKeys[key];
+            var nestedObject = properties[key];
             for (var nestedKey in nestedObject) {
-                if (!eventKeys[key].hasOwnProperty(nestedKey)) { continue; }
+                if (!properties[key].hasOwnProperty(nestedKey)) { continue; }
 
                 var nestedMatchIndex = nestedObject[nestedKey];
                 data[key][nestedKey] = match[nestedMatchIndex];
             }
         } else {
-            var matchIndex = eventKeys[key];
+            var matchIndex = properties[key];
             data[key] = match[matchIndex];
         }
     }
@@ -98,9 +98,22 @@ PathOfExileLog.prototype.evalArea = function (match) {
     var area = {};
 
     area.name = match[1] || "";
+    area.type = "unknown";
     area.info = [];
 
-    // Determine AFK/DND status
+    // Iterate through each area type
+    for (var areaType in Areas) {
+        if (!Areas.hasOwnProperty(areaType)) { continue; }
+
+        // Check if area has additional info in that area type, add to object if true
+        if(typeof match[1] !== "undefined"
+            && Areas[areaType].hasOwnProperty(match[1])) {
+            area.type = areaType;
+            area.info = Areas[areaType][match[1]];
+        }
+    }
+
+
     if(Areas.hasOwnProperty(match[1])) {
         area.info = Areas[match[1]];
     }
@@ -117,8 +130,8 @@ PathOfExileLog.prototype.evalAway = function (match) {
     away.autoreply = match[3] || "";
 
     // Determine AFK/DND status
-    if(typeof match[2] !== "undefined" && match[2] === "ON" ||
-        typeof match[4] !== "undefined" && match[4] === "ON") {
+    if(typeof match[2] !== "undefined" && match[2] === "ON"
+        || typeof match[4] !== "undefined" && match[4] === "ON") {
         away.status = true;
     }
 

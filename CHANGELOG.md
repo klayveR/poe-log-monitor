@@ -3,6 +3,15 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 
+## [1.2.2] - 2018-05-29
+### Added
+- The object emitted by the `area` event now has an additional property `type`
+- Vaal side areas and hideouts have been added to known areas
+- Added [AREA.md](https://github.com/klayveR/poe-log-monitor/blob/master/AREA.md) for more detailed information about the `area` event
+
+### Removed
+- Areas of the `area` type have had the `map` property removed from the `info` object
+
 ## [1.2.1] - 2018-05-27
 - The following events have been added
     - `trade` emits when the player accepts or cancels a trade
@@ -17,8 +26,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 - Added an example for the new `info` object which can be found in the `examples` folder
 
 ### Changes
-- The `name` and `guild` elements of the `message` and `whisper` event are now stored in the `player` object
-- The `area` element of the `area` event is now `name`
+- The `name` and `guild` properties of the `message` and `whisper` event are now stored in the `player` object
+- The `area` property of the `area` event is now `name`
 
 ### Fixed
 - Fixed a bug that caused the DND/AFK status to always be false
@@ -54,13 +63,13 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 - Added an example on GitHub
 
 ### Changed
-- The `isAfk` element name of the `afk` event is now `status`
-- The `autoReply` element name of the `afk` event is now `autoreply`
-- The `channel` element name of the `message` event is now `chat`
+- The `isAfk` property of the `afk` event is now `status`
+- The `autoReply` property of the `afk` event is now `autoreply`
+- The `channel` property of the `message` event is now `chat`
 
 ### Fixed
 - Fixed a bug that would not include the `isAfk` (now `status`) value in the event object when the AFK status changed to `OFF`
-- The `autoreply` element is no longer `undefined` if the player isn't AFK or in DND mode
+- The `autoreply` property is no longer `undefined` if the player isn't AFK or in DND mode
 
 ## [1.0.1] - 2018-05-23
 ### Changes
@@ -70,6 +79,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 ### Added
 - Initial release
 
+[1.2.2]: https://www.npmjs.com/package/poe-log-monitor/v/1.2.2
 [1.2.1]: https://www.npmjs.com/package/poe-log-monitor/v/1.2.1
 [1.2.0]: https://www.npmjs.com/package/poe-log-monitor/v/1.2.0
 [1.1.2]: https://www.npmjs.com/package/poe-log-monitor/v/1.1.2
