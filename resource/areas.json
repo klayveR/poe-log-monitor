@@ -2465,5 +2465,28 @@
         ]
       ]
     }
+  },
+  "labyrinth":{
+    "Aspirants' Plaza":{
+      "trial":false
+    },
+    "Trial of Piercing Truth":{
+      "trial":true
+    },
+    "Trial of Swirling Fear":{
+      "trial":true
+    },
+    "Trial of Crippling Grief":{
+      "trial":true
+    },
+    "Trial of Burning Rage":{
+      "trial":true
+    },
+    "Trial of Lingering Pain":{
+      "trial":true
+    },
+    "Trial of Stinging Doubt":{
+      "trial":true
+    }
   }
 }

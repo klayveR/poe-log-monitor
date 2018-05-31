@@ -14,12 +14,13 @@ The properties listed below are stored in an object emitted by the `area` event.
         - `area` - Regular areas, such as act areas or hideouts
         - `vaal` - Vaal side areas
         - `map` - Map areas *(currently unused)*
-        - `labyrinth` - Labyrinth areas *(currently unused)*
+        - `master` - Master mission areas *(currently unused)*
+        - `labyrinth` - Labyrinth areas
         - `unknown` - Areas of this type are currently unknown by the script
 - `info` 
     - An array of objects containing additional information about the area and their variants, if data is available. The emitted object has a different structure based on the `type`. See [Area information structure](#area-information-structure).
     
-        >⚠ In the current version [1.2.2], only story, hideout and vaal side areas have additional information. All the other areas will follow shortly.
+        >⚠ In the current version [1.2.3], only story, hideout and vaal side and some labyrinth areas have additional information. All the other areas will follow shortly.
 
 ## Area information structure
 The `info` object always contains an array of objects, because some areas have different properties, but the same name (this is usually only the case for story areas). Currently, it is not possible to get the exact area the player is in based on the Path of Exile log file, so the script just gives you every possible variant.
@@ -41,6 +42,11 @@ The `info` object has different structures based on the area `type`. Below, you 
     - `name` - Name of the boss
             
 ### `labyrinth`
+- `trial` - `true` if the area is a trial of ascendancy
+
+    >⚠ In the current version [1.2.3], only the Aspirants' Plaza and the trial areas are supported.
+           
+### `master`
 - *There's no data for this area type yet, I'll add the data as soon as possible.*
             
 ### `map`
@@ -101,4 +107,4 @@ poeLog.on("area", (area) => {
 
 [areas.json]: https://github.com/klayveR/poe-log-monitor/blob/master/resource/areas.json
 [area.js]: https://github.com/klayveR/poe-log-monitor/blob/master/examples/area.js
-[1.2.2]: https://www.npmjs.com/package/poe-log-monitor/v/1.2.2
+[1.2.3]: https://www.npmjs.com/package/poe-log-monitor/v/1.2.3

@@ -3,6 +3,22 @@
     "regex":"\\[INFO Client [0-9]*] : You have entered (.*)\\.",
     "function":"evalArea"
   },
+  "areaJoin":{
+    "regex":"\\[INFO Client [0-9]*] : (\\S+) has joined the area\\.",
+    "properties":{
+      "player":{
+        "name":1
+      }
+    }
+  },
+  "areaLeave":{
+    "regex":"\\[INFO Client [0-9]*] : (\\S+) has left the area\\.",
+    "properties":{
+      "player":{
+        "name":1
+      }
+    }
+  },
   "message":{
     "regex":"\\[INFO Client [0-9]*] (#|\\$|%|&|)(?:<(.+)> )?((?!Enumerated )[a-zA-Z_, ]+): (.+)",
     "function":"evalMessage"

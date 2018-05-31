@@ -3,6 +3,13 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 
+## [1.2.3] - 2018-05-31
+### Added
+- The following events have been added
+    - `areaJoin` emits when another player joins the area the player is in
+    - `areaLeave` emits when another player leaves the area the player is in
+- Added labyrinth trials and the Aspirants' plaza to the `labyrinth` areas
+
 ## [1.2.2] - 2018-05-29
 ### Added
 - The object emitted by the `area` event now has an additional property `type`
@@ -13,6 +20,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 - Areas of the `area` type have had the `map` property removed from the `info` object
 
 ## [1.2.1] - 2018-05-27
+### Added
 - The following events have been added
     - `trade` emits when the player accepts or cancels a trade
     
@@ -79,6 +87,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 ### Added
 - Initial release
 
+[1.2.3]: https://www.npmjs.com/package/poe-log-monitor/v/1.2.2
 [1.2.2]: https://www.npmjs.com/package/poe-log-monitor/v/1.2.2
 [1.2.1]: https://www.npmjs.com/package/poe-log-monitor/v/1.2.1
 [1.2.0]: https://www.npmjs.com/package/poe-log-monitor/v/1.2.0

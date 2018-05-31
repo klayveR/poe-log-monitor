@@ -64,6 +64,19 @@ Emitted when the player logs into the game.
 
 Emitted when the player enters an area. See [AREA.md] for more information about this event.
 
+### areaJoin
+- `player`
+    - `name` - Name of the player who joined the area
+    
+Emitted when another player enters the area the player is in.
+
+### areaLeave
+- `player`
+    - `name` - Name of the player who joined the area
+    
+Emitted when another player leaves the area the player is in.
+
+
 ### joinChat
 - `chat` - Chat which the player joined
 - `channel` - Channel the player joined

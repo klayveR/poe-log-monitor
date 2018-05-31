@@ -13,6 +13,14 @@ poeLog.on("area", (area) => {
     console.log("Entered \'" + area.name + "\'");
 });
 
+poeLog.on("areaJoin", (area) => {
+    console.log(area.player.name + " has joined the area.");
+});
+
+poeLog.on("areaLeave", (area) => {
+    console.log(area.player.name + " has left the area.");
+});
+
 poeLog.on("level", (player) => {
     console.log(player.name + " (" + player.characterClass + ") is now level " + player.level);
 });
