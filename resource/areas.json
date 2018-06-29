@@ -2386,5 +2386,1567 @@
     "Trial of Stinging Doubt": {
       "trial": true
     }
+  },
+  "map": {
+    "Beach Map": [
+      {
+        "level": 68,
+        "tier": 1,
+        "bosses": [
+          "Glace"
+        ]
+      }
+    ],
+    "Dungeon Map": [
+      {
+        "level": 68,
+        "tier": 1,
+        "bosses": [
+          "Penitentiary Incarcerator"
+        ]
+      }
+    ],
+    "Graveyard Map": [
+      {
+        "level": 68,
+        "tier": 1,
+        "bosses": [
+          "Steelpoint the Avenger",
+          "Champion of Frost",
+          "Thunderskull"
+        ]
+      }
+    ],
+    "Lookout Map": [
+      {
+        "level": 68,
+        "tier": 1,
+        "bosses": [
+          "The Grey Plague"
+        ]
+      }
+    ],
+    "Alleyways Map": [
+      {
+        "level": 69,
+        "tier": 2,
+        "bosses": [
+          "Calderus"
+        ]
+      }
+    ],
+    "Arid Lake Map": [
+      {
+        "level": 69,
+        "tier": 2,
+        "bosses": [
+          "Drought-Maddened Rhoa"
+        ]
+      }
+    ],
+    "Desert Map": [
+      {
+        "level": 69,
+        "tier": 2,
+        "bosses": [
+          "Preethi, Eye-Pecker"
+        ]
+      }
+    ],
+    "Flooded Mine Map": [
+      {
+        "level": 69,
+        "tier": 2,
+        "bosses": [
+          "The Eroding One"
+        ]
+      }
+    ],
+    "Marshes Map": [
+      {
+        "level": 69,
+        "tier": 2,
+        "bosses": [
+          "Tore, Towering Ancient"
+        ]
+      }
+    ],
+    "Pen Map": [
+      {
+        "level": 69,
+        "tier": 2,
+        "bosses": [
+          "Arwyn, the Houndmaster"
+        ]
+      }
+    ],
+    "Arcade Map": [
+      {
+        "level": 70,
+        "tier": 3,
+        "bosses": [
+          "Herald of Ashes",
+          "Herald of Thunder"
+        ]
+      }
+    ],
+    "Burial Chambers Map": [
+      {
+        "level": 70,
+        "tier": 3,
+        "bosses": [
+          "Witch of the Cauldron"
+        ]
+      }
+    ],
+    "Cage Map": [
+      {
+        "level": 70,
+        "tier": 3,
+        "bosses": [
+          "Executioner Bloodwing"
+        ]
+      }
+    ],
+    "Cells Map": [
+      {
+        "level": 70,
+        "tier": 3,
+        "bosses": [
+          "Megaera"
+        ]
+      }
+    ],
+    "Excavation Map": [
+      {
+        "level": 70,
+        "tier": 3,
+        "bosses": [
+          "Shrieker Eihal",
+          "Breaker Toruul"
+        ]
+      }
+    ],
+    "Iceberg Map": [
+      {
+        "level": 70,
+        "tier": 3,
+        "bosses": [
+          "One random Mutewind Warband boss with a supporting Warband"
+        ]
+      }
+    ],
+    "Leyline Map": [
+      {
+        "level": 70,
+        "tier": 3,
+        "bosses": [
+          "Mirage of Bones"
+        ]
+      }
+    ],
+    "Peninsula Map": [
+      {
+        "level": 70,
+        "tier": 3,
+        "bosses": [
+          "Titan of the Grove"
+        ]
+      }
+    ],
+    "Port Map": [
+      {
+        "level": 70,
+        "tier": 3,
+        "bosses": [
+          "Unravelling Horror"
+        ]
+      }
+    ],
+    "Springs Map": [
+      {
+        "level": 70,
+        "tier": 3,
+        "bosses": [
+          "Aulen Greychain"
+        ]
+      }
+    ],
+    "Esh's Domain": [
+      {
+        "level": 70,
+        "tier": null,
+        "bosses": [
+          "Esh, Forked Thought"
+        ]
+      }
+    ],
+    "Tul's Domain": [
+      {
+        "level": 70,
+        "tier": null,
+        "bosses": [
+          "Tul, Creeping Avalanche"
+        ]
+      }
+    ],
+    "Xoph's Domain": [
+      {
+        "level": 70,
+        "tier": null,
+        "bosses": [
+          "Xoph, Dark Embers"
+        ]
+      }
+    ],
+    "The Apex of Sacrifice": [
+      {
+        "level": 70,
+        "tier": null,
+        "bosses": [
+          "Atziri, Queen of the Vaal",
+          "Q'ura",
+          "Y'ara'az",
+          "A'alai",
+          "Vessel of the Vaal",
+          "Vessel of the Vaal"
+        ]
+      }
+    ],
+    "Canyon Map": [
+      {
+        "level": 71,
+        "tier": 4,
+        "bosses": [
+          "Gnar, Eater of Carrion",
+          "Stonebeak, Battle Fowl"
+        ]
+      }
+    ],
+    "Chateau Map": [
+      {
+        "level": 71,
+        "tier": 4,
+        "bosses": [
+          "The Reaver"
+        ]
+      }
+    ],
+    "City Square Map": [
+      {
+        "level": 71,
+        "tier": 4,
+        "bosses": [
+          "Carius, the Unnatural",
+          "Pileah, Corpse Burner",
+          "Pileah, Burning Corpse"
+        ]
+      }
+    ],
+    "Courthouse Map": [
+      {
+        "level": 71,
+        "tier": 4,
+        "bosses": [
+          "Thena Moga, The Crimson Storm",
+          "Ion Darkshroud, The Hungering Blade",
+          "Bolt Brownfur, Earth Churner"
+        ]
+      }
+    ],
+    "Gorge Map": [
+      {
+        "level": 71,
+        "tier": 4,
+        "bosses": [
+          "Rek'tar, the Breaker"
+        ]
+      }
+    ],
+    "Grotto Map": [
+      {
+        "level": 71,
+        "tier": 4,
+        "bosses": [
+          "Void Anomaly"
+        ]
+      }
+    ],
+    "Lighthouse Map": [
+      {
+        "level": 71,
+        "tier": 4,
+        "bosses": [
+          "One random Redblade Warband boss with a supporting Warband"
+        ]
+      }
+    ],
+    "Relic Chambers Map": [
+      {
+        "level": 71,
+        "tier": 4,
+        "bosses": [
+          "Litanius, the Black Prayer"
+        ]
+      }
+    ],
+    "Strand Map": [
+      {
+        "level": 71,
+        "tier": 4,
+        "bosses": [
+          "Master of the Blade Massier"
+        ]
+      }
+    ],
+    "Whakawairua Tuahu": [
+      {
+        "level": 71,
+        "tier": 4,
+        "bosses": [
+          "Tormented Temptress"
+        ]
+      }
+    ],
+    "Volcano Map": [
+      {
+        "level": 71,
+        "tier": 4,
+        "bosses": [
+          "Forest of Flames"
+        ]
+      }
+    ],
+    "Ancient City Map": [
+      {
+        "level": 72,
+        "tier": 5,
+        "bosses": [
+          "Lady Stormflay"
+        ]
+      }
+    ],
+    "Barrows Map": [
+      {
+        "level": 72,
+        "tier": 5,
+        "bosses": [
+          "Beast of the Pits"
+        ]
+      }
+    ],
+    "Channel Map": [
+      {
+        "level": 72,
+        "tier": 5,
+        "bosses": [
+          "The Winged Death"
+        ]
+      }
+    ],
+    "Conservatory Map": [
+      {
+        "level": 72,
+        "tier": 5,
+        "bosses": [
+          "The Forgotten Soldier"
+        ]
+      }
+    ],
+    "Haunted Mansion Map": [
+      {
+        "level": 72,
+        "tier": 5,
+        "bosses": [
+          "Barthol, the Pure",
+          "Barthol, the Corrupter"
+        ]
+      }
+    ],
+    "Ivory Temple Map": [
+      {
+        "level": 72,
+        "tier": 5,
+        "bosses": [
+          "One random Perandus Manor boss"
+        ]
+      }
+    ],
+    "Maze Map": [
+      {
+        "level": 72,
+        "tier": 5,
+        "bosses": [
+          "Shadow of the Vaal"
+        ]
+      }
+    ],
+    "Spider Lair Map": [
+      {
+        "level": 72,
+        "tier": 5,
+        "bosses": [
+          "Thraxia"
+        ]
+      }
+    ],
+    "Sulphur Vents Map": [
+      {
+        "level": 72,
+        "tier": 5,
+        "bosses": [
+          "The Gorgon"
+        ]
+      }
+    ],
+    "Toxic Sewer Map": [
+      {
+        "level": 72,
+        "tier": 5,
+        "bosses": [
+          "Arachnoxia"
+        ]
+      }
+    ],
+    "The Beachhead": [
+      {
+        "level": 72,
+        "tier": 5,
+        "bosses": []
+      }
+    ],
+    "Academy Map": [
+      {
+        "level": 73,
+        "tier": 6,
+        "bosses": [
+          "The Arbiter of Knowledge"
+        ]
+      }
+    ],
+    "Atoll Map": [
+      {
+        "level": 73,
+        "tier": 6,
+        "bosses": [
+          "Puruna, the Challenger"
+        ]
+      }
+    ],
+    "Maelström of Chaos": [
+      {
+        "level": 73,
+        "tier": 6,
+        "bosses": [
+          "Merveil, the Reflection",
+          "Merveil, the Returned"
+        ]
+      }
+    ],
+    "Ashen Wood Map": [
+      {
+        "level": 73,
+        "tier": 6,
+        "bosses": [
+          "Lord of the Ashen Arrow"
+        ]
+      }
+    ],
+    "Cemetery Map": [
+      {
+        "level": 73,
+        "tier": 6,
+        "bosses": [
+          "Erebix, Light's Bane"
+        ]
+      }
+    ],
+    "Hallowed Ground": [
+      {
+        "level": 73,
+        "tier": 6,
+        "bosses": [
+          "Maker of Mires"
+        ]
+      }
+    ],
+    "Fields Map": [
+      {
+        "level": 73,
+        "tier": 6,
+        "bosses": [
+          "Drek, Apex Hunter"
+        ]
+      }
+    ],
+    "Jungle Valley Map": [
+      {
+        "level": 73,
+        "tier": 6,
+        "bosses": [
+          "Queen of the Great Tangle"
+        ]
+      }
+    ],
+    "Mausoleum Map": [
+      {
+        "level": 73,
+        "tier": 6,
+        "bosses": [
+          "Tolman, the Exhumer"
+        ]
+      }
+    ],
+    "Phantasmagoria Map": [
+      {
+        "level": 73,
+        "tier": 6,
+        "bosses": [
+          "Erythrophagia"
+        ]
+      }
+    ],
+    "Thicket Map": [
+      {
+        "level": 73,
+        "tier": 6,
+        "bosses": [
+          "The Primal One"
+        ]
+      }
+    ],
+    "Underground Sea Map": [
+      {
+        "level": 73,
+        "tier": 6,
+        "bosses": [
+          "Merveil, the Reflection"
+        ]
+      }
+    ],
+    "Wharf Map": [
+      {
+        "level": 73,
+        "tier": 6,
+        "bosses": [
+          "Stone of the Currents"
+        ]
+      }
+    ],
+    "Arachnid Nest Map": [
+      {
+        "level": 74,
+        "tier": 7,
+        "bosses": [
+          "Spinner of False Hope"
+        ]
+      }
+    ],
+    "Bazaar Map": [
+      {
+        "level": 74,
+        "tier": 7,
+        "bosses": [
+          "Ancient Sculptor"
+        ]
+      }
+    ],
+    "Bone Crypt Map": [
+      {
+        "level": 74,
+        "tier": 7,
+        "bosses": [
+          "Xixic, High Necromancer"
+        ]
+      }
+    ],
+    "Olmec's Sanctum": [
+      {
+        "level": 74,
+        "tier": 7,
+        "bosses": [
+          "Olmec, the All Stone"
+        ]
+      }
+    ],
+    "Coral Ruins Map": [
+      {
+        "level": 74,
+        "tier": 7,
+        "bosses": [
+          "Captain Tanner Lightfoot"
+        ]
+      }
+    ],
+    "Dunes Map": [
+      {
+        "level": 74,
+        "tier": 7,
+        "bosses": [
+          "The Blacksmith"
+        ]
+      }
+    ],
+    "Pillars of Arun": [
+      {
+        "level": 74,
+        "tier": 7,
+        "bosses": [
+          "Talin, Faithbreaker"
+        ]
+      }
+    ],
+    "Gardens Map": [
+      {
+        "level": 74,
+        "tier": 7,
+        "bosses": [
+          "Sallazzang"
+        ]
+      }
+    ],
+    "Lava Chamber Map": [
+      {
+        "level": 74,
+        "tier": 7,
+        "bosses": [
+          "Fire and Fury"
+        ]
+      }
+    ],
+    "Ramparts Map": [
+      {
+        "level": 74,
+        "tier": 7,
+        "bosses": [
+          "Legius Garhall"
+        ]
+      }
+    ],
+    "Residence Map": [
+      {
+        "level": 74,
+        "tier": 7,
+        "bosses": [
+          "Excellis Aurafix"
+        ]
+      }
+    ],
+    "Tribunal Map": [
+      {
+        "level": 74,
+        "tier": 7,
+        "bosses": [
+          "Shavronne the Sickening"
+        ]
+      }
+    ],
+    "Underground River Map": [
+      {
+        "level": 74,
+        "tier": 7,
+        "bosses": [
+          "It That Fell"
+        ]
+      }
+    ],
+    "Caer Blaidd, Wolfpack's Den": [
+      {
+        "level": 74,
+        "tier": 7,
+        "bosses": [
+          "Solus, Pack Alpha",
+          "Storm Eye",
+          "Winterfang"
+        ]
+      }
+    ],
+    "Armoury Map": [
+      {
+        "level": 75,
+        "tier": 8,
+        "bosses": [
+          "Warmonger"
+        ]
+      }
+    ],
+    "Courtyard Map": [
+      {
+        "level": 75,
+        "tier": 8,
+        "bosses": [
+          "Oriath's Vengeance",
+          "Oriath's Vigil",
+          "Oriath's Virtue"
+        ]
+      }
+    ],
+    "The Vinktar Square": [
+      {
+        "level": 75,
+        "tier": 8,
+        "bosses": [
+          "Avatar of Thunder"
+        ]
+      }
+    ],
+    "Geode Map": [
+      {
+        "level": 75,
+        "tier": 8,
+        "bosses": [
+          "Avatar of Undoing"
+        ]
+      }
+    ],
+    "Infested Valley Map": [
+      {
+        "level": 75,
+        "tier": 8,
+        "bosses": [
+          "Gorulis, Will-Thief"
+        ]
+      }
+    ],
+    "Laboratory Map": [
+      {
+        "level": 75,
+        "tier": 8,
+        "bosses": [
+          "Riftwalker"
+        ]
+      }
+    ],
+    "Mineral Pools Map": [
+      {
+        "level": 75,
+        "tier": 8,
+        "bosses": [
+          "Merveil, the Reflection",
+          "Merveil, the Returned"
+        ]
+      }
+    ],
+    "Mud Geyser Map": [
+      {
+        "level": 75,
+        "tier": 8,
+        "bosses": [
+          "Tunneltrap"
+        ]
+      }
+    ],
+    "Overgrown Ruin Map": [
+      {
+        "level": 75,
+        "tier": 8,
+        "bosses": [
+          "Visceris"
+        ]
+      }
+    ],
+    "Shore Map": [
+      {
+        "level": 75,
+        "tier": 8,
+        "bosses": [
+          "Belcer, the Pirate Lord"
+        ]
+      }
+    ],
+    "Mao Kun": [
+      {
+        "level": 75,
+        "tier": 8,
+        "bosses": [
+          "Fairgraves, Never Dying"
+        ]
+      }
+    ],
+    "The Pale Court": [
+      {
+        "level": 75,
+        "tier": null,
+        "bosses": [
+          "Eber, the Plaguemaw",
+          "Inya, the Unbearable Whispers",
+          "Volkuur, the Unbreathing Queen",
+          "Yriel, the Feral Lord"
+        ]
+      }
+    ],
+    "Tropical Island Map": [
+      {
+        "level": 75,
+        "tier": 8,
+        "bosses": [
+          "Blood Progenitor"
+        ]
+      }
+    ],
+    "Uul-Netol's Domain": [
+      {
+        "level": 75,
+        "tier": null,
+        "bosses": [
+          "Uul-Netol, Unburdened Flesh"
+        ]
+      }
+    ],
+    "Untainted Paradise": [
+      {
+        "level": 75,
+        "tier": 8,
+        "bosses": [
+          "Clutch Queen",
+          "Colossal Spitter",
+          "Elder Devourer",
+          "Great Maw",
+          "Prime Ape",
+          "The First Rhoa"
+        ]
+      }
+    ],
+    "Vaal Pyramid Map": [
+      {
+        "level": 75,
+        "tier": 8,
+        "bosses": [
+          "The Fallen Queen",
+          "The Hollow Lady",
+          "The Broken Prince"
+        ]
+      }
+    ],
+    "Vaults of Atziri": [
+      {
+        "level": 75,
+        "tier": 8,
+        "bosses": [
+          "(none)"
+        ]
+      }
+    ],
+    "Arena Map": [
+      {
+        "level": 76,
+        "tier": 9,
+        "bosses": [
+          "Avatar of the Forge",
+          "Avatar of the Huntress",
+          "Avatar of the Skies"
+        ]
+      }
+    ],
+    "Estuary Map": [
+      {
+        "level": 76,
+        "tier": 9,
+        "bosses": [
+          "Sumter the Twisted"
+        ]
+      }
+    ],
+    "Moon Temple Map": [
+      {
+        "level": 76,
+        "tier": 9,
+        "bosses": [
+          "Sebbert, Crescent's Point"
+        ]
+      }
+    ],
+    "The Twilight Temple": [
+      {
+        "level": 76,
+        "tier": 9,
+        "bosses": [
+          "Helial, the Day Unending",
+          "Selenia, the Endless Night"
+        ]
+      }
+    ],
+    "Museum Map": [
+      {
+        "level": 76,
+        "tier": 9,
+        "bosses": [
+          "He of Many Pieces"
+        ]
+      }
+    ],
+    "The Putrid Cloister": [
+      {
+        "level": 76,
+        "tier": 9,
+        "bosses": [
+          "Headmistress Braeta"
+        ]
+      }
+    ],
+    "Plateau Map": [
+      {
+        "level": 76,
+        "tier": 9,
+        "bosses": [
+          "Puruna, the Challenger",
+          "Poporo, the Highest Spire"
+        ]
+      }
+    ],
+    "Scriptorium Map": [
+      {
+        "level": 76,
+        "tier": 9,
+        "bosses": [
+          "Gisale, Thought Thief"
+        ]
+      }
+    ],
+    "Sepulchre Map": [
+      {
+        "level": 76,
+        "tier": 9,
+        "bosses": [
+          "Doedre the Defiler"
+        ]
+      }
+    ],
+    "Temple Map": [
+      {
+        "level": 76,
+        "tier": 9,
+        "bosses": [
+          "Jorus, Sky's Edge"
+        ]
+      }
+    ],
+    "Poorjoy's Asylum": [
+      {
+        "level": 76,
+        "tier": 9,
+        "bosses": [
+          "Mistress Hyseria"
+        ]
+      }
+    ],
+    "Tower Map": [
+      {
+        "level": 76,
+        "tier": 9,
+        "bosses": [
+          "Liantra Bazur"
+        ]
+      }
+    ],
+    "Vault Map": [
+      {
+        "level": 76,
+        "tier": 9,
+        "bosses": [
+          "Guardian of the Vault"
+        ]
+      }
+    ],
+    "Waste Pool Map": [
+      {
+        "level": 76,
+        "tier": 9,
+        "bosses": [
+          "Portentia, the Foul"
+        ]
+      }
+    ],
+    "Arachnid Tomb Map": [
+      {
+        "level": 77,
+        "tier": 10,
+        "bosses": [
+          "Hybrid Widow"
+        ]
+      }
+    ],
+    "Belfry Map": [
+      {
+        "level": 77,
+        "tier": 10,
+        "bosses": [
+          "Lord of the Grey"
+        ]
+      }
+    ],
+    "Bog Map": [
+      {
+        "level": 77,
+        "tier": 10,
+        "bosses": [
+          "Skullbeak"
+        ]
+      }
+    ],
+    "Cursed Crypt Map": [
+      {
+        "level": 77,
+        "tier": 10,
+        "bosses": [
+          "Pagan Bishop of Agony"
+        ]
+      }
+    ],
+    "The Coward's Trial": [
+      {
+        "level": 77,
+        "tier": 10,
+        "bosses": [
+          "Infector of Dreams"
+        ]
+      }
+    ],
+    "Orchard Map": [
+      {
+        "level": 77,
+        "tier": 10,
+        "bosses": [
+          "Vision of Justice"
+        ]
+      }
+    ],
+    "Pier Map": [
+      {
+        "level": 77,
+        "tier": 10,
+        "bosses": [
+          "Ancient Architect"
+        ]
+      }
+    ],
+    "Precinct Map": [
+      {
+        "level": 77,
+        "tier": 10,
+        "bosses": [
+          "Three random Rogue Exiles"
+        ]
+      }
+    ],
+    "Shipyard Map": [
+      {
+        "level": 77,
+        "tier": 10,
+        "bosses": [
+          "One random Brinerot Warband boss with a supporting Warband"
+        ]
+      }
+    ],
+    "Siege Map": [
+      {
+        "level": 77,
+        "tier": 10,
+        "bosses": [
+          "Tahsin, Warmaker"
+        ]
+      }
+    ],
+    "The Beachhead 10": [
+      {
+        "level": 77,
+        "tier": 10,
+        "bosses": [
+          ""
+        ]
+      }
+    ],
+    "Wasteland Map": [
+      {
+        "level": 77,
+        "tier": 10,
+        "bosses": [
+          "The Brittle Emperor"
+        ]
+      }
+    ],
+    "Colonnade Map": [
+      {
+        "level": 78,
+        "tier": 11,
+        "bosses": [
+          "Tyrant"
+        ]
+      }
+    ],
+    "Coves Map": [
+      {
+        "level": 78,
+        "tier": 11,
+        "bosses": [
+          "Telvar, the Inebriated Pirate Treasure"
+        ]
+      }
+    ],
+    "Factory Map": [
+      {
+        "level": 78,
+        "tier": 11,
+        "bosses": [
+          "Pesquin, the Mad Baron"
+        ]
+      }
+    ],
+    "Mesa Map": [
+      {
+        "level": 78,
+        "tier": 11,
+        "bosses": [
+          "Oak the Mighty"
+        ]
+      }
+    ],
+    "Lair Map": [
+      {
+        "level": 78,
+        "tier": 11,
+        "bosses": [
+          "Lycius, Midnight's Howl"
+        ]
+      }
+    ],
+    "Pit Map": [
+      {
+        "level": 78,
+        "tier": 11,
+        "bosses": [
+          "Olof, Son of the Headsman"
+        ]
+      }
+    ],
+    "Primordial Pool Map": [
+      {
+        "level": 78,
+        "tier": 11,
+        "bosses": [
+          "Nightmare's Omen"
+        ]
+      }
+    ],
+    "Promenade Map": [
+      {
+        "level": 78,
+        "tier": 11,
+        "bosses": [
+          "Blackguard Avenger Blackguard Tempest"
+        ]
+      }
+    ],
+    "Hall of Grandmasters": [
+      {
+        "level": 78,
+        "tier": 11,
+        "bosses": [
+          "(none)*"
+        ]
+      }
+    ],
+    "Spider Forest Map": [
+      {
+        "level": 78,
+        "tier": 11,
+        "bosses": [
+          "Enticer of Rot"
+        ]
+      }
+    ],
+    "Waterways Map": [
+      {
+        "level": 78,
+        "tier": 11,
+        "bosses": [
+          "Fragment of Winter"
+        ]
+      }
+    ],
+    "Castle Ruins Map": [
+      {
+        "level": 79,
+        "tier": 12,
+        "bosses": [
+          "Leif, the Swift-Handed"
+        ]
+      }
+    ],
+    "Crystal Ore Map": [
+      {
+        "level": 79,
+        "tier": 12,
+        "bosses": [
+          "Champion of the Hollows Lord of the Hollows Messenger of the Hollows"
+        ]
+      }
+    ],
+    "Defiled Cathedral Map": [
+      {
+        "level": 79,
+        "tier": 12,
+        "bosses": [
+          "Woad, Mockery of Man"
+        ]
+      }
+    ],
+    "Necropolis Map": [
+      {
+        "level": 79,
+        "tier": 12,
+        "bosses": [
+          "Burtok, Conjuror of Bones"
+        ]
+      }
+    ],
+    "Death and Taxes": [
+      {
+        "level": 79,
+        "tier": 12,
+        "bosses": [
+          "Avatar of Apocalypse"
+        ]
+      }
+    ],
+    "Overgrown Shrine Map": [
+      {
+        "level": 79,
+        "tier": 12,
+        "bosses": [
+          "Maligaro the Mutilator"
+        ]
+      }
+    ],
+    "Acton's Nightmare": [
+      {
+        "level": 79,
+        "tier": 12,
+        "bosses": [
+          "Rose Thorn"
+        ]
+      }
+    ],
+    "Racecourse Map": [
+      {
+        "level": 79,
+        "tier": 12,
+        "bosses": [
+          "Shredder of Gladiators Crusher of Gladiators Bringer of Blood"
+        ]
+      }
+    ],
+    "Summit Map": [
+      {
+        "level": 79,
+        "tier": 12,
+        "bosses": [
+          "Mephod, the Earth Scorcher"
+        ]
+      }
+    ],
+    "Torture Chamber Map": [
+      {
+        "level": 79,
+        "tier": 12,
+        "bosses": [
+          "Shock and Horror"
+        ]
+      }
+    ],
+    "Oba's Cursed Trove": [
+      {
+        "level": 79,
+        "tier": 12,
+        "bosses": []
+      }
+    ],
+    "Villa Map": [
+      {
+        "level": 79,
+        "tier": 12,
+        "bosses": [
+          "The High Templar"
+        ]
+      }
+    ],
+    "Arsenal Map": [
+      {
+        "level": 80,
+        "tier": 13,
+        "bosses": [
+          "The Steel Soul"
+        ]
+      }
+    ],
+    "Caldera Map": [
+      {
+        "level": 80,
+        "tier": 13,
+        "bosses": [
+          "The Infernal King"
+        ]
+      }
+    ],
+    "Core Map": [
+      {
+        "level": 80,
+        "tier": 13,
+        "bosses": [
+          "Eater of Souls"
+        ]
+      }
+    ],
+    "Chayula's Domain": [
+      {
+        "level": 80,
+        "tier": null,
+        "bosses": [
+          "Chayula, Who Dreamt"
+        ]
+      }
+    ],
+    "Desert Spring Map": [
+      {
+        "level": 80,
+        "tier": 13,
+        "bosses": [
+          "Terror of the Infinite Drifts"
+        ]
+      }
+    ],
+    "Ghetto Map": [
+      {
+        "level": 80,
+        "tier": 13,
+        "bosses": [
+          "Hephaeus, The Hammer"
+        ]
+      }
+    ],
+    "Malformation Map": [
+      {
+        "level": 80,
+        "tier": 13,
+        "bosses": [
+          "Nightmare Manifest"
+        ]
+      }
+    ],
+    "Park Map": [
+      {
+        "level": 80,
+        "tier": 13,
+        "bosses": [
+          "Suncaller Asha"
+        ]
+      }
+    ],
+    "Shrine Map": [
+      {
+        "level": 80,
+        "tier": 13,
+        "bosses": [
+          "Piety the Empyrean"
+        ]
+      }
+    ],
+    "Terrace Map": [
+      {
+        "level": 80,
+        "tier": 13,
+        "bosses": [
+          "Varhesh, Shimmering Aberration"
+        ]
+      }
+    ],
+    "The Alluring Abyss": [
+      {
+        "level": 80,
+        "tier": null,
+        "bosses": [
+          "Atziri, Queen of the Vaal",
+          "Q'ura",
+          "Y'ara'az",
+          "A'alai",
+          "Vessel of the Vaal",
+          "Vessel of the Vaal"
+        ]
+      }
+    ],
+    "Acid Lakes Map": [
+      {
+        "level": 81,
+        "tier": 14,
+        "bosses": [
+          "Two random Renegades Warband bosses with a supporting Warband"
+        ]
+      }
+    ],
+    "Colosseum Map": [
+      {
+        "level": 81,
+        "tier": 14,
+        "bosses": [
+          "Ambrius, Legion Slayer"
+        ]
+      }
+    ],
+    "Crimson Temple Map": [
+      {
+        "level": 81,
+        "tier": 14,
+        "bosses": [
+          "The Sanguine Siren"
+        ]
+      }
+    ],
+    "Dark Forest Map": [
+      {
+        "level": 81,
+        "tier": 14,
+        "bosses": [
+          "The Cursed King"
+        ]
+      }
+    ],
+    "Dig Map": [
+      {
+        "level": 81,
+        "tier": 14,
+        "bosses": [
+          "Stalker of the Endless Dunes"
+        ]
+      }
+    ],
+    "Palace Map": [
+      {
+        "level": 81,
+        "tier": 14,
+        "bosses": [
+          "God's Chosen The Hallowed Husk"
+        ]
+      }
+    ],
+    "Plaza Map": [
+      {
+        "level": 81,
+        "tier": 14,
+        "bosses": [
+          "The Goddess"
+        ]
+      }
+    ],
+    "Basilica Map": [
+      {
+        "level": 82,
+        "tier": 15,
+        "bosses": [
+          "Konley, the Unrepentant",
+          "The Cleansing Light"
+        ]
+      }
+    ],
+    "Carcass Map": [
+      {
+        "level": 82,
+        "tier": 15,
+        "bosses": [
+          "Amalgam of Nightmares"
+        ]
+      }
+    ],
+    "Lava Lake Map": [
+      {
+        "level": 82,
+        "tier": 15,
+        "bosses": [
+          "Kitava, the Insatiable"
+        ]
+      }
+    ],
+    "Reef Map": [
+      {
+        "level": 82,
+        "tier": 15,
+        "bosses": [
+          "Nassar, Lion of the Seas"
+        ]
+      }
+    ],
+    "Sunken City Map": [
+      {
+        "level": 82,
+        "tier": 15,
+        "bosses": [
+          "Armala, the Widow"
+        ]
+      }
+    ],
+    "The Beachhead 15": [
+      {
+        "level": 82,
+        "tier": 15,
+        "bosses": [
+          ""
+        ]
+      }
+    ],
+    "Forge of the Phoenix Map": [
+      {
+        "level": 83,
+        "tier": 16,
+        "bosses": [
+          "Guardian of the Phoenix"
+        ]
+      }
+    ],
+    "Lair of the Hydra Map": [
+      {
+        "level": 83,
+        "tier": 16,
+        "bosses": [
+          "Guardian of the Hydra"
+        ]
+      }
+    ],
+    "Maze of the Minotaur Map": [
+      {
+        "level": 83,
+        "tier": 16,
+        "bosses": [
+          "Guardian of the Minotaur"
+        ]
+      }
+    ],
+    "Pit of the Chimera Map": [
+      {
+        "level": 83,
+        "tier": 16,
+        "bosses": [
+          "Guardian of the Chimera"
+        ]
+      }
+    ],
+    "Vaal Temple Map": [
+      {
+        "level": 83,
+        "tier": 16,
+        "bosses": [
+          "K'aj A'alai",
+          "K'aj Q'ura",
+          "K'aj Y'ara'az"
+        ]
+      }
+    ],
+    "The Shaper's Realm": [
+      {
+        "level": 84,
+        "tier": null,
+        "bosses": [
+          "The Shaper"
+        ]
+      }
+    ]
   }
 }
