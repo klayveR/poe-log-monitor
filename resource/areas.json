@@ -2001,391 +2001,405 @@
   "vaal": {
     "Strange Sinkhole": {
       "bosses": [
-        [
-          "Mother of the Hive"
-        ]
+        {
+          "name": "Mother of the Hive"
+        }
       ]
     },
     "Concealed Cavity": {
       "bosses": [
-        [
-          "The All-seeing Eye"
-        ]
+        {
+          "name": "The All-seeing Eye"
+        }
       ]
     },
     "Sunken Shingle": {
       "bosses": [
-        [
-          "Perquil the Lucky"
-        ]
+        {
+          "name": "Perquil the Lucky"
+        }
       ]
     },
     "Clouded Ridge": {
       "bosses": [
-        [
-          "Konu, Maker of Wind"
-        ]
+        {
+          "name": "Konu, Maker of Wind"
+        }
       ]
     },
     "Forgotten Oubliette": {
       "bosses": [
-        [
-          "Coniraya, Shadow of Malice"
-        ]
+        {
+          "name": "Coniraya, Shadow of Malice"
+        }
       ]
     },
     "Remote Gulch": {
       "bosses": [
-        [
-          "Sheaq, Maker of Floods"
-        ]
+        {
+          "name": "Sheaq, Maker of Floods"
+        }
       ]
     },
     "Narrow Ravine": {
       "bosses": [
-        [
-          "Kamaq, Soilmaker"
-        ]
+        {
+          "name": "Kamaq, Soilmaker"
+        }
       ]
     },
     "Mystical Clearing": {
       "bosses": [
-        [
-          "Simi, the Nature Touched"
-        ]
+        {
+          "name": "Simi, the Nature Touched"
+        }
       ]
     },
     "Covered-up Hollow": {
       "bosses": [
-        [
-          "Cintiq, the Inescapable"
-        ]
+        {
+          "name": "Cintiq, the Inescapable"
+        }
       ]
     },
     "Hidden Patch": {
       "bosses": [
-        [
-          "Thornrunner"
-        ]
+        {
+          "name": "Thornrunner"
+        }
       ]
     },
     "Entombed Alcove": {
       "bosses": [
-        [
-          "Shrapnelbearer"
-        ]
+        {
+          "name": "Shrapnelbearer"
+        }
       ]
     },
     "Secret Laboratory": {
       "bosses": [
-        [
-          "Atziri's Pride"
-        ]
+        {
+          "name": "Atziri's Pride"
+        }
       ]
     },
     "Secluded Copse": {
       "bosses": [
-        [
-          "Kutec, Vaal Fleshsmith"
-        ]
+        {
+          "name": "Kutec, Vaal Fleshsmith"
+        }
       ]
     },
     "Forbidden Chamber": {
       "bosses": [
-        [
-          "Haviri, Vaal Metalsmith"
-        ]
+        {
+          "name": "Haviri, Vaal Metalsmith"
+        }
       ]
     },
     "Quarantined Quarters": {
       "bosses": [
-        [
-          "The Sunburst Queen"
-        ]
+        {
+          "name": "The Sunburst Queen"
+        }
       ]
     },
     "Disused Furnace": {
       "bosses": [
-        [
-          "Curator Miem"
-        ]
+        {
+          "name": "Curator Miem"
+        }
       ]
     },
     "Blind Alley": {
       "bosses": [
-        [
-          "M'gaska, the Living Pyre"
-        ]
+        {
+          "name": "M'gaska, the Living Pyre"
+        }
       ]
     },
     "Entombed Chamber": {
       "bosses": [
-        [
-          "Ossecati, Boneshaper"
-        ]
+        {
+          "name": "Ossecati, Boneshaper"
+        }
       ]
     },
     "Sacred Chambers": {
       "bosses": [
-        [
-          "Shadow of Vengeance"
-        ]
+        {
+          "name": "Shadow of Vengeance"
+        }
       ]
     },
     "Stagnant Canal": {
       "bosses": [
-        [
-          "Wiraqucha, Ancient Guardian"
-        ]
+        {
+          "name": "Wiraqucha, Ancient Guardian"
+        }
       ]
     },
     "Walled-off Ducts": {
       "bosses": [
-        [
-          "Cava, Artist of Pain"
-        ]
+        {
+          "name": "Cava, Artist of Pain"
+        }
       ]
     },
     "Neglected Cellar": {
       "bosses": [
-        [
-          "Rima, Deep Temptress"
-        ]
+        {
+          "name": "Rima, Deep Temptress"
+        }
       ]
     },
     "Arcane Chambers": {
       "bosses": [
-        [
-          "Beheader Ataguchu"
-        ]
+        {
+          "name": "Beheader Ataguchu"
+        }
       ]
     },
     "Inner Grounds": {
       "bosses": [
-        [
-          "Inti of the Blood Moon"
-        ]
+        {
+          "name": "Inti of the Blood Moon"
+        }
       ]
     },
     "Sealed Corridors": {
       "bosses": [
-        [
-          "Wiraq, the Impaler"
-        ]
+        {
+          "name": "Wiraq, the Impaler"
+        }
       ]
     },
     "Restricted Gallery": {
       "bosses": [
-        [
-          "Ch'aska, Maker of Rain"
-        ]
+        {
+          "name": "Ch'aska, Maker of Rain"
+        }
       ]
     },
     "Forgotten Conduit": {
       "bosses": [
-        [
-          "Torrent of Fear"
-        ]
+        {
+          "name": "Torrent of Fear"
+        }
       ]
     },
     "Ancient Catacomb": {
       "bosses": [
-        [
-          "Commander of Flesh"
-        ]
+        {
+          "name": "Commander of Flesh"
+        }
       ]
     },
     "Haunted Mineshaft": {
       "bosses": [
-        [
-          "Calxipher"
-        ]
+        {
+          "name": "Calxipher"
+        }
       ]
     },
     "Abandoned Dam": {
       "bosses": [
-        [
-          "Quetzerxi"
-        ]
+        {
+          "name": "Quetzerxi"
+        }
       ]
     },
     "Desolate Track": {
       "bosses": [
-        [
-          "Quetzerxi"
-        ]
+        {
+          "name": "Quetzerxi"
+        }
       ]
     },
     "Reclaimed Barracks": {
       "bosses": [
-        [
-          "Huitepa the Blind"
-        ]
+        {
+          "name": "Huitepa the Blind"
+        }
       ]
     },
     "Sealed Basement": {
       "bosses": [
-        [
-          "Guraq, Daylight's Blade"
-        ]
+        {
+          "name": "Guraq, Daylight's Blade"
+        }
       ]
     },
     "Secluded Canal": {
       "bosses": [
-        [
-          "Xuatl, Cutting Wind"
-        ]
+        {
+          "name": "Xuatl, Cutting Wind"
+        }
       ]
     },
     "Forbidden Archives": {
       "bosses": [
-        [
-          "Exartze, the Woven Stone"
-        ]
+        {
+          "name": "Exartze, the Woven Stone"
+        }
       ]
     },
     "Cremated Archives": {
       "bosses": [
-        [
-          "Exartze, the Woven Stone"
-        ]
+        {
+          "name": "Exartze, the Woven Stone"
+        }
       ]
     },
     "Twisted Inquisitorium": {
       "bosses": [
-        [
-          "Anacuacotli, Death's Worship"
-        ]
+        {
+          "name": "Anacuacotli, Death's Worship"
+        }
       ]
     },
     "Deathly Chambers": {
       "bosses": [
-        [
-          "Harbinger of Disorder"
-        ]
+        {
+          "name": "Harbinger of Disorder"
+        }
       ]
     },
     "Restricted Collection": {
       "bosses": [
-        [
-          "Iorphia, Dream Eater"
-        ]
+        {
+          "name": "Iorphia, Dream Eater"
+        }
       ]
     },
     "Side Chapel": {
       "bosses": [
-        [
-          "Daluatti, Stoneraiser"
-        ]
+        {
+          "name": "Daluatti, Stoneraiser"
+        }
       ]
     },
     "Radiant Pools": {
       "bosses": [
-        [
-          "Perquil the Lucky"
-        ]
+        {
+          "name": "Perquil the Lucky"
+        }
       ]
     },
     "Clouded Ledge": {
       "bosses": [
-        [
-          "Simi, the Nature Touched"
-        ]
+        {
+          "name": "Simi, the Nature Touched"
+        }
       ]
     },
     "Sealed Repository": {
       "bosses": [
-        [
-          "Inti of the Blood Moon"
-        ]
+        {
+          "name": "Inti of the Blood Moon"
+        }
       ]
     },
     "Flooded Complex": {
       "bosses": [
-        [
-          "M'gaska, the Living Pyre"
-        ]
+        {
+          "name": "M'gaska, the Living Pyre"
+        }
       ]
     },
     "Forbidden Shrine": {
       "bosses": [
-        [
-          "Shrapnelbearer"
-        ]
+        {
+          "name": "Shrapnelbearer"
+        }
       ]
     },
     "Evacuated Quarter": {
       "bosses": [
-        [
-          "Curator Miem"
-        ]
+        {
+          "name": "Curator Miem"
+        }
       ]
     },
     "Concealed Caldarium": {
       "bosses": [
-        [
-          "Cava, Artist of Pain"
-        ]
+        {
+          "name": "Cava, Artist of Pain"
+        }
       ]
     },
     "Moonlit Chambers": {
       "bosses": [
-        [
-          "Beheader Ataguchu"
-        ]
+        {
+          "name": "Beheader Ataguchu"
+        }
       ]
     },
     "Shifting Sands": {
       "bosses": [
-        [
-          "Wiraq, the Impaler"
-        ]
+        {
+          "name": "Wiraq, the Impaler"
+        }
       ]
     },
     "Forgotten Gulch": {
       "bosses": [
-        [
-          "Curator Miem"
-        ]
+        {
+          "name": "Curator Miem"
+        }
       ]
     },
     "Desolate Isle": {
       "bosses": [
-        [
-          "Wiraqucha, Ancient Guardian"
-        ]
+        {
+          "name": "Wiraqucha, Ancient Guardian"
+        }
       ]
     },
     "Dusty Bluff": {
       "bosses": [
-        [
-          "Quetzerxi"
-        ]
+        {
+          "name": "Quetzerxi"
+        }
       ]
     }
   },
   "labyrinth": {
-    "Aspirants' Plaza": {
-      "trial": false
-    },
-    "Trial of Piercing Truth": {
-      "trial": true
-    },
-    "Trial of Swirling Fear": {
-      "trial": true
-    },
-    "Trial of Crippling Grief": {
-      "trial": true
-    },
-    "Trial of Burning Rage": {
-      "trial": true
-    },
-    "Trial of Lingering Pain": {
-      "trial": true
-    },
-    "Trial of Stinging Doubt": {
-      "trial": true
-    }
+    "Aspirants' Plaza": [
+      {
+        "trial": false
+      }
+    ],
+    "Trial of Piercing Truth": [
+      {
+        "trial": true
+      }
+    ],
+    "Trial of Swirling Fear": [
+      {
+        "trial": true
+      }
+    ],
+    "Trial of Crippling Grief": [
+      {
+        "trial": true
+      }
+    ],
+    "Trial of Burning Rage": [
+      {
+        "trial": true
+      }
+    ],
+    "Trial of Lingering Pain": [
+      {
+        "trial": true
+      }
+    ],
+    "Trial of Stinging Doubt": [
+      {
+        "trial": true
+      }
+    ]
   },
   "map": {
     "Beach Map": [
@@ -2393,7 +2407,9 @@
         "level": 68,
         "tier": 1,
         "bosses": [
-          "Glace"
+          {
+            "name": "Glace"
+          }
         ]
       }
     ],
@@ -2402,7 +2418,9 @@
         "level": 68,
         "tier": 1,
         "bosses": [
-          "Penitentiary Incarcerator"
+          {
+            "name": "Penitentiary Incarcerator"
+          }
         ]
       }
     ],
@@ -2411,9 +2429,15 @@
         "level": 68,
         "tier": 1,
         "bosses": [
-          "Steelpoint the Avenger",
-          "Champion of Frost",
-          "Thunderskull"
+          {
+            "name": "Steelpoint the Avenger"
+          },
+          {
+            "name": "Champion of Frost"
+          },
+          {
+            "name": "Thunderskull"
+          }
         ]
       }
     ],
@@ -2422,7 +2446,9 @@
         "level": 68,
         "tier": 1,
         "bosses": [
-          "The Grey Plague"
+          {
+            "name": "The Grey Plague"
+          }
         ]
       }
     ],
@@ -2431,7 +2457,9 @@
         "level": 69,
         "tier": 2,
         "bosses": [
-          "Calderus"
+          {
+            "name": "Calderus"
+          }
         ]
       }
     ],
@@ -2440,7 +2468,9 @@
         "level": 69,
         "tier": 2,
         "bosses": [
-          "Drought-Maddened Rhoa"
+          {
+            "name": "Drought-Maddened Rhoa"
+          }
         ]
       }
     ],
@@ -2449,7 +2479,9 @@
         "level": 69,
         "tier": 2,
         "bosses": [
-          "Preethi, Eye-Pecker"
+          {
+            "name": "Preethi, Eye-Pecker"
+          }
         ]
       }
     ],
@@ -2458,7 +2490,9 @@
         "level": 69,
         "tier": 2,
         "bosses": [
-          "The Eroding One"
+          {
+            "name": "The Eroding One"
+          }
         ]
       }
     ],
@@ -2467,7 +2501,9 @@
         "level": 69,
         "tier": 2,
         "bosses": [
-          "Tore, Towering Ancient"
+          {
+            "name": "Tore, Towering Ancient"
+          }
         ]
       }
     ],
@@ -2476,7 +2512,9 @@
         "level": 69,
         "tier": 2,
         "bosses": [
-          "Arwyn, the Houndmaster"
+          {
+            "name": "Arwyn, the Houndmaster"
+          }
         ]
       }
     ],
@@ -2485,8 +2523,12 @@
         "level": 70,
         "tier": 3,
         "bosses": [
-          "Herald of Ashes",
-          "Herald of Thunder"
+          {
+            "name": "Herald of Ashes"
+          },
+          {
+            "name": "Herald of Thunder"
+          }
         ]
       }
     ],
@@ -2495,7 +2537,9 @@
         "level": 70,
         "tier": 3,
         "bosses": [
-          "Witch of the Cauldron"
+          {
+            "name": "Witch of the Cauldron"
+          }
         ]
       }
     ],
@@ -2504,7 +2548,9 @@
         "level": 70,
         "tier": 3,
         "bosses": [
-          "Executioner Bloodwing"
+          {
+            "name": "Executioner Bloodwing"
+          }
         ]
       }
     ],
@@ -2513,7 +2559,9 @@
         "level": 70,
         "tier": 3,
         "bosses": [
-          "Megaera"
+          {
+            "name": "Megaera"
+          }
         ]
       }
     ],
@@ -2522,8 +2570,12 @@
         "level": 70,
         "tier": 3,
         "bosses": [
-          "Shrieker Eihal",
-          "Breaker Toruul"
+          {
+            "name": "Shrieker Eihal"
+          },
+          {
+            "name": "Breaker Toruul"
+          }
         ]
       }
     ],
@@ -2532,7 +2584,9 @@
         "level": 70,
         "tier": 3,
         "bosses": [
-          "One random Mutewind Warband boss with a supporting Warband"
+          {
+            "name": "One random Mutewind Warband boss with a supporting Warband"
+          }
         ]
       }
     ],
@@ -2541,7 +2595,9 @@
         "level": 70,
         "tier": 3,
         "bosses": [
-          "Mirage of Bones"
+          {
+            "name": "Mirage of Bones"
+          }
         ]
       }
     ],
@@ -2550,7 +2606,9 @@
         "level": 70,
         "tier": 3,
         "bosses": [
-          "Titan of the Grove"
+          {
+            "name": "Titan of the Grove"
+          }
         ]
       }
     ],
@@ -2559,7 +2617,9 @@
         "level": 70,
         "tier": 3,
         "bosses": [
-          "Unravelling Horror"
+          {
+            "name": "Unravelling Horror"
+          }
         ]
       }
     ],
@@ -2568,7 +2628,9 @@
         "level": 70,
         "tier": 3,
         "bosses": [
-          "Aulen Greychain"
+          {
+            "name": "Aulen Greychain"
+          }
         ]
       }
     ],
@@ -2577,7 +2639,9 @@
         "level": 70,
         "tier": null,
         "bosses": [
-          "Esh, Forked Thought"
+          {
+            "name": "Esh, Forked Thought"
+          }
         ]
       }
     ],
@@ -2586,7 +2650,9 @@
         "level": 70,
         "tier": null,
         "bosses": [
-          "Tul, Creeping Avalanche"
+          {
+            "name": "Tul, Creeping Avalanche"
+          }
         ]
       }
     ],
@@ -2595,7 +2661,9 @@
         "level": 70,
         "tier": null,
         "bosses": [
-          "Xoph, Dark Embers"
+          {
+            "name": "Xoph, Dark Embers"
+          }
         ]
       }
     ],
@@ -2604,9 +2672,15 @@
         "level": 70,
         "tier": null,
         "bosses": [
-          "Atziri, Queen of the Vaal",
-          "Q'ura",
-          "Y'ara'az",
+          {
+            "name": "Atziri, Queen of the Vaal"
+          },
+          {
+            "name": "Q'ura"
+          },
+          {
+            "name": "Y'ara'az"
+          },
           "A'alai",
           "Vessel of the Vaal",
           "Vessel of the Vaal"
@@ -2618,8 +2692,12 @@
         "level": 71,
         "tier": 4,
         "bosses": [
-          "Gnar, Eater of Carrion",
-          "Stonebeak, Battle Fowl"
+          {
+            "name": "Gnar, Eater of Carrion"
+          },
+          {
+            "name": "Stonebeak, Battle Fowl"
+          }
         ]
       }
     ],
@@ -2628,7 +2706,9 @@
         "level": 71,
         "tier": 4,
         "bosses": [
-          "The Reaver"
+          {
+            "name": "The Reaver"
+          }
         ]
       }
     ],
@@ -2637,9 +2717,15 @@
         "level": 71,
         "tier": 4,
         "bosses": [
-          "Carius, the Unnatural",
-          "Pileah, Corpse Burner",
-          "Pileah, Burning Corpse"
+          {
+            "name": "Carius, the Unnatural"
+          },
+          {
+            "name": "Pileah, Corpse Burner"
+          },
+          {
+            "name": "Pileah, Burning Corpse"
+          }
         ]
       }
     ],
@@ -2648,9 +2734,15 @@
         "level": 71,
         "tier": 4,
         "bosses": [
-          "Thena Moga, The Crimson Storm",
-          "Ion Darkshroud, The Hungering Blade",
-          "Bolt Brownfur, Earth Churner"
+          {
+            "name": "Thena Moga, The Crimson Storm"
+          },
+          {
+            "name": "Ion Darkshroud, The Hungering Blade"
+          },
+          {
+            "name": "Bolt Brownfur, Earth Churner"
+          }
         ]
       }
     ],
@@ -2659,7 +2751,9 @@
         "level": 71,
         "tier": 4,
         "bosses": [
-          "Rek'tar, the Breaker"
+          {
+            "name": "Rek'tar, the Breaker"
+          }
         ]
       }
     ],
@@ -2668,7 +2762,9 @@
         "level": 71,
         "tier": 4,
         "bosses": [
-          "Void Anomaly"
+          {
+            "name": "Void Anomaly"
+          }
         ]
       }
     ],
@@ -2677,7 +2773,9 @@
         "level": 71,
         "tier": 4,
         "bosses": [
-          "One random Redblade Warband boss with a supporting Warband"
+          {
+            "name": "One random Redblade Warband boss with a supporting Warband"
+          }
         ]
       }
     ],
@@ -2686,7 +2784,9 @@
         "level": 71,
         "tier": 4,
         "bosses": [
-          "Litanius, the Black Prayer"
+          {
+            "name": "Litanius, the Black Prayer"
+          }
         ]
       }
     ],
@@ -2695,7 +2795,9 @@
         "level": 71,
         "tier": 4,
         "bosses": [
-          "Master of the Blade Massier"
+          {
+            "name": "Master of the Blade Massier"
+          }
         ]
       }
     ],
@@ -2704,7 +2806,9 @@
         "level": 71,
         "tier": 4,
         "bosses": [
-          "Tormented Temptress"
+          {
+            "name": "Tormented Temptress"
+          }
         ]
       }
     ],
@@ -2713,7 +2817,9 @@
         "level": 71,
         "tier": 4,
         "bosses": [
-          "Forest of Flames"
+          {
+            "name": "Forest of Flames"
+          }
         ]
       }
     ],
@@ -2722,7 +2828,9 @@
         "level": 72,
         "tier": 5,
         "bosses": [
-          "Lady Stormflay"
+          {
+            "name": "Lady Stormflay"
+          }
         ]
       }
     ],
@@ -2731,7 +2839,9 @@
         "level": 72,
         "tier": 5,
         "bosses": [
-          "Beast of the Pits"
+          {
+            "name": "Beast of the Pits"
+          }
         ]
       }
     ],
@@ -2740,7 +2850,9 @@
         "level": 72,
         "tier": 5,
         "bosses": [
-          "The Winged Death"
+          {
+            "name": "The Winged Death"
+          }
         ]
       }
     ],
@@ -2749,7 +2861,9 @@
         "level": 72,
         "tier": 5,
         "bosses": [
-          "The Forgotten Soldier"
+          {
+            "name": "The Forgotten Soldier"
+          }
         ]
       }
     ],
@@ -2758,8 +2872,12 @@
         "level": 72,
         "tier": 5,
         "bosses": [
-          "Barthol, the Pure",
-          "Barthol, the Corrupter"
+          {
+            "name": "Barthol, the Pure"
+          },
+          {
+            "name": "Barthol, the Corrupter"
+          }
         ]
       }
     ],
@@ -2768,7 +2886,9 @@
         "level": 72,
         "tier": 5,
         "bosses": [
-          "One random Perandus Manor boss"
+          {
+            "name": "One random Perandus Manor boss"
+          }
         ]
       }
     ],
@@ -2777,7 +2897,9 @@
         "level": 72,
         "tier": 5,
         "bosses": [
-          "Shadow of the Vaal"
+          {
+            "name": "Shadow of the Vaal"
+          }
         ]
       }
     ],
@@ -2786,7 +2908,9 @@
         "level": 72,
         "tier": 5,
         "bosses": [
-          "Thraxia"
+          {
+            "name": "Thraxia"
+          }
         ]
       }
     ],
@@ -2795,7 +2919,9 @@
         "level": 72,
         "tier": 5,
         "bosses": [
-          "The Gorgon"
+          {
+            "name": "The Gorgon"
+          }
         ]
       }
     ],
@@ -2804,7 +2930,9 @@
         "level": 72,
         "tier": 5,
         "bosses": [
-          "Arachnoxia"
+          {
+            "name": "Arachnoxia"
+          }
         ]
       }
     ],
@@ -2820,7 +2948,9 @@
         "level": 73,
         "tier": 6,
         "bosses": [
-          "The Arbiter of Knowledge"
+          {
+            "name": "The Arbiter of Knowledge"
+          }
         ]
       }
     ],
@@ -2829,7 +2959,9 @@
         "level": 73,
         "tier": 6,
         "bosses": [
-          "Puruna, the Challenger"
+          {
+            "name": "Puruna, the Challenger"
+          }
         ]
       }
     ],
@@ -2838,8 +2970,12 @@
         "level": 73,
         "tier": 6,
         "bosses": [
-          "Merveil, the Reflection",
-          "Merveil, the Returned"
+          {
+            "name": "Merveil, the Reflection"
+          },
+          {
+            "name": "Merveil, the Returned"
+          }
         ]
       }
     ],
@@ -2848,7 +2984,9 @@
         "level": 73,
         "tier": 6,
         "bosses": [
-          "Lord of the Ashen Arrow"
+          {
+            "name": "Lord of the Ashen Arrow"
+          }
         ]
       }
     ],
@@ -2857,7 +2995,9 @@
         "level": 73,
         "tier": 6,
         "bosses": [
-          "Erebix, Light's Bane"
+          {
+            "name": "Erebix, Light's Bane"
+          }
         ]
       }
     ],
@@ -2866,7 +3006,9 @@
         "level": 73,
         "tier": 6,
         "bosses": [
-          "Maker of Mires"
+          {
+            "name": "Maker of Mires"
+          }
         ]
       }
     ],
@@ -2875,7 +3017,9 @@
         "level": 73,
         "tier": 6,
         "bosses": [
-          "Drek, Apex Hunter"
+          {
+            "name": "Drek, Apex Hunter"
+          }
         ]
       }
     ],
@@ -2884,7 +3028,9 @@
         "level": 73,
         "tier": 6,
         "bosses": [
-          "Queen of the Great Tangle"
+          {
+            "name": "Queen of the Great Tangle"
+          }
         ]
       }
     ],
@@ -2893,7 +3039,9 @@
         "level": 73,
         "tier": 6,
         "bosses": [
-          "Tolman, the Exhumer"
+          {
+            "name": "Tolman, the Exhumer"
+          }
         ]
       }
     ],
@@ -2902,7 +3050,9 @@
         "level": 73,
         "tier": 6,
         "bosses": [
-          "Erythrophagia"
+          {
+            "name": "Erythrophagia"
+          }
         ]
       }
     ],
@@ -2911,7 +3061,9 @@
         "level": 73,
         "tier": 6,
         "bosses": [
-          "The Primal One"
+          {
+            "name": "The Primal One"
+          }
         ]
       }
     ],
@@ -2920,7 +3072,9 @@
         "level": 73,
         "tier": 6,
         "bosses": [
-          "Merveil, the Reflection"
+          {
+            "name": "Merveil, the Reflection"
+          }
         ]
       }
     ],
@@ -2929,7 +3083,9 @@
         "level": 73,
         "tier": 6,
         "bosses": [
-          "Stone of the Currents"
+          {
+            "name": "Stone of the Currents"
+          }
         ]
       }
     ],
@@ -2938,7 +3094,9 @@
         "level": 74,
         "tier": 7,
         "bosses": [
-          "Spinner of False Hope"
+          {
+            "name": "Spinner of False Hope"
+          }
         ]
       }
     ],
@@ -2947,7 +3105,9 @@
         "level": 74,
         "tier": 7,
         "bosses": [
-          "Ancient Sculptor"
+          {
+            "name": "Ancient Sculptor"
+          }
         ]
       }
     ],
@@ -2956,7 +3116,9 @@
         "level": 74,
         "tier": 7,
         "bosses": [
-          "Xixic, High Necromancer"
+          {
+            "name": "Xixic, High Necromancer"
+          }
         ]
       }
     ],
@@ -2965,7 +3127,9 @@
         "level": 74,
         "tier": 7,
         "bosses": [
-          "Olmec, the All Stone"
+          {
+            "name": "Olmec, the All Stone"
+          }
         ]
       }
     ],
@@ -2974,7 +3138,9 @@
         "level": 74,
         "tier": 7,
         "bosses": [
-          "Captain Tanner Lightfoot"
+          {
+            "name": "Captain Tanner Lightfoot"
+          }
         ]
       }
     ],
@@ -2983,7 +3149,9 @@
         "level": 74,
         "tier": 7,
         "bosses": [
-          "The Blacksmith"
+          {
+            "name": "The Blacksmith"
+          }
         ]
       }
     ],
@@ -2992,7 +3160,9 @@
         "level": 74,
         "tier": 7,
         "bosses": [
-          "Talin, Faithbreaker"
+          {
+            "name": "Talin, Faithbreaker"
+          }
         ]
       }
     ],
@@ -3001,7 +3171,9 @@
         "level": 74,
         "tier": 7,
         "bosses": [
-          "Sallazzang"
+          {
+            "name": "Sallazzang"
+          }
         ]
       }
     ],
@@ -3010,7 +3182,9 @@
         "level": 74,
         "tier": 7,
         "bosses": [
-          "Fire and Fury"
+          {
+            "name": "Fire and Fury"
+          }
         ]
       }
     ],
@@ -3019,7 +3193,9 @@
         "level": 74,
         "tier": 7,
         "bosses": [
-          "Legius Garhall"
+          {
+            "name": "Legius Garhall"
+          }
         ]
       }
     ],
@@ -3028,7 +3204,9 @@
         "level": 74,
         "tier": 7,
         "bosses": [
-          "Excellis Aurafix"
+          {
+            "name": "Excellis Aurafix"
+          }
         ]
       }
     ],
@@ -3037,7 +3215,9 @@
         "level": 74,
         "tier": 7,
         "bosses": [
-          "Shavronne the Sickening"
+          {
+            "name": "Shavronne the Sickening"
+          }
         ]
       }
     ],
@@ -3046,7 +3226,9 @@
         "level": 74,
         "tier": 7,
         "bosses": [
-          "It That Fell"
+          {
+            "name": "It That Fell"
+          }
         ]
       }
     ],
@@ -3055,9 +3237,15 @@
         "level": 74,
         "tier": 7,
         "bosses": [
-          "Solus, Pack Alpha",
-          "Storm Eye",
-          "Winterfang"
+          {
+            "name": "Solus, Pack Alpha"
+          },
+          {
+            "name": "Storm Eye"
+          },
+          {
+            "name": "Winterfang"
+          }
         ]
       }
     ],
@@ -3066,7 +3254,9 @@
         "level": 75,
         "tier": 8,
         "bosses": [
-          "Warmonger"
+          {
+            "name": "Warmonger"
+          }
         ]
       }
     ],
@@ -3075,9 +3265,15 @@
         "level": 75,
         "tier": 8,
         "bosses": [
-          "Oriath's Vengeance",
-          "Oriath's Vigil",
-          "Oriath's Virtue"
+          {
+            "name": "Oriath's Vengeance"
+          },
+          {
+            "name": "Oriath's Vigil"
+          },
+          {
+            "name": "Oriath's Virtue"
+          }
         ]
       }
     ],
@@ -3086,7 +3282,9 @@
         "level": 75,
         "tier": 8,
         "bosses": [
-          "Avatar of Thunder"
+          {
+            "name": "Avatar of Thunder"
+          }
         ]
       }
     ],
@@ -3095,7 +3293,9 @@
         "level": 75,
         "tier": 8,
         "bosses": [
-          "Avatar of Undoing"
+          {
+            "name": "Avatar of Undoing"
+          }
         ]
       }
     ],
@@ -3104,7 +3304,9 @@
         "level": 75,
         "tier": 8,
         "bosses": [
-          "Gorulis, Will-Thief"
+          {
+            "name": "Gorulis, Will-Thief"
+          }
         ]
       }
     ],
@@ -3113,7 +3315,9 @@
         "level": 75,
         "tier": 8,
         "bosses": [
-          "Riftwalker"
+          {
+            "name": "Riftwalker"
+          }
         ]
       }
     ],
@@ -3122,8 +3326,12 @@
         "level": 75,
         "tier": 8,
         "bosses": [
-          "Merveil, the Reflection",
-          "Merveil, the Returned"
+          {
+            "name": "Merveil, the Reflection"
+          },
+          {
+            "name": "Merveil, the Returned"
+          }
         ]
       }
     ],
@@ -3132,7 +3340,9 @@
         "level": 75,
         "tier": 8,
         "bosses": [
-          "Tunneltrap"
+          {
+            "name": "Tunneltrap"
+          }
         ]
       }
     ],
@@ -3141,7 +3351,9 @@
         "level": 75,
         "tier": 8,
         "bosses": [
-          "Visceris"
+          {
+            "name": "Visceris"
+          }
         ]
       }
     ],
@@ -3150,7 +3362,9 @@
         "level": 75,
         "tier": 8,
         "bosses": [
-          "Belcer, the Pirate Lord"
+          {
+            "name": "Belcer, the Pirate Lord"
+          }
         ]
       }
     ],
@@ -3159,7 +3373,9 @@
         "level": 75,
         "tier": 8,
         "bosses": [
-          "Fairgraves, Never Dying"
+          {
+            "name": "Fairgraves, Never Dying"
+          }
         ]
       }
     ],
@@ -3168,9 +3384,15 @@
         "level": 75,
         "tier": null,
         "bosses": [
-          "Eber, the Plaguemaw",
-          "Inya, the Unbearable Whispers",
-          "Volkuur, the Unbreathing Queen",
+          {
+            "name": "Eber, the Plaguemaw"
+          },
+          {
+            "name": "Inya, the Unbearable Whispers"
+          },
+          {
+            "name": "Volkuur, the Unbreathing Queen"
+          },
           "Yriel, the Feral Lord"
         ]
       }
@@ -3180,7 +3402,9 @@
         "level": 75,
         "tier": 8,
         "bosses": [
-          "Blood Progenitor"
+          {
+            "name": "Blood Progenitor"
+          }
         ]
       }
     ],
@@ -3189,7 +3413,9 @@
         "level": 75,
         "tier": null,
         "bosses": [
-          "Uul-Netol, Unburdened Flesh"
+          {
+            "name": "Uul-Netol, Unburdened Flesh"
+          }
         ]
       }
     ],
@@ -3198,9 +3424,15 @@
         "level": 75,
         "tier": 8,
         "bosses": [
-          "Clutch Queen",
-          "Colossal Spitter",
-          "Elder Devourer",
+          {
+            "name": "Clutch Queen"
+          },
+          {
+            "name": "Colossal Spitter"
+          },
+          {
+            "name": "Elder Devourer"
+          },
           "Great Maw",
           "Prime Ape",
           "The First Rhoa"
@@ -3212,9 +3444,15 @@
         "level": 75,
         "tier": 8,
         "bosses": [
-          "The Fallen Queen",
-          "The Hollow Lady",
-          "The Broken Prince"
+          {
+            "name": "The Fallen Queen"
+          },
+          {
+            "name": "The Hollow Lady"
+          },
+          {
+            "name": "The Broken Prince"
+          }
         ]
       }
     ],
@@ -3223,7 +3461,9 @@
         "level": 75,
         "tier": 8,
         "bosses": [
-          "(none)"
+          {
+            "name": "(none)"
+          }
         ]
       }
     ],
@@ -3232,9 +3472,15 @@
         "level": 76,
         "tier": 9,
         "bosses": [
-          "Avatar of the Forge",
-          "Avatar of the Huntress",
-          "Avatar of the Skies"
+          {
+            "name": "Avatar of the Forge"
+          },
+          {
+            "name": "Avatar of the Huntress"
+          },
+          {
+            "name": "Avatar of the Skies"
+          }
         ]
       }
     ],
@@ -3243,7 +3489,9 @@
         "level": 76,
         "tier": 9,
         "bosses": [
-          "Sumter the Twisted"
+          {
+            "name": "Sumter the Twisted"
+          }
         ]
       }
     ],
@@ -3252,7 +3500,9 @@
         "level": 76,
         "tier": 9,
         "bosses": [
-          "Sebbert, Crescent's Point"
+          {
+            "name": "Sebbert, Crescent's Point"
+          }
         ]
       }
     ],
@@ -3261,8 +3511,12 @@
         "level": 76,
         "tier": 9,
         "bosses": [
-          "Helial, the Day Unending",
-          "Selenia, the Endless Night"
+          {
+            "name": "Helial, the Day Unending"
+          },
+          {
+            "name": "Selenia, the Endless Night"
+          }
         ]
       }
     ],
@@ -3271,7 +3525,9 @@
         "level": 76,
         "tier": 9,
         "bosses": [
-          "He of Many Pieces"
+          {
+            "name": "He of Many Pieces"
+          }
         ]
       }
     ],
@@ -3280,7 +3536,9 @@
         "level": 76,
         "tier": 9,
         "bosses": [
-          "Headmistress Braeta"
+          {
+            "name": "Headmistress Braeta"
+          }
         ]
       }
     ],
@@ -3289,8 +3547,12 @@
         "level": 76,
         "tier": 9,
         "bosses": [
-          "Puruna, the Challenger",
-          "Poporo, the Highest Spire"
+          {
+            "name": "Puruna, the Challenger"
+          },
+          {
+            "name": "Poporo, the Highest Spire"
+          }
         ]
       }
     ],
@@ -3299,7 +3561,9 @@
         "level": 76,
         "tier": 9,
         "bosses": [
-          "Gisale, Thought Thief"
+          {
+            "name": "Gisale, Thought Thief"
+          }
         ]
       }
     ],
@@ -3308,7 +3572,9 @@
         "level": 76,
         "tier": 9,
         "bosses": [
-          "Doedre the Defiler"
+          {
+            "name": "Doedre the Defiler"
+          }
         ]
       }
     ],
@@ -3317,7 +3583,9 @@
         "level": 76,
         "tier": 9,
         "bosses": [
-          "Jorus, Sky's Edge"
+          {
+            "name": "Jorus, Sky's Edge"
+          }
         ]
       }
     ],
@@ -3326,7 +3594,9 @@
         "level": 76,
         "tier": 9,
         "bosses": [
-          "Mistress Hyseria"
+          {
+            "name": "Mistress Hyseria"
+          }
         ]
       }
     ],
@@ -3335,7 +3605,9 @@
         "level": 76,
         "tier": 9,
         "bosses": [
-          "Liantra Bazur"
+          {
+            "name": "Liantra Bazur"
+          }
         ]
       }
     ],
@@ -3344,7 +3616,9 @@
         "level": 76,
         "tier": 9,
         "bosses": [
-          "Guardian of the Vault"
+          {
+            "name": "Guardian of the Vault"
+          }
         ]
       }
     ],
@@ -3353,7 +3627,9 @@
         "level": 76,
         "tier": 9,
         "bosses": [
-          "Portentia, the Foul"
+          {
+            "name": "Portentia, the Foul"
+          }
         ]
       }
     ],
@@ -3362,7 +3638,9 @@
         "level": 77,
         "tier": 10,
         "bosses": [
-          "Hybrid Widow"
+          {
+            "name": "Hybrid Widow"
+          }
         ]
       }
     ],
@@ -3371,7 +3649,9 @@
         "level": 77,
         "tier": 10,
         "bosses": [
-          "Lord of the Grey"
+          {
+            "name": "Lord of the Grey"
+          }
         ]
       }
     ],
@@ -3380,7 +3660,9 @@
         "level": 77,
         "tier": 10,
         "bosses": [
-          "Skullbeak"
+          {
+            "name": "Skullbeak"
+          }
         ]
       }
     ],
@@ -3389,7 +3671,9 @@
         "level": 77,
         "tier": 10,
         "bosses": [
-          "Pagan Bishop of Agony"
+          {
+            "name": "Pagan Bishop of Agony"
+          }
         ]
       }
     ],
@@ -3398,7 +3682,9 @@
         "level": 77,
         "tier": 10,
         "bosses": [
-          "Infector of Dreams"
+          {
+            "name": "Infector of Dreams"
+          }
         ]
       }
     ],
@@ -3407,7 +3693,9 @@
         "level": 77,
         "tier": 10,
         "bosses": [
-          "Vision of Justice"
+          {
+            "name": "Vision of Justice"
+          }
         ]
       }
     ],
@@ -3416,7 +3704,9 @@
         "level": 77,
         "tier": 10,
         "bosses": [
-          "Ancient Architect"
+          {
+            "name": "Ancient Architect"
+          }
         ]
       }
     ],
@@ -3425,7 +3715,9 @@
         "level": 77,
         "tier": 10,
         "bosses": [
-          "Three random Rogue Exiles"
+          {
+            "name": "Three random Rogue Exiles"
+          }
         ]
       }
     ],
@@ -3434,7 +3726,9 @@
         "level": 77,
         "tier": 10,
         "bosses": [
-          "One random Brinerot Warband boss with a supporting Warband"
+          {
+            "name": "One random Brinerot Warband boss with a supporting Warband"
+          }
         ]
       }
     ],
@@ -3443,7 +3737,9 @@
         "level": 77,
         "tier": 10,
         "bosses": [
-          "Tahsin, Warmaker"
+          {
+            "name": "Tahsin, Warmaker"
+          }
         ]
       }
     ],
@@ -3452,7 +3748,9 @@
         "level": 77,
         "tier": 10,
         "bosses": [
-          ""
+          {
+            "name": ""
+          }
         ]
       }
     ],
@@ -3461,7 +3759,9 @@
         "level": 77,
         "tier": 10,
         "bosses": [
-          "The Brittle Emperor"
+          {
+            "name": "The Brittle Emperor"
+          }
         ]
       }
     ],
@@ -3470,7 +3770,9 @@
         "level": 78,
         "tier": 11,
         "bosses": [
-          "Tyrant"
+          {
+            "name": "Tyrant"
+          }
         ]
       }
     ],
@@ -3479,7 +3781,9 @@
         "level": 78,
         "tier": 11,
         "bosses": [
-          "Telvar, the Inebriated Pirate Treasure"
+          {
+            "name": "Telvar, the Inebriated Pirate Treasure"
+          }
         ]
       }
     ],
@@ -3488,7 +3792,9 @@
         "level": 78,
         "tier": 11,
         "bosses": [
-          "Pesquin, the Mad Baron"
+          {
+            "name": "Pesquin, the Mad Baron"
+          }
         ]
       }
     ],
@@ -3497,7 +3803,9 @@
         "level": 78,
         "tier": 11,
         "bosses": [
-          "Oak the Mighty"
+          {
+            "name": "Oak the Mighty"
+          }
         ]
       }
     ],
@@ -3506,7 +3814,9 @@
         "level": 78,
         "tier": 11,
         "bosses": [
-          "Lycius, Midnight's Howl"
+          {
+            "name": "Lycius, Midnight's Howl"
+          }
         ]
       }
     ],
@@ -3515,7 +3825,9 @@
         "level": 78,
         "tier": 11,
         "bosses": [
-          "Olof, Son of the Headsman"
+          {
+            "name": "Olof, Son of the Headsman"
+          }
         ]
       }
     ],
@@ -3524,7 +3836,9 @@
         "level": 78,
         "tier": 11,
         "bosses": [
-          "Nightmare's Omen"
+          {
+            "name": "Nightmare's Omen"
+          }
         ]
       }
     ],
@@ -3533,7 +3847,9 @@
         "level": 78,
         "tier": 11,
         "bosses": [
-          "Blackguard Avenger Blackguard Tempest"
+          {
+            "name": "Blackguard Avenger Blackguard Tempest"
+          }
         ]
       }
     ],
@@ -3542,7 +3858,9 @@
         "level": 78,
         "tier": 11,
         "bosses": [
-          "(none)*"
+          {
+            "name": "(none)*"
+          }
         ]
       }
     ],
@@ -3551,7 +3869,9 @@
         "level": 78,
         "tier": 11,
         "bosses": [
-          "Enticer of Rot"
+          {
+            "name": "Enticer of Rot"
+          }
         ]
       }
     ],
@@ -3560,7 +3880,9 @@
         "level": 78,
         "tier": 11,
         "bosses": [
-          "Fragment of Winter"
+          {
+            "name": "Fragment of Winter"
+          }
         ]
       }
     ],
@@ -3569,7 +3891,9 @@
         "level": 79,
         "tier": 12,
         "bosses": [
-          "Leif, the Swift-Handed"
+          {
+            "name": "Leif, the Swift-Handed"
+          }
         ]
       }
     ],
@@ -3578,7 +3902,9 @@
         "level": 79,
         "tier": 12,
         "bosses": [
-          "Champion of the Hollows Lord of the Hollows Messenger of the Hollows"
+          {
+            "name": "Champion of the Hollows Lord of the Hollows Messenger of the Hollows"
+          }
         ]
       }
     ],
@@ -3587,7 +3913,9 @@
         "level": 79,
         "tier": 12,
         "bosses": [
-          "Woad, Mockery of Man"
+          {
+            "name": "Woad, Mockery of Man"
+          }
         ]
       }
     ],
@@ -3596,7 +3924,9 @@
         "level": 79,
         "tier": 12,
         "bosses": [
-          "Burtok, Conjuror of Bones"
+          {
+            "name": "Burtok, Conjuror of Bones"
+          }
         ]
       }
     ],
@@ -3605,7 +3935,9 @@
         "level": 79,
         "tier": 12,
         "bosses": [
-          "Avatar of Apocalypse"
+          {
+            "name": "Avatar of Apocalypse"
+          }
         ]
       }
     ],
@@ -3614,7 +3946,9 @@
         "level": 79,
         "tier": 12,
         "bosses": [
-          "Maligaro the Mutilator"
+          {
+            "name": "Maligaro the Mutilator"
+          }
         ]
       }
     ],
@@ -3623,7 +3957,9 @@
         "level": 79,
         "tier": 12,
         "bosses": [
-          "Rose Thorn"
+          {
+            "name": "Rose Thorn"
+          }
         ]
       }
     ],
@@ -3632,7 +3968,9 @@
         "level": 79,
         "tier": 12,
         "bosses": [
-          "Shredder of Gladiators Crusher of Gladiators Bringer of Blood"
+          {
+            "name": "Shredder of Gladiators Crusher of Gladiators Bringer of Blood"
+          }
         ]
       }
     ],
@@ -3641,7 +3979,9 @@
         "level": 79,
         "tier": 12,
         "bosses": [
-          "Mephod, the Earth Scorcher"
+          {
+            "name": "Mephod, the Earth Scorcher"
+          }
         ]
       }
     ],
@@ -3650,7 +3990,9 @@
         "level": 79,
         "tier": 12,
         "bosses": [
-          "Shock and Horror"
+          {
+            "name": "Shock and Horror"
+          }
         ]
       }
     ],
@@ -3666,7 +4008,9 @@
         "level": 79,
         "tier": 12,
         "bosses": [
-          "The High Templar"
+          {
+            "name": "The High Templar"
+          }
         ]
       }
     ],
@@ -3675,7 +4019,9 @@
         "level": 80,
         "tier": 13,
         "bosses": [
-          "The Steel Soul"
+          {
+            "name": "The Steel Soul"
+          }
         ]
       }
     ],
@@ -3684,7 +4030,9 @@
         "level": 80,
         "tier": 13,
         "bosses": [
-          "The Infernal King"
+          {
+            "name": "The Infernal King"
+          }
         ]
       }
     ],
@@ -3693,7 +4041,9 @@
         "level": 80,
         "tier": 13,
         "bosses": [
-          "Eater of Souls"
+          {
+            "name": "Eater of Souls"
+          }
         ]
       }
     ],
@@ -3702,7 +4052,9 @@
         "level": 80,
         "tier": null,
         "bosses": [
-          "Chayula, Who Dreamt"
+          {
+            "name": "Chayula, Who Dreamt"
+          }
         ]
       }
     ],
@@ -3711,7 +4063,9 @@
         "level": 80,
         "tier": 13,
         "bosses": [
-          "Terror of the Infinite Drifts"
+          {
+            "name": "Terror of the Infinite Drifts"
+          }
         ]
       }
     ],
@@ -3720,7 +4074,9 @@
         "level": 80,
         "tier": 13,
         "bosses": [
-          "Hephaeus, The Hammer"
+          {
+            "name": "Hephaeus, The Hammer"
+          }
         ]
       }
     ],
@@ -3729,7 +4085,9 @@
         "level": 80,
         "tier": 13,
         "bosses": [
-          "Nightmare Manifest"
+          {
+            "name": "Nightmare Manifest"
+          }
         ]
       }
     ],
@@ -3738,7 +4096,9 @@
         "level": 80,
         "tier": 13,
         "bosses": [
-          "Suncaller Asha"
+          {
+            "name": "Suncaller Asha"
+          }
         ]
       }
     ],
@@ -3747,7 +4107,9 @@
         "level": 80,
         "tier": 13,
         "bosses": [
-          "Piety the Empyrean"
+          {
+            "name": "Piety the Empyrean"
+          }
         ]
       }
     ],
@@ -3756,7 +4118,9 @@
         "level": 80,
         "tier": 13,
         "bosses": [
-          "Varhesh, Shimmering Aberration"
+          {
+            "name": "Varhesh, Shimmering Aberration"
+          }
         ]
       }
     ],
@@ -3765,9 +4129,15 @@
         "level": 80,
         "tier": null,
         "bosses": [
-          "Atziri, Queen of the Vaal",
-          "Q'ura",
-          "Y'ara'az",
+          {
+            "name": "Atziri, Queen of the Vaal"
+          },
+          {
+            "name": "Q'ura"
+          },
+          {
+            "name": "Y'ara'az"
+          },
           "A'alai",
           "Vessel of the Vaal",
           "Vessel of the Vaal"
@@ -3779,7 +4149,9 @@
         "level": 81,
         "tier": 14,
         "bosses": [
-          "Two random Renegades Warband bosses with a supporting Warband"
+          {
+            "name": "Two random Renegades Warband bosses with a supporting Warband"
+          }
         ]
       }
     ],
@@ -3788,7 +4160,9 @@
         "level": 81,
         "tier": 14,
         "bosses": [
-          "Ambrius, Legion Slayer"
+          {
+            "name": "Ambrius, Legion Slayer"
+          }
         ]
       }
     ],
@@ -3797,7 +4171,9 @@
         "level": 81,
         "tier": 14,
         "bosses": [
-          "The Sanguine Siren"
+          {
+            "name": "The Sanguine Siren"
+          }
         ]
       }
     ],
@@ -3806,7 +4182,9 @@
         "level": 81,
         "tier": 14,
         "bosses": [
-          "The Cursed King"
+          {
+            "name": "The Cursed King"
+          }
         ]
       }
     ],
@@ -3815,7 +4193,9 @@
         "level": 81,
         "tier": 14,
         "bosses": [
-          "Stalker of the Endless Dunes"
+          {
+            "name": "Stalker of the Endless Dunes"
+          }
         ]
       }
     ],
@@ -3824,7 +4204,9 @@
         "level": 81,
         "tier": 14,
         "bosses": [
-          "God's Chosen The Hallowed Husk"
+          {
+            "name": "God's Chosen The Hallowed Husk"
+          }
         ]
       }
     ],
@@ -3833,7 +4215,9 @@
         "level": 81,
         "tier": 14,
         "bosses": [
-          "The Goddess"
+          {
+            "name": "The Goddess"
+          }
         ]
       }
     ],
@@ -3842,8 +4226,12 @@
         "level": 82,
         "tier": 15,
         "bosses": [
-          "Konley, the Unrepentant",
-          "The Cleansing Light"
+          {
+            "name": "Konley, the Unrepentant"
+          },
+          {
+            "name": "The Cleansing Light"
+          }
         ]
       }
     ],
@@ -3852,7 +4240,9 @@
         "level": 82,
         "tier": 15,
         "bosses": [
-          "Amalgam of Nightmares"
+          {
+            "name": "Amalgam of Nightmares"
+          }
         ]
       }
     ],
@@ -3861,7 +4251,9 @@
         "level": 82,
         "tier": 15,
         "bosses": [
-          "Kitava, the Insatiable"
+          {
+            "name": "Kitava, the Insatiable"
+          }
         ]
       }
     ],
@@ -3870,7 +4262,9 @@
         "level": 82,
         "tier": 15,
         "bosses": [
-          "Nassar, Lion of the Seas"
+          {
+            "name": "Nassar, Lion of the Seas"
+          }
         ]
       }
     ],
@@ -3879,7 +4273,9 @@
         "level": 82,
         "tier": 15,
         "bosses": [
-          "Armala, the Widow"
+          {
+            "name": "Armala, the Widow"
+          }
         ]
       }
     ],
@@ -3888,7 +4284,9 @@
         "level": 82,
         "tier": 15,
         "bosses": [
-          ""
+          {
+            "name": ""
+          }
         ]
       }
     ],
@@ -3897,7 +4295,9 @@
         "level": 83,
         "tier": 16,
         "bosses": [
-          "Guardian of the Phoenix"
+          {
+            "name": "Guardian of the Phoenix"
+          }
         ]
       }
     ],
@@ -3906,7 +4306,9 @@
         "level": 83,
         "tier": 16,
         "bosses": [
-          "Guardian of the Hydra"
+          {
+            "name": "Guardian of the Hydra"
+          }
         ]
       }
     ],
@@ -3915,7 +4317,9 @@
         "level": 83,
         "tier": 16,
         "bosses": [
-          "Guardian of the Minotaur"
+          {
+            "name": "Guardian of the Minotaur"
+          }
         ]
       }
     ],
@@ -3924,7 +4328,9 @@
         "level": 83,
         "tier": 16,
         "bosses": [
-          "Guardian of the Chimera"
+          {
+            "name": "Guardian of the Chimera"
+          }
         ]
       }
     ],
@@ -3933,9 +4339,15 @@
         "level": 83,
         "tier": 16,
         "bosses": [
-          "K'aj A'alai",
-          "K'aj Q'ura",
-          "K'aj Y'ara'az"
+          {
+            "name": "K'aj A'alai"
+          },
+          {
+            "name": "K'aj Q'ura"
+          },
+          {
+            "name": "K'aj Y'ara'az"
+          }
         ]
       }
     ],
@@ -3944,7 +4356,9 @@
         "level": 84,
         "tier": null,
         "bosses": [
-          "The Shaper"
+          {
+            "name": "The Shaper"
+          }
         ]
       }
     ]
