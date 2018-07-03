@@ -2402,7 +2402,7 @@
     ]
   },
   "map": {
-    "Beach Map": [
+    "Beach": [
       {
         "level": 68,
         "tier": 1,
@@ -2413,7 +2413,7 @@
         ]
       }
     ],
-    "Dungeon Map": [
+    "Dungeon": [
       {
         "level": 68,
         "tier": 1,
@@ -2424,7 +2424,7 @@
         ]
       }
     ],
-    "Graveyard Map": [
+    "Graveyard": [
       {
         "level": 68,
         "tier": 1,
@@ -2441,7 +2441,7 @@
         ]
       }
     ],
-    "Lookout Map": [
+    "Lookout": [
       {
         "level": 68,
         "tier": 1,
@@ -2452,7 +2452,7 @@
         ]
       }
     ],
-    "Alleyways Map": [
+    "Alleyways": [
       {
         "level": 69,
         "tier": 2,
@@ -2463,7 +2463,7 @@
         ]
       }
     ],
-    "Arid Lake Map": [
+    "Arid Lake": [
       {
         "level": 69,
         "tier": 2,
@@ -2474,7 +2474,7 @@
         ]
       }
     ],
-    "Desert Map": [
+    "Desert": [
       {
         "level": 69,
         "tier": 2,
@@ -2485,7 +2485,7 @@
         ]
       }
     ],
-    "Flooded Mine Map": [
+    "Flooded Mine": [
       {
         "level": 69,
         "tier": 2,
@@ -2496,7 +2496,7 @@
         ]
       }
     ],
-    "Marshes Map": [
+    "Marshes": [
       {
         "level": 69,
         "tier": 2,
@@ -2507,7 +2507,7 @@
         ]
       }
     ],
-    "Pen Map": [
+    "Pen": [
       {
         "level": 69,
         "tier": 2,
@@ -2518,7 +2518,7 @@
         ]
       }
     ],
-    "Arcade Map": [
+    "Arcade": [
       {
         "level": 70,
         "tier": 3,
@@ -2532,7 +2532,7 @@
         ]
       }
     ],
-    "Burial Chambers Map": [
+    "Burial Chambers": [
       {
         "level": 70,
         "tier": 3,
@@ -2543,7 +2543,7 @@
         ]
       }
     ],
-    "Cage Map": [
+    "Cage": [
       {
         "level": 70,
         "tier": 3,
@@ -2554,7 +2554,7 @@
         ]
       }
     ],
-    "Cells Map": [
+    "Cells": [
       {
         "level": 70,
         "tier": 3,
@@ -2565,7 +2565,7 @@
         ]
       }
     ],
-    "Excavation Map": [
+    "Excavation": [
       {
         "level": 70,
         "tier": 3,
@@ -2579,7 +2579,7 @@
         ]
       }
     ],
-    "Iceberg Map": [
+    "Iceberg": [
       {
         "level": 70,
         "tier": 3,
@@ -2590,7 +2590,7 @@
         ]
       }
     ],
-    "Leyline Map": [
+    "Leyline": [
       {
         "level": 70,
         "tier": 3,
@@ -2601,7 +2601,7 @@
         ]
       }
     ],
-    "Peninsula Map": [
+    "Peninsula": [
       {
         "level": 70,
         "tier": 3,
@@ -2612,7 +2612,7 @@
         ]
       }
     ],
-    "Port Map": [
+    "Port": [
       {
         "level": 70,
         "tier": 3,
@@ -2623,7 +2623,7 @@
         ]
       }
     ],
-    "Springs Map": [
+    "Springs": [
       {
         "level": 70,
         "tier": 3,
@@ -2687,7 +2687,7 @@
         ]
       }
     ],
-    "Canyon Map": [
+    "Canyon": [
       {
         "level": 71,
         "tier": 4,
@@ -2701,7 +2701,7 @@
         ]
       }
     ],
-    "Chateau Map": [
+    "Chateau": [
       {
         "level": 71,
         "tier": 4,
@@ -2712,7 +2712,7 @@
         ]
       }
     ],
-    "City Square Map": [
+    "City Square": [
       {
         "level": 71,
         "tier": 4,
@@ -2729,7 +2729,7 @@
         ]
       }
     ],
-    "Courthouse Map": [
+    "Courthouse": [
       {
         "level": 71,
         "tier": 4,
@@ -2746,7 +2746,7 @@
         ]
       }
     ],
-    "Gorge Map": [
+    "Gorge": [
       {
         "level": 71,
         "tier": 4,
@@ -2757,7 +2757,7 @@
         ]
       }
     ],
-    "Grotto Map": [
+    "Grotto": [
       {
         "level": 71,
         "tier": 4,
@@ -2768,7 +2768,7 @@
         ]
       }
     ],
-    "Lighthouse Map": [
+    "Lighthouse": [
       {
         "level": 71,
         "tier": 4,
@@ -2779,7 +2779,7 @@
         ]
       }
     ],
-    "Relic Chambers Map": [
+    "Relic Chambers": [
       {
         "level": 71,
         "tier": 4,
@@ -2790,7 +2790,7 @@
         ]
       }
     ],
-    "Strand Map": [
+    "Strand": [
       {
         "level": 71,
         "tier": 4,
@@ -2812,7 +2812,7 @@
         ]
       }
     ],
-    "Volcano Map": [
+    "Volcano": [
       {
         "level": 71,
         "tier": 4,
@@ -2823,7 +2823,7 @@
         ]
       }
     ],
-    "Ancient City Map": [
+    "Ancient City": [
       {
         "level": 72,
         "tier": 5,
@@ -2834,7 +2834,7 @@
         ]
       }
     ],
-    "Barrows Map": [
+    "Barrows": [
       {
         "level": 72,
         "tier": 5,
@@ -2845,7 +2845,7 @@
         ]
       }
     ],
-    "Channel Map": [
+    "Channel": [
       {
         "level": 72,
         "tier": 5,
@@ -2856,7 +2856,7 @@
         ]
       }
     ],
-    "Conservatory Map": [
+    "Conservatory": [
       {
         "level": 72,
         "tier": 5,
@@ -2867,7 +2867,7 @@
         ]
       }
     ],
-    "Haunted Mansion Map": [
+    "Haunted Mansion": [
       {
         "level": 72,
         "tier": 5,
@@ -2881,7 +2881,7 @@
         ]
       }
     ],
-    "Ivory Temple Map": [
+    "Ivory Temple": [
       {
         "level": 72,
         "tier": 5,
@@ -2892,7 +2892,7 @@
         ]
       }
     ],
-    "Maze Map": [
+    "Maze": [
       {
         "level": 72,
         "tier": 5,
@@ -2903,7 +2903,7 @@
         ]
       }
     ],
-    "Spider Lair Map": [
+    "Spider Lair": [
       {
         "level": 72,
         "tier": 5,
@@ -2914,7 +2914,7 @@
         ]
       }
     ],
-    "Sulphur Vents Map": [
+    "Sulphur Vents": [
       {
         "level": 72,
         "tier": 5,
@@ -2925,7 +2925,7 @@
         ]
       }
     ],
-    "Toxic Sewer Map": [
+    "Toxic Sewer": [
       {
         "level": 72,
         "tier": 5,
@@ -2943,7 +2943,7 @@
         "bosses": []
       }
     ],
-    "Academy Map": [
+    "Academy": [
       {
         "level": 73,
         "tier": 6,
@@ -2954,7 +2954,7 @@
         ]
       }
     ],
-    "Atoll Map": [
+    "Atoll": [
       {
         "level": 73,
         "tier": 6,
@@ -2979,7 +2979,7 @@
         ]
       }
     ],
-    "Ashen Wood Map": [
+    "Ashen Wood": [
       {
         "level": 73,
         "tier": 6,
@@ -2990,7 +2990,7 @@
         ]
       }
     ],
-    "Cemetery Map": [
+    "Cemetery": [
       {
         "level": 73,
         "tier": 6,
@@ -3012,7 +3012,7 @@
         ]
       }
     ],
-    "Fields Map": [
+    "Fields": [
       {
         "level": 73,
         "tier": 6,
@@ -3023,7 +3023,7 @@
         ]
       }
     ],
-    "Jungle Valley Map": [
+    "Jungle Valley": [
       {
         "level": 73,
         "tier": 6,
@@ -3034,7 +3034,7 @@
         ]
       }
     ],
-    "Mausoleum Map": [
+    "Mausoleum": [
       {
         "level": 73,
         "tier": 6,
@@ -3045,7 +3045,7 @@
         ]
       }
     ],
-    "Phantasmagoria Map": [
+    "Phantasmagoria": [
       {
         "level": 73,
         "tier": 6,
@@ -3056,7 +3056,7 @@
         ]
       }
     ],
-    "Thicket Map": [
+    "Thicket": [
       {
         "level": 73,
         "tier": 6,
@@ -3067,7 +3067,7 @@
         ]
       }
     ],
-    "Underground Sea Map": [
+    "Underground Sea": [
       {
         "level": 73,
         "tier": 6,
@@ -3078,7 +3078,7 @@
         ]
       }
     ],
-    "Wharf Map": [
+    "Wharf": [
       {
         "level": 73,
         "tier": 6,
@@ -3089,7 +3089,7 @@
         ]
       }
     ],
-    "Arachnid Nest Map": [
+    "Arachnid Nest": [
       {
         "level": 74,
         "tier": 7,
@@ -3100,7 +3100,7 @@
         ]
       }
     ],
-    "Bazaar Map": [
+    "Bazaar": [
       {
         "level": 74,
         "tier": 7,
@@ -3111,7 +3111,7 @@
         ]
       }
     ],
-    "Bone Crypt Map": [
+    "Bone Crypt": [
       {
         "level": 74,
         "tier": 7,
@@ -3133,7 +3133,7 @@
         ]
       }
     ],
-    "Coral Ruins Map": [
+    "Coral Ruins": [
       {
         "level": 74,
         "tier": 7,
@@ -3144,7 +3144,7 @@
         ]
       }
     ],
-    "Dunes Map": [
+    "Dunes": [
       {
         "level": 74,
         "tier": 7,
@@ -3166,7 +3166,7 @@
         ]
       }
     ],
-    "Gardens Map": [
+    "Gardens": [
       {
         "level": 74,
         "tier": 7,
@@ -3177,7 +3177,7 @@
         ]
       }
     ],
-    "Lava Chamber Map": [
+    "Lava Chamber": [
       {
         "level": 74,
         "tier": 7,
@@ -3188,7 +3188,7 @@
         ]
       }
     ],
-    "Ramparts Map": [
+    "Ramparts": [
       {
         "level": 74,
         "tier": 7,
@@ -3199,7 +3199,7 @@
         ]
       }
     ],
-    "Residence Map": [
+    "Residence": [
       {
         "level": 74,
         "tier": 7,
@@ -3210,7 +3210,7 @@
         ]
       }
     ],
-    "Tribunal Map": [
+    "Tribunal": [
       {
         "level": 74,
         "tier": 7,
@@ -3221,7 +3221,7 @@
         ]
       }
     ],
-    "Underground River Map": [
+    "Underground River": [
       {
         "level": 74,
         "tier": 7,
@@ -3249,7 +3249,7 @@
         ]
       }
     ],
-    "Armoury Map": [
+    "Armoury": [
       {
         "level": 75,
         "tier": 8,
@@ -3260,7 +3260,7 @@
         ]
       }
     ],
-    "Courtyard Map": [
+    "Courtyard": [
       {
         "level": 75,
         "tier": 8,
@@ -3288,7 +3288,7 @@
         ]
       }
     ],
-    "Geode Map": [
+    "Geode": [
       {
         "level": 75,
         "tier": 8,
@@ -3299,7 +3299,7 @@
         ]
       }
     ],
-    "Infested Valley Map": [
+    "Infested Valley": [
       {
         "level": 75,
         "tier": 8,
@@ -3310,7 +3310,7 @@
         ]
       }
     ],
-    "Laboratory Map": [
+    "Laboratory": [
       {
         "level": 75,
         "tier": 8,
@@ -3321,7 +3321,7 @@
         ]
       }
     ],
-    "Mineral Pools Map": [
+    "Mineral Pools": [
       {
         "level": 75,
         "tier": 8,
@@ -3335,7 +3335,7 @@
         ]
       }
     ],
-    "Mud Geyser Map": [
+    "Mud Geyser": [
       {
         "level": 75,
         "tier": 8,
@@ -3346,7 +3346,7 @@
         ]
       }
     ],
-    "Overgrown Ruin Map": [
+    "Overgrown Ruin": [
       {
         "level": 75,
         "tier": 8,
@@ -3357,7 +3357,7 @@
         ]
       }
     ],
-    "Shore Map": [
+    "Shore": [
       {
         "level": 75,
         "tier": 8,
@@ -3397,7 +3397,7 @@
         ]
       }
     ],
-    "Tropical Island Map": [
+    "Tropical Island": [
       {
         "level": 75,
         "tier": 8,
@@ -3439,7 +3439,7 @@
         ]
       }
     ],
-    "Vaal Pyramid Map": [
+    "Vaal Pyramid": [
       {
         "level": 75,
         "tier": 8,
@@ -3467,7 +3467,7 @@
         ]
       }
     ],
-    "Arena Map": [
+    "Arena": [
       {
         "level": 76,
         "tier": 9,
@@ -3484,7 +3484,7 @@
         ]
       }
     ],
-    "Estuary Map": [
+    "Estuary": [
       {
         "level": 76,
         "tier": 9,
@@ -3495,7 +3495,7 @@
         ]
       }
     ],
-    "Moon Temple Map": [
+    "Moon Temple": [
       {
         "level": 76,
         "tier": 9,
@@ -3520,7 +3520,7 @@
         ]
       }
     ],
-    "Museum Map": [
+    "Museum": [
       {
         "level": 76,
         "tier": 9,
@@ -3542,7 +3542,7 @@
         ]
       }
     ],
-    "Plateau Map": [
+    "Plateau": [
       {
         "level": 76,
         "tier": 9,
@@ -3556,7 +3556,7 @@
         ]
       }
     ],
-    "Scriptorium Map": [
+    "Scriptorium": [
       {
         "level": 76,
         "tier": 9,
@@ -3567,7 +3567,7 @@
         ]
       }
     ],
-    "Sepulchre Map": [
+    "Sepulchre": [
       {
         "level": 76,
         "tier": 9,
@@ -3578,7 +3578,7 @@
         ]
       }
     ],
-    "Temple Map": [
+    "Temple": [
       {
         "level": 76,
         "tier": 9,
@@ -3600,7 +3600,7 @@
         ]
       }
     ],
-    "Tower Map": [
+    "Tower": [
       {
         "level": 76,
         "tier": 9,
@@ -3611,7 +3611,7 @@
         ]
       }
     ],
-    "Vault Map": [
+    "Vault": [
       {
         "level": 76,
         "tier": 9,
@@ -3622,7 +3622,7 @@
         ]
       }
     ],
-    "Waste Pool Map": [
+    "Waste Pool": [
       {
         "level": 76,
         "tier": 9,
@@ -3633,7 +3633,7 @@
         ]
       }
     ],
-    "Arachnid Tomb Map": [
+    "Arachnid Tomb": [
       {
         "level": 77,
         "tier": 10,
@@ -3644,7 +3644,7 @@
         ]
       }
     ],
-    "Belfry Map": [
+    "Belfry": [
       {
         "level": 77,
         "tier": 10,
@@ -3655,7 +3655,7 @@
         ]
       }
     ],
-    "Bog Map": [
+    "Bog": [
       {
         "level": 77,
         "tier": 10,
@@ -3666,7 +3666,7 @@
         ]
       }
     ],
-    "Cursed Crypt Map": [
+    "Cursed Crypt": [
       {
         "level": 77,
         "tier": 10,
@@ -3688,7 +3688,7 @@
         ]
       }
     ],
-    "Orchard Map": [
+    "Orchard": [
       {
         "level": 77,
         "tier": 10,
@@ -3699,7 +3699,7 @@
         ]
       }
     ],
-    "Pier Map": [
+    "Pier": [
       {
         "level": 77,
         "tier": 10,
@@ -3710,7 +3710,7 @@
         ]
       }
     ],
-    "Precinct Map": [
+    "Precinct": [
       {
         "level": 77,
         "tier": 10,
@@ -3721,7 +3721,7 @@
         ]
       }
     ],
-    "Shipyard Map": [
+    "Shipyard": [
       {
         "level": 77,
         "tier": 10,
@@ -3732,7 +3732,7 @@
         ]
       }
     ],
-    "Siege Map": [
+    "Siege": [
       {
         "level": 77,
         "tier": 10,
@@ -3754,7 +3754,7 @@
         ]
       }
     ],
-    "Wasteland Map": [
+    "Wasteland": [
       {
         "level": 77,
         "tier": 10,
@@ -3765,7 +3765,7 @@
         ]
       }
     ],
-    "Colonnade Map": [
+    "Colonnade": [
       {
         "level": 78,
         "tier": 11,
@@ -3776,7 +3776,7 @@
         ]
       }
     ],
-    "Coves Map": [
+    "Coves": [
       {
         "level": 78,
         "tier": 11,
@@ -3787,7 +3787,7 @@
         ]
       }
     ],
-    "Factory Map": [
+    "Factory": [
       {
         "level": 78,
         "tier": 11,
@@ -3798,7 +3798,7 @@
         ]
       }
     ],
-    "Mesa Map": [
+    "Mesa": [
       {
         "level": 78,
         "tier": 11,
@@ -3809,7 +3809,7 @@
         ]
       }
     ],
-    "Lair Map": [
+    "Lair": [
       {
         "level": 78,
         "tier": 11,
@@ -3820,7 +3820,7 @@
         ]
       }
     ],
-    "Pit Map": [
+    "Pit": [
       {
         "level": 78,
         "tier": 11,
@@ -3831,7 +3831,7 @@
         ]
       }
     ],
-    "Primordial Pool Map": [
+    "Primordial Pool": [
       {
         "level": 78,
         "tier": 11,
@@ -3842,7 +3842,7 @@
         ]
       }
     ],
-    "Promenade Map": [
+    "Promenade": [
       {
         "level": 78,
         "tier": 11,
@@ -3864,7 +3864,7 @@
         ]
       }
     ],
-    "Spider Forest Map": [
+    "Spider Forest": [
       {
         "level": 78,
         "tier": 11,
@@ -3875,7 +3875,7 @@
         ]
       }
     ],
-    "Waterways Map": [
+    "Waterways": [
       {
         "level": 78,
         "tier": 11,
@@ -3886,7 +3886,7 @@
         ]
       }
     ],
-    "Castle Ruins Map": [
+    "Castle Ruins": [
       {
         "level": 79,
         "tier": 12,
@@ -3897,7 +3897,7 @@
         ]
       }
     ],
-    "Crystal Ore Map": [
+    "Crystal Ore": [
       {
         "level": 79,
         "tier": 12,
@@ -3908,7 +3908,7 @@
         ]
       }
     ],
-    "Defiled Cathedral Map": [
+    "Defiled Cathedral": [
       {
         "level": 79,
         "tier": 12,
@@ -3919,7 +3919,7 @@
         ]
       }
     ],
-    "Necropolis Map": [
+    "Necropolis": [
       {
         "level": 79,
         "tier": 12,
@@ -3941,7 +3941,7 @@
         ]
       }
     ],
-    "Overgrown Shrine Map": [
+    "Overgrown Shrine": [
       {
         "level": 79,
         "tier": 12,
@@ -3963,7 +3963,7 @@
         ]
       }
     ],
-    "Racecourse Map": [
+    "Racecourse": [
       {
         "level": 79,
         "tier": 12,
@@ -3974,7 +3974,7 @@
         ]
       }
     ],
-    "Summit Map": [
+    "Summit": [
       {
         "level": 79,
         "tier": 12,
@@ -3985,7 +3985,7 @@
         ]
       }
     ],
-    "Torture Chamber Map": [
+    "Torture Chamber": [
       {
         "level": 79,
         "tier": 12,
@@ -4003,7 +4003,7 @@
         "bosses": []
       }
     ],
-    "Villa Map": [
+    "Villa": [
       {
         "level": 79,
         "tier": 12,
@@ -4014,7 +4014,7 @@
         ]
       }
     ],
-    "Arsenal Map": [
+    "Arsenal": [
       {
         "level": 80,
         "tier": 13,
@@ -4025,7 +4025,7 @@
         ]
       }
     ],
-    "Caldera Map": [
+    "Caldera": [
       {
         "level": 80,
         "tier": 13,
@@ -4036,7 +4036,7 @@
         ]
       }
     ],
-    "Core Map": [
+    "Core": [
       {
         "level": 80,
         "tier": 13,
@@ -4058,7 +4058,7 @@
         ]
       }
     ],
-    "Desert Spring Map": [
+    "Desert Spring": [
       {
         "level": 80,
         "tier": 13,
@@ -4069,7 +4069,7 @@
         ]
       }
     ],
-    "Ghetto Map": [
+    "Ghetto": [
       {
         "level": 80,
         "tier": 13,
@@ -4080,7 +4080,7 @@
         ]
       }
     ],
-    "Malformation Map": [
+    "Malformation": [
       {
         "level": 80,
         "tier": 13,
@@ -4091,7 +4091,7 @@
         ]
       }
     ],
-    "Park Map": [
+    "Park": [
       {
         "level": 80,
         "tier": 13,
@@ -4102,7 +4102,7 @@
         ]
       }
     ],
-    "Shrine Map": [
+    "Shrine": [
       {
         "level": 80,
         "tier": 13,
@@ -4113,7 +4113,7 @@
         ]
       }
     ],
-    "Terrace Map": [
+    "Terrace": [
       {
         "level": 80,
         "tier": 13,
@@ -4144,7 +4144,7 @@
         ]
       }
     ],
-    "Acid Lakes Map": [
+    "Acid Lakes": [
       {
         "level": 81,
         "tier": 14,
@@ -4155,7 +4155,7 @@
         ]
       }
     ],
-    "Colosseum Map": [
+    "Colosseum": [
       {
         "level": 81,
         "tier": 14,
@@ -4166,7 +4166,7 @@
         ]
       }
     ],
-    "Crimson Temple Map": [
+    "Crimson Temple": [
       {
         "level": 81,
         "tier": 14,
@@ -4177,7 +4177,7 @@
         ]
       }
     ],
-    "Dark Forest Map": [
+    "Dark Forest": [
       {
         "level": 81,
         "tier": 14,
@@ -4188,7 +4188,7 @@
         ]
       }
     ],
-    "Dig Map": [
+    "Dig": [
       {
         "level": 81,
         "tier": 14,
@@ -4199,7 +4199,7 @@
         ]
       }
     ],
-    "Palace Map": [
+    "Palace": [
       {
         "level": 81,
         "tier": 14,
@@ -4210,7 +4210,7 @@
         ]
       }
     ],
-    "Plaza Map": [
+    "Plaza": [
       {
         "level": 81,
         "tier": 14,
@@ -4221,7 +4221,7 @@
         ]
       }
     ],
-    "Basilica Map": [
+    "Basilica": [
       {
         "level": 82,
         "tier": 15,
@@ -4235,7 +4235,7 @@
         ]
       }
     ],
-    "Carcass Map": [
+    "Carcass": [
       {
         "level": 82,
         "tier": 15,
@@ -4246,7 +4246,7 @@
         ]
       }
     ],
-    "Lava Lake Map": [
+    "Lava Lake": [
       {
         "level": 82,
         "tier": 15,
@@ -4257,7 +4257,7 @@
         ]
       }
     ],
-    "Reef Map": [
+    "Reef": [
       {
         "level": 82,
         "tier": 15,
@@ -4268,7 +4268,7 @@
         ]
       }
     ],
-    "Sunken City Map": [
+    "Sunken City": [
       {
         "level": 82,
         "tier": 15,
@@ -4290,7 +4290,7 @@
         ]
       }
     ],
-    "Forge of the Phoenix Map": [
+    "Forge of the Phoenix": [
       {
         "level": 83,
         "tier": 16,
@@ -4301,7 +4301,7 @@
         ]
       }
     ],
-    "Lair of the Hydra Map": [
+    "Lair of the Hydra": [
       {
         "level": 83,
         "tier": 16,
@@ -4312,7 +4312,7 @@
         ]
       }
     ],
-    "Maze of the Minotaur Map": [
+    "Maze of the Minotaur": [
       {
         "level": 83,
         "tier": 16,
@@ -4323,7 +4323,7 @@
         ]
       }
     ],
-    "Pit of the Chimera Map": [
+    "Pit of the Chimera": [
       {
         "level": 83,
         "tier": 16,
@@ -4334,7 +4334,7 @@
         ]
       }
     ],
-    "Vaal Temple Map": [
+    "Vaal Temple": [
       {
         "level": 83,
         "tier": 16,
