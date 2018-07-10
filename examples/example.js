@@ -9,6 +9,10 @@ poeLog.on("login", (data) => {
     console.log("Logged in. Gateway: " + data.server + ", Latency: " + data.latency);
 });
 
+poeLog.on("instanceServer", (data) => {
+    console.log("Connected to instance server " + data.address);
+});
+
 poeLog.on("area", (area) => {
     console.log("Entered \'" + area.name + "\'");
 });

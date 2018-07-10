@@ -20,7 +20,7 @@ The properties listed below are stored in an object emitted by the `area` event.
 - `info` 
     - An array of objects containing additional information about the area and their variants, if data is available. The emitted object has a different structure based on the `type`. See [Area information structure](#area-information-structure).
     
-        >⚠ In the current version [1.2.3], only story, hideout and vaal side and some labyrinth areas have additional information. All the other areas will follow shortly.
+        >⚠ In the current version [1.2.4] some areas might still be missing. I'll add them as soon as possible. If you encounter an area that's not supported, feel free to contribute or open an issue.
 
 ## Area information structure
 The `info` object always contains an array of objects, because some areas have different properties, but the same name (this is usually only the case for story areas). Currently, it is not possible to get the exact area the player is in based on the Path of Exile log file, so the script just gives you every possible variant.
@@ -44,13 +44,16 @@ The `info` object has different structures based on the area `type`. Below, you 
 ### `labyrinth`
 - `trial` - `true` if the area is a trial of ascendancy
 
-    >⚠ In the current version [1.2.3], only the Aspirants' Plaza and the trial areas are supported.
+    >⚠ In the current version [1.2.4], only the Aspirants' Plaza and the trial areas are supported.
            
 ### `master`
 - *There's no data for this area type yet, I'll add the data as soon as possible.*
-            
+
 ### `map`
-- *There's no data for this area type yet, I'll add the data as soon as possible.*
+- `level` - Zone/monster level of the area
+- `tier` - Tier of the map
+- `bosses` - An array of objects containing additional information for each boss in the area
+    - `name` - Name of the boss
 
 ### `unknown`
 - Areas of this type are currently unknown by the script. They will emit no additional data in the `info` object.
@@ -107,4 +110,4 @@ poeLog.on("area", (area) => {
 
 [areas.json]: https://github.com/klayveR/poe-log-monitor/blob/master/resource/areas.json
 [area.js]: https://github.com/klayveR/poe-log-monitor/blob/master/examples/area.js
-[1.2.3]: https://www.npmjs.com/package/poe-log-monitor/v/1.2.3
+[1.2.4]: https://www.npmjs.com/package/poe-log-monitor/v/1.2.4

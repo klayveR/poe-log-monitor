@@ -3,6 +3,17 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 
+## [1.2.4] - 2018-07-10
+### Added
+- The following events have been added
+    - `instanceServer` emits when the player joins a new instance server. This can be useful for determining whether a player enters an area instance the player previously entered, or a newly created one.
+- Added `info` data for map areas
+
+### Changes
+- Normalized boss data for all areas
+
+*Thanks to [petterannerwall](https://github.com/petterannerwall) for these improvements. Go check out his fantastic project [ExileParty](https://github.com/viktorgullmark/exile-party)!*
+
 ## [1.2.3] - 2018-05-31
 ### Added
 - The following events have been added
@@ -87,7 +98,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 ### Added
 - Initial release
 
-[1.2.3]: https://www.npmjs.com/package/poe-log-monitor/v/1.2.2
+[1.2.4]: https://www.npmjs.com/package/poe-log-monitor/v/1.2.4
+[1.2.3]: https://www.npmjs.com/package/poe-log-monitor/v/1.2.3
 [1.2.2]: https://www.npmjs.com/package/poe-log-monitor/v/1.2.2
 [1.2.1]: https://www.npmjs.com/package/poe-log-monitor/v/1.2.1
 [1.2.0]: https://www.npmjs.com/package/poe-log-monitor/v/1.2.0

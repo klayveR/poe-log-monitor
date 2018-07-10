@@ -57,6 +57,11 @@ The parameters listed below each event are stored in an object emitted by the ev
 
 Emitted when the player logs into the game.
 
+### instanceServer
+- `address` - Instance server the player connected to
+
+Emitted when the player changes the instance server. This can be useful for determining whether a player enters an area instance the player previously entered, or a newly created one.
+
 ### area
 - `name` - The name of the area that has been entered
 - `type` - The type of the area
@@ -75,7 +80,6 @@ Emitted when another player enters the area the player is in.
     - `name` - Name of the player who joined the area
     
 Emitted when another player leaves the area the player is in.
-
 
 ### joinChat
 - `chat` - Chat which the player joined
