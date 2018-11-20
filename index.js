@@ -72,12 +72,9 @@ async function readLogStream(file, instance) {
     return new Promise(resolve => {
         var stream = fs.createReadStream(file, { encoding: 'utf8', highWaterMark: instance.chunkSize });
         var hasStarted = false;
-
         // Split data into chunks so we dont stall the client
         stream.on('data', chunk => {
-            if (!hasStarted) {
-                instance.emit("parsingStarted");
-            }
+            if (!hasStarted) instance.emit("parsingStarted");
             hasStarted = true;
             var lines = chunk.toString().split("\n");
             // Pause stream until this chunk is completed to avoid spamming the thread
