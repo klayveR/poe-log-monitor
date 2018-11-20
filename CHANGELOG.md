@@ -13,7 +13,6 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 - The following events have been added
     - `parsingStarted` emits when the parsing of the file has started.
     - `parsingComplete` emits when the parsing of the file has completed. 
-- Added `info` data for map areas
 
 ### Changes
 - Wrapped regex-matching in a new function called `registerMatch`.
