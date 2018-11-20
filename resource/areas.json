@@ -2681,9 +2681,15 @@
           {
             "name": "Y'ara'az"
           },
-          "A'alai",
-          "Vessel of the Vaal",
-          "Vessel of the Vaal"
+          {
+            "name": "A'alai"
+          },
+          {
+            "name": "Vessel of the Vaal"
+          },
+          {
+            "name": "Vessel of the Vaal"
+          }
         ]
       }
     ],
@@ -3393,7 +3399,9 @@
           {
             "name": "Volkuur, the Unbreathing Queen"
           },
-          "Yriel, the Feral Lord"
+          {
+            "name": "Yriel, the Feral Lord"
+          }
         ]
       }
     ],
@@ -3433,9 +3441,15 @@
           {
             "name": "Elder Devourer"
           },
-          "Great Maw",
-          "Prime Ape",
-          "The First Rhoa"
+          {
+            "name": "Great Maw"
+          },
+          {
+            "name": "Prime Ape"
+          },
+          {
+            "name": "The First Rhoa"
+          }
         ]
       }
     ],
@@ -4138,9 +4152,15 @@
           {
             "name": "Y'ara'az"
           },
-          "A'alai",
-          "Vessel of the Vaal",
-          "Vessel of the Vaal"
+          {
+            "name": "A'alai"
+          },
+          {
+            "name": "Vessel of the Vaal"
+          },
+          {
+            "name": "Vessel of the Vaal"
+          }
         ]
       }
     ],
