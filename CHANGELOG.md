@@ -3,6 +3,24 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 
+## [1.2.5] - 2018-11-20
+### Added
+- Functionality to parse the entire log from the beginning has been added
+- The following inputs have been added
+    - `includedEvents` specifies the events that should be used. By default it includes all events specified in Events.json.
+    - `chunkSize` determines the chunksize when parsing the entire log. 
+    - `chunkInterval` specifies the interval at which the parser will chunk data. Can be delayed if slower parsing is accepted, in cases where it would otherwhise affect performance.
+- The following events have been added
+    - `parsingStarted` emits when the parsing of the file has started.
+    - `parsingComplete` emits when the parsing of the file has completed. 
+- Added `info` data for map areas
+
+### Changes
+- Wrapped regex-matching in a new function called `registerMatch`.
+
+### Fixed
+- Fixed some areas that had incorrectly formatted boss-arrays.
+
 ## [1.2.4] - 2018-07-10
 ### Added
 - The following events have been added
