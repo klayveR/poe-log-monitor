@@ -3,9 +3,10 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 
-## [1.2.5] - 2018-11-20
+## [1.2.5] - 2018-11-21
 ### Added
 - Functionality to parse the entire log from the beginning has been added
+- Added timestamps to all current events, as a separate regex group that can be used. Useful for comparing timestamps when parsing the entire log.
 - The following inputs have been added
     - `includedEvents` specifies the events that should be used. By default it includes all events specified in Events.json.
     - `chunkSize` determines the chunksize when parsing the entire log. 

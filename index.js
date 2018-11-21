@@ -149,25 +149,26 @@ PathOfExileLog.prototype.evalMatch = function (match, properties, event) {
 PathOfExileLog.prototype.evalArea = function (match) {
     var area = {};
 
-    area.name = match[1] || "";
+    area.name = match[2] || "";
     area.type = "unknown";
     area.info = [];
+    area.timestamp = match[1];
 
     // Iterate through each area type
     for (var areaType in Areas) {
         if (!Areas.hasOwnProperty(areaType)) { continue; }
 
         // Check if area has additional info in that area type, add to object if true
-        if (typeof match[1] !== "undefined"
-            && Areas[areaType].hasOwnProperty(match[1])) {
+        if (typeof match[2] !== "undefined"
+            && Areas[areaType].hasOwnProperty(match[2])) {
             area.type = areaType;
-            area.info = Areas[areaType][match[1]];
+            area.info = Areas[areaType][match[2]];
         }
     }
 
 
-    if (Areas.hasOwnProperty(match[1])) {
-        area.info = Areas[match[1]];
+    if (Areas.hasOwnProperty(match[2])) {
+        area.info = Areas[match[2]];
     }
 
     this.emit("area", area);
@@ -176,14 +177,14 @@ PathOfExileLog.prototype.evalArea = function (match) {
 // AFK/DND match
 PathOfExileLog.prototype.evalAway = function (match) {
     var away = {};
-    var type = match[1].toLowerCase();
+    var type = match[2].toLowerCase();
 
     away.status = false;
-    away.autoreply = match[3] || "";
+    away.autoreply = match[4] || "";
 
     // Determine AFK/DND status
-    if (typeof match[2] !== "undefined" && match[2] === "ON"
-        || typeof match[4] !== "undefined" && match[4] === "ON") {
+    if (typeof match[3] !== "undefined" && match[3] === "ON"
+        || typeof match[5] !== "undefined" && match[5] === "ON") {
         away.status = true;
     }
 
@@ -195,17 +196,17 @@ PathOfExileLog.prototype.evalMessage = function (match) {
     var message = {};
 
     message.player = {};
-    message.player.guild = match[2] || "";
-    message.player.name = match[3] || "";
-    message.message = match[4] || "";
+    message.player.guild = match[3] || "";
+    message.player.name = match[4] || "";
+    message.message = match[5] || "";
 
     // Get chat
-    if (typeof match[1] !== "undefined") {
-        if (match[1] === "#") { message.chat = "global"; }
-        else if (match[1] === "$") { message.chat = "trade"; }
-        else if (match[1] === "&") { message.chat = "guild"; }
-        else if (match[1] === "%") { message.chat = "party"; }
-        else if (match[1] === "") {
+    if (typeof match[2] !== "undefined") {
+        if (match[2] === "#") { message.chat = "global"; }
+        else if (match[2] === "$") { message.chat = "trade"; }
+        else if (match[2] === "&") { message.chat = "guild"; }
+        else if (match[2] === "%") { message.chat = "party"; }
+        else if (match[2] === "") {
             message.chat = "local";
 
             // If the chat is local, check if any of the NPC are talking
@@ -228,7 +229,7 @@ PathOfExileLog.prototype.evalTrade = function (match) {
     var trade = {};
     trade.accepted = false;
 
-    if (typeof match[1] !== "undefined" && match[1] === "accepted") {
+    if (typeof match[2] !== "undefined" && match[2] === "accepted") {
         trade.accepted = true;
     }
 
