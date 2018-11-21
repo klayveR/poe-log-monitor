@@ -5,9 +5,12 @@ var Areas = require("./resource/areas");
 var NPC = require("./resource/npc");
 var util = require("util");
 var fs = require("fs");
+var async = require("async");
 
 var LOGFILE = "C:/Program Files (x86)/Grinding Gear Games/Path of Exile/logs/Client.txt";
 var INTERVAL = 1000;
+var CHUNKSIZE = 1024;
+var CHUNKINTERVAL = 1;
 
 function PathOfExileLog(options) {
     options = options || {};
@@ -17,6 +20,11 @@ function PathOfExileLog(options) {
     var self = this;
     this.logfile = options.logfile || LOGFILE;
     this.interval = options.interval || INTERVAL;
+    this.includedEvents = options.includedEvents || Object.keys(Events);
+
+    // Options for chunks when parsing the entire log
+    this.chunkSize = options.chunkSize || CHUNKSIZE;
+    this.chunkInterval = options.chunkInterval || CHUNKINTERVAL;
 
     // Check if the specified log file exists
     if (!fs.existsSync(this.logfile)) {
@@ -24,33 +32,77 @@ function PathOfExileLog(options) {
         return;
     }
 
-    this.tail = new Tail(this.logfile, "\n", {interval: this.interval});
+    this.tail = new Tail(this.logfile, "\n", { interval: this.interval });
 
     // If a new line appears in the log file...
     this.tail.on("line", function (line) {
         // Try matching the line with a regular expression from the Events JSON
-        for (var eventName in Events) {
-            if (!Events.hasOwnProperty(eventName)) { continue; }
-
-            var event = Events[eventName];
-            var match = line.match(new RegExp(event.regex));
-            if(match) {
-                if(event.hasOwnProperty("properties")) { // Assign properties to matching groups
-                    self.evalMatch(match, event.properties, eventName);
-                } else if(event.hasOwnProperty("function")) { // Execute a function to further evaluate the matching data
-                    // Check if the specified function is actually a function
-                    if (typeof self[event.function] === "function") {
-                        self[event.function](match); // Execute specified function
-                    }
-                }
-                return;
-            }
-        }
+        self.registerMatch(line);
     });
 
     this.tail.on("error", function (error) {
         self.emit("error", new Error("Tail has encountered an error: " + error));
     });
+}
+
+// Register the received line as a match and eval the result
+PathOfExileLog.prototype.registerMatch = function (text) {
+    var self = this;
+    for (var i in self.includedEvents) {
+        eventName = self.includedEvents[i];
+        if (!Events.hasOwnProperty(eventName)) { continue; }
+        var event = Events[eventName];
+        var match = text.match(new RegExp(event.regex));
+        if (match) {
+            if (event.hasOwnProperty("properties")) { // Assign properties to matching groups
+                self.evalMatch(match, event.properties, eventName);
+            } else if (event.hasOwnProperty("function")) { // Execute a function to further evaluate the matching data
+                // Check if the specified function is actually a function
+                if (typeof self[event.function] === "function") {
+                    self[event.function](match); // Execute specified function
+                }
+            }
+            return;
+        }
+    }
+}
+
+// Reads the file and emits events for each included event
+async function readLogStream(file, instance) {
+    return new Promise(resolve => {
+        var stream = fs.createReadStream(file, { encoding: 'utf8', highWaterMark: instance.chunkSize });
+        var hasStarted = false;
+        // Split data into chunks so we dont stall the client
+        stream.on('data', chunk => {
+            if (!hasStarted) instance.emit("parsingStarted");
+            hasStarted = true;
+            var lines = chunk.toString().split("\n");
+            // Pause stream until this chunk is completed to avoid spamming the thread
+            stream.pause();
+            async.each(lines, function (line, callback) {
+                instance.registerMatch(line);
+                callback();
+            }, function (err) {
+                setTimeout(() => {
+                    stream.resume();
+                }, instance.chunkInterval);
+            });
+        });
+        stream.on('end', () => {
+            instance.emit("parsingComplete");
+            resolve();
+        });
+    });
+};
+
+async function getLogData(file, instance) {
+    await readLogStream(file, instance);
+}
+
+// Parse the entire log from the beginning
+PathOfExileLog.prototype.parseLog = function () {
+    var self = this;
+    getLogData(this.logfile, self);
 }
 
 // Resumes monitoring the log file
@@ -73,7 +125,7 @@ PathOfExileLog.prototype.evalMatch = function (match, properties, event) {
         if (!properties.hasOwnProperty(key)) { continue; }
 
         // Check if the properties should be in an additional object
-        if(typeof properties[key] === "object") {
+        if (typeof properties[key] === "object") {
             data[key] = {}; // Create new object in the data object
 
             // Iterate through each object key
@@ -97,25 +149,26 @@ PathOfExileLog.prototype.evalMatch = function (match, properties, event) {
 PathOfExileLog.prototype.evalArea = function (match) {
     var area = {};
 
-    area.name = match[1] || "";
+    area.name = match[2] || "";
     area.type = "unknown";
     area.info = [];
+    area.timestamp = match[1];
 
     // Iterate through each area type
     for (var areaType in Areas) {
         if (!Areas.hasOwnProperty(areaType)) { continue; }
 
         // Check if area has additional info in that area type, add to object if true
-        if(typeof match[1] !== "undefined"
-            && Areas[areaType].hasOwnProperty(match[1])) {
+        if (typeof match[2] !== "undefined"
+            && Areas[areaType].hasOwnProperty(match[2])) {
             area.type = areaType;
-            area.info = Areas[areaType][match[1]];
+            area.info = Areas[areaType][match[2]];
         }
     }
 
 
-    if(Areas.hasOwnProperty(match[1])) {
-        area.info = Areas[match[1]];
+    if (Areas.hasOwnProperty(match[2])) {
+        area.info = Areas[match[2]];
     }
 
     this.emit("area", area);
@@ -124,14 +177,14 @@ PathOfExileLog.prototype.evalArea = function (match) {
 // AFK/DND match
 PathOfExileLog.prototype.evalAway = function (match) {
     var away = {};
-    var type = match[1].toLowerCase();
+    var type = match[2].toLowerCase();
 
     away.status = false;
-    away.autoreply = match[3] || "";
+    away.autoreply = match[4] || "";
 
     // Determine AFK/DND status
-    if(typeof match[2] !== "undefined" && match[2] === "ON"
-        || typeof match[4] !== "undefined" && match[4] === "ON") {
+    if (typeof match[3] !== "undefined" && match[3] === "ON"
+        || typeof match[5] !== "undefined" && match[5] === "ON") {
         away.status = true;
     }
 
@@ -143,24 +196,24 @@ PathOfExileLog.prototype.evalMessage = function (match) {
     var message = {};
 
     message.player = {};
-    message.player.guild = match[2] || "";
-    message.player.name = match[3] || "";
-    message.message = match[4] || "";
+    message.player.guild = match[3] || "";
+    message.player.name = match[4] || "";
+    message.message = match[5] || "";
 
     // Get chat
-    if(typeof match[1] !== "undefined") {
-        if(match[1] === "#") { message.chat = "global"; }
-        else if(match[1] === "$") { message.chat = "trade"; }
-        else if(match[1] === "&") { message.chat = "guild"; }
-        else if(match[1] === "%") { message.chat = "party"; }
-        else if(match[1] === "") {
+    if (typeof match[2] !== "undefined") {
+        if (match[2] === "#") { message.chat = "global"; }
+        else if (match[2] === "$") { message.chat = "trade"; }
+        else if (match[2] === "&") { message.chat = "guild"; }
+        else if (match[2] === "%") { message.chat = "party"; }
+        else if (match[2] === "") {
             message.chat = "local";
 
             // If the chat is local, check if any of the NPC are talking
-            if(NPC.masters.hasOwnProperty(message.player.name)) {
+            if (NPC.masters.hasOwnProperty(message.player.name)) {
                 this.evalMasterEncounter(message.player.name, message.message);
                 return;
-            } else if(NPC.npcs.hasOwnProperty(message.player.name)) {
+            } else if (NPC.npcs.hasOwnProperty(message.player.name)) {
                 this.evalNpcDialogue(message.player.name, message.message);
                 return;
             }
@@ -176,7 +229,7 @@ PathOfExileLog.prototype.evalTrade = function (match) {
     var trade = {};
     trade.accepted = false;
 
-    if(typeof match[1] !== "undefined" && match[1] === "accepted") {
+    if (typeof match[2] !== "undefined" && match[2] === "accepted") {
         trade.accepted = true;
     }
 
@@ -188,7 +241,7 @@ PathOfExileLog.prototype.evalMasterEncounter = function (name, message) {
     master.name = name;
     master.message = message;
 
-    if(NPC.masters.hasOwnProperty(master.name)) {
+    if (NPC.masters.hasOwnProperty(master.name)) {
         this.emit("masterEncounter", master);
     }
 };
@@ -198,7 +251,7 @@ PathOfExileLog.prototype.evalNpcDialogue = function (name, message) {
     npc.name = name;
     npc.message = message;
 
-    if(NPC.npcs.hasOwnProperty(npc.name)) {
+    if (NPC.npcs.hasOwnProperty(npc.name)) {
         this.emit("npcEncounter", npc);
     }
 };
