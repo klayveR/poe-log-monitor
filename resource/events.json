@@ -1,16 +1,16 @@
 {
   "instanceServer": {
-    "regex": "\\[INFO Client [0-9]*] Connecting to instance server at (.*)",
+    "regex": "([0-9]{4}\/[0-9]{2}\/[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2}).*\\[INFO Client [0-9]*] Connecting to instance server at (.*)",
     "properties": {
       "address": 1
     }
   },
   "area": {
-    "regex": "\\[INFO Client [0-9]*] : You have entered (.*)\\.",
+    "regex": "([0-9]{4}\/[0-9]{2}\/[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2}).*\\[INFO Client [0-9]*] : You have entered (.*)\\.",
     "function": "evalArea"
   },
   "areaJoin": {
-    "regex": "\\[INFO Client [0-9]*] : (\\S+) has joined the area\\.",
+    "regex": "([0-9]{4}\/[0-9]{2}\/[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2}).*\\[INFO Client [0-9]*] : (\\S+) has joined the area\\.",
     "properties": {
       "player": {
         "name": 1
@@ -18,7 +18,7 @@
     }
   },
   "areaLeave": {
-    "regex": "\\[INFO Client [0-9]*] : (\\S+) has left the area\\.",
+    "regex": "([0-9]{4}\/[0-9]{2}\/[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2}).*\\[INFO Client [0-9]*] : (\\S+) has left the area\\.",
     "properties": {
       "player": {
         "name": 1
@@ -26,11 +26,11 @@
     }
   },
   "message": {
-    "regex": "\\[INFO Client [0-9]*] (#|\\$|%|&|)(?:<(.+)> )?((?!Enumerated )[a-zA-Z_, ]+): (.+)",
+    "regex": "([0-9]{4}\/[0-9]{2}\/[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2}).*\\[INFO Client [0-9]*] (#|\\$|%|&|)(?:<(.+)> )?((?!Enumerated )[a-zA-Z_, ]+): (.+)",
     "function": "evalMessage"
   },
   "whisper": {
-    "regex": "\\[INFO Client [0-9]*] @(To|From) (?:<(.+)> )?([a-zA-Z_, ]+): (.+)",
+    "regex": "([0-9]{4}\/[0-9]{2}\/[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2}).*\\[INFO Client [0-9]*] @(To|From) (?:<(.+)> )?([a-zA-Z_, ]+): (.+)",
     "properties": {
       "direction": 1,
       "player": {
@@ -41,18 +41,18 @@
     }
   },
   "away": {
-    "regex": "\\[INFO Client [0-9]*] : (DND|AFK) mode is now (?:(ON)\\. Autoreply \"(.*)\"|(OFF))",
+    "regex": "([0-9]{4}\/[0-9]{2}\/[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2}).*\\[INFO Client [0-9]*] : (DND|AFK) mode is now (?:(ON)\\. Autoreply \"(.*)\"|(OFF))",
     "function": "evalAway"
   },
   "login": {
-    "regex": "\\[INFO Client [0-9]*] Connected to ([a-z]+[0-9]*\\.login\\.pathofexile\\.com) in ([0-9]*)ms\\.",
+    "regex": "([0-9]{4}\/[0-9]{2}\/[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2}).*\\[INFO Client [0-9]*] Connected to ([a-z]+[0-9]*\\.login\\.pathofexile\\.com) in ([0-9]*)ms\\.",
     "properties": {
       "server": 1,
       "latency": 2
     }
   },
   "joinChat": {
-    "regex": "\\[INFO Client [0-9]*] : You have joined ([a-zA-Z0-9]+) chat channel ([0-9]+) ([a-zA-Z0-9]+)\\.",
+    "regex": "([0-9]{4}\/[0-9]{2}\/[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2}).*\\[INFO Client [0-9]*] : You have joined ([a-zA-Z0-9]+) chat channel ([0-9]+) ([a-zA-Z0-9]+)\\.",
     "properties": {
       "chat": 1,
       "channel": 2,
@@ -60,29 +60,29 @@
     }
   },
   "trade": {
-    "regex": "\\[INFO Client [0-9]*] : Trade (cancelled|accepted)",
+    "regex": "([0-9]{4}\/[0-9]{2}\/[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2}).*\\[INFO Client [0-9]*] : Trade (cancelled|accepted)",
     "function": "evalTrade"
   },
   "deaths": {
-    "regex": "\\[INFO Client [0-9]*] : You have died ([0-9]+) times\\.",
+    "regex": "([0-9]{4}\/[0-9]{2}\/[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2}).*\\[INFO Client [0-9]*] : You have died ([0-9]+) times\\.",
     "properties": {
       "deaths": 1
     }
   },
   "remaining": {
-    "regex": "\\[INFO Client [0-9]*] : (?:More than )?([0-9]+) monsters? remain\\.",
+    "regex": "([0-9]{4}\/[0-9]{2}\/[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2}).*\\[INFO Client [0-9]*] : (?:More than )?([0-9]+) monsters? remain\\.",
     "properties": {
       "monsters": 1
     }
   },
   "death": {
-    "regex": "\\[INFO Client [0-9]*] : (\\S+) has been slain\\.",
+    "regex": "([0-9]{4}\/[0-9]{2}\/[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2}).*\\[INFO Client [0-9]*] : (\\S+) has been slain\\.",
     "properties": {
       "name": 1
     }
   },
   "level": {
-    "regex": "\\[INFO Client [0-9]*] : (.*) \\((.*)\\) is now level ([0-9]+)",
+    "regex": "([0-9]{4}\/[0-9]{2}\/[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2}).*\\[INFO Client [0-9]*] : (.*) \\((.*)\\) is now level ([0-9]+)",
     "properties": {
       "name": 1,
       "characterClass": 2,
@@ -90,7 +90,7 @@
     }
   },
   "played": {
-    "regex": "\\[INFO Client [0-9]*] : You have played for (?:([0-9]*) days?)?(?:, )?(?:([0-9]*) hours?)?(?:, )?(?:([0-9]*) minutes?)?(?:, )?(?:and )?(?:([0-9]*) seconds?)",
+    "regex": "([0-9]{4}\/[0-9]{2}\/[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2}).*\\[INFO Client [0-9]*] : You have played for (?:([0-9]*) days?)?(?:, )?(?:([0-9]*) hours?)?(?:, )?(?:([0-9]*) minutes?)?(?:, )?(?:and )?(?:([0-9]*) seconds?)",
     "properties": {
       "days": 1,
       "hours": 2,
@@ -99,7 +99,7 @@
     }
   },
   "age": {
-    "regex": "\\[INFO Client [0-9]*] : Your character was created (?:([0-9]*) days?)?(?:, )?(?:([0-9]*) hours?)?(?:, )?(?:([0-9]*) minutes?)?(?:, )?(?:and )?(?:([0-9]*) seconds?)",
+    "regex": "([0-9]{4}\/[0-9]{2}\/[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2}).*\\[INFO Client [0-9]*] : Your character was created (?:([0-9]*) days?)?(?:, )?(?:([0-9]*) hours?)?(?:, )?(?:([0-9]*) minutes?)?(?:, )?(?:and )?(?:([0-9]*) seconds?)",
     "properties": {
       "days": 1,
       "hours": 2,
