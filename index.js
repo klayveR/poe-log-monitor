@@ -120,25 +120,29 @@ PathOfExileLog.prototype.pause = function () {
 // This function simply puts match groups into a new object with the correct identifiers defined in the Events JSON and emits it
 PathOfExileLog.prototype.evalMatch = function (match, properties, event) {
     var data = {};
+    var timestampIndex = 1;
+    var timestamp = match[timestampIndex];
+    // Attach timestamp to data-object
+    data.timestamp = timestamp;
 
     for (var key in properties) {
+
         if (!properties.hasOwnProperty(key)) { continue; }
 
         // Check if the properties should be in an additional object
         if (typeof properties[key] === "object") {
             data[key] = {}; // Create new object in the data object
-
             // Iterate through each object key
             var nestedObject = properties[key];
             for (var nestedKey in nestedObject) {
                 if (!properties[key].hasOwnProperty(nestedKey)) { continue; }
 
                 var nestedMatchIndex = nestedObject[nestedKey];
-                data[key][nestedKey] = match[nestedMatchIndex];
+                data[key][nestedKey] = match[nestedMatchIndex+timestampIndex];
             }
         } else {
             var matchIndex = properties[key];
-            data[key] = match[matchIndex];
+            data[key] = match[matchIndex+timestampIndex];
         }
     }
 
@@ -181,6 +185,7 @@ PathOfExileLog.prototype.evalAway = function (match) {
 
     away.status = false;
     away.autoreply = match[4] || "";
+    away.timestamp = match[1];
 
     // Determine AFK/DND status
     if (typeof match[3] !== "undefined" && match[3] === "ON"
@@ -199,6 +204,7 @@ PathOfExileLog.prototype.evalMessage = function (match) {
     message.player.guild = match[3] || "";
     message.player.name = match[4] || "";
     message.message = match[5] || "";
+    message.timestamp = match[1];
 
     // Get chat
     if (typeof match[2] !== "undefined") {
@@ -211,10 +217,10 @@ PathOfExileLog.prototype.evalMessage = function (match) {
 
             // If the chat is local, check if any of the NPC are talking
             if (NPC.masters.hasOwnProperty(message.player.name)) {
-                this.evalMasterEncounter(message.player.name, message.message);
+                this.evalMasterEncounter(message.player.name, message.message, message.timestamp);
                 return;
             } else if (NPC.npcs.hasOwnProperty(message.player.name)) {
-                this.evalNpcDialogue(message.player.name, message.message);
+                this.evalNpcDialogue(message.player.name, message.message, message.timestamp);
                 return;
             }
         }
@@ -228,6 +234,7 @@ PathOfExileLog.prototype.evalMessage = function (match) {
 PathOfExileLog.prototype.evalTrade = function (match) {
     var trade = {};
     trade.accepted = false;
+    trade.timestamp = match[1];
 
     if (typeof match[2] !== "undefined" && match[2] === "accepted") {
         trade.accepted = true;
@@ -236,20 +243,22 @@ PathOfExileLog.prototype.evalTrade = function (match) {
     this.emit("trade", trade);
 };
 
-PathOfExileLog.prototype.evalMasterEncounter = function (name, message) {
+PathOfExileLog.prototype.evalMasterEncounter = function (name, message, timestamp) {
     var master = {};
     master.name = name;
     master.message = message;
+    master.timestamp = timestamp;
 
     if (NPC.masters.hasOwnProperty(master.name)) {
         this.emit("masterEncounter", master);
     }
 };
 
-PathOfExileLog.prototype.evalNpcDialogue = function (name, message) {
+PathOfExileLog.prototype.evalNpcDialogue = function (name, message, timestamp) {
     var npc = {};
     npc.name = name;
     npc.message = message;
+    npc.timestamp = timestamp;
 
     if (NPC.npcs.hasOwnProperty(npc.name)) {
         this.emit("npcEncounter", npc);
