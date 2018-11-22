@@ -91,6 +91,7 @@ async function readLogStream(file, instance) {
         stream.on('end', () => {
             instance.emit("parsingComplete");
             resolve();
+            stream.close();
         });
     });
 };
