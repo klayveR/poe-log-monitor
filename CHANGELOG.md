@@ -9,11 +9,11 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 - Added timestamps to all current events, as a separate regex group that can be used. Useful for comparing timestamps when parsing the entire log.
 - The following inputs have been added
     - `includedEvents` specifies the events that should be used. By default it includes all events specified in Events.json.
-    - `chunkSize` determines the chunksize when parsing the entire log. 
+    - `chunkSize` determines the chunksize when parsing the entire log.
     - `chunkInterval` specifies the interval at which the parser will chunk data. Can be delayed if slower parsing is accepted, in cases where it would otherwhise affect performance.
 - The following events have been added
     - `parsingStarted` emits when the parsing of the file has started.
-    - `parsingComplete` emits when the parsing of the file has completed. 
+    - `parsingComplete` emits when the parsing of the file has completed.
 
 ### Changes
 - Wrapped regex-matching in a new function called `registerMatch`.
@@ -52,7 +52,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 ### Added
 - The following events have been added
     - `trade` emits when the player accepts or cancels a trade
-    
+
 ## [1.2.0] - 2018-05-27
 ### Added
 - The following events have been added
@@ -84,7 +84,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 ### Added
 - The following events have been added
     - `remaining` emits when the player uses the `/remaining` command in game
-    
+
 ### Changes
 - Eliminated the use of `undefined` in code
 - Methods that simply renamed match groups and emitted them as a new object are now handled in a single method (events which require additional evaluation of the data are still in separate functions)
@@ -116,6 +116,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 ### Added
 - Initial release
 
+[1.2.5]: https://www.npmjs.com/package/poe-log-monitor/v/1.2.5
 [1.2.4]: https://www.npmjs.com/package/poe-log-monitor/v/1.2.4
 [1.2.3]: https://www.npmjs.com/package/poe-log-monitor/v/1.2.3
 [1.2.2]: https://www.npmjs.com/package/poe-log-monitor/v/1.2.2

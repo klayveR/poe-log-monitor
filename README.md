@@ -47,6 +47,9 @@ Pauses monitoring the logfile.
 ### start()
 Resumes monitoring the logfile.
 
+### parseLog()
+Parses the full logfile.
+
 ## Events
 
 The parameters listed below each event are stored in an object emitted by the event.
@@ -72,13 +75,13 @@ Emitted when the player enters an area. See [AREA.md] for more information about
 ### areaJoin
 - `player`
     - `name` - Name of the player who joined the area
-    
+
 Emitted when another player enters the area the player is in.
 
 ### areaLeave
 - `player`
     - `name` - Name of the player who joined the area
-    
+
 Emitted when another player leaves the area the player is in.
 
 ### joinChat
