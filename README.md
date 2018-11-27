@@ -67,7 +67,7 @@ Stops monitoring the Path of Exile log file
 <a name="PoeLog+parseLog"></a>
 
 ### poeLog.parseLog([options]) ⇒ <code>Promise.&lt;Array&gt;</code>
-Parses the entire Client.txt and returns the events in an array
+Parses the entire `Client.txt` and returns the events in an array utilizing a read stream
 
 **Kind**: instance method of [<code>PoeLog</code>](#PoeLog)  
 
@@ -75,6 +75,7 @@ Parses the entire Client.txt and returns the events in an array
 | --- | --- | --- | --- |
 | [options] | <code>Object</code> |  | An optional parameter object |
 | [options.events] | <code>Array</code> | <code>All events</code> | An array containing the events that should be included |
+| [options.chunkSize] | <code>number</code> | <code>65536</code> | Bytes per chunk |
 
 <a name="PoeLog+getEvents"></a>
 

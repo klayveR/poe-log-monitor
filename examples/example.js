@@ -4,10 +4,12 @@ let log = new PoeLog({
   "timestamps": true
 });
 
+let start = Date.now();
+
 // Parse entire log, only include message and whispers
-log.parseLog({ "events": ["message", "whisper"] })
+log.parseLog({ "events": ["area", "instanceServer"] })
 .then((result) => {
-  console.log(`Parsed ${result.length} whisper and message events`);
+  console.log(`Parsed ${result.length} events with readStream, ${Date.now() - start} ms`);
 })
 .catch((error) => {
   console.log(`Error parsing`, error);

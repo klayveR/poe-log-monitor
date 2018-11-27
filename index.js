@@ -1,13 +1,11 @@
 const EventEmitter = require("events");
 const TailStream = require("tail-stream");
-const LineReader = require("line-reader");
 const Defaults = require("./resource/defaults");
 const Events = require("./events");
-const util = require('util');
+const util = require("util");
 const fs = require("fs");
 const _ = require("lodash");
 
-const eachLine = util.promisify(LineReader.eachLine);
 const access = util.promisify(fs.access);
 
 class PoeLog extends EventEmitter {
@@ -54,40 +52,76 @@ class PoeLog extends EventEmitter {
   }
 
   /**
-  * Parses the entire Client.txt and returns the events in an array
+  * Parses the entire `Client.txt` and returns the events in an array utilizing a read stream
   *
   * @param   {Object} [options] - An optional parameter object
   * @param   {Array}  [options.events=All events] - An array containing the events that should be included
+  * @param   {number} [options.chunkSize=65536] - Bytes per chunk
   * @returns {Promise<Array>}
   */
   parseLog(options) {
-    options = _.defaults(options, {
-      "events": this.getEvents()
-    });
-
-    let events = [];
-
-    // Check if file exists
     return access(this.options.logfile, fs.constants.F_OK)
     .then(() => {
-      // Read each line, parse and add to events array if valid
-      return eachLine(this.options.logfile, (line) => {
-        let result = this._parseLine(line);
-
-        // Add event if line successfully parsed and is included in events parameter
-        if(result && _.includes(options.events, result.event)) {
-          events.push(result);
-        }
-      });
+      return this._parseLogStream(options);
     })
-    .then(() => {
-      // Return full events array once every line has been processed
-      return Promise.resolve(events);
+    .then((result) => {
+      return Promise.resolve(result);
     })
     .catch((error) => {
       return Promise.reject(error);
     });
   }
+
+  /**
+  * Parses the entire log using a read stream
+  *
+  * @private
+  * @param   {Object} options
+  * @returns {Promise<Array>}
+  */
+  _parseLogStream(options) {
+    options = _.defaults(options, {
+      "events": this.getEvents(),
+      "chunkSize": 1024 * 64
+    });
+
+    return new Promise(resolve => {
+      let stream = fs.createReadStream(this.options.logfile, { "encoding": "utf8", "highWaterMark": options.chunkSize });
+      let events = [];
+      let lastLine = null;
+
+      stream.on("data", (data) => {
+        if(lastLine) {
+          /* Put previously chunked line in front of new data */
+          data = lastLine + data;
+        }
+
+        let lines = _.compact(data.toString().split("\n"));
+
+        for(const index in lines) {
+          let line = lines[index];
+          let result = this._parseLine(line);
+
+          if(result && _.includes(options.events, result.event)) {
+            /* Add event if line successfully parsed and is included in events parameter */
+            events.push(result);
+          } else if(index == (lines.length - 1)) {
+            /* If this is the last line and it could not be parsed, store it
+             * and put it in front of the new data set later, in case the chunking
+             * cut off the full line */
+            lastLine = line;
+          } else {
+            /* In every other case, reset the last line stored */
+            lastLine = null;
+          }
+        }
+      });
+
+      stream.on("end", () => {
+        resolve(events);
+      });
+    });
+  };
 
   /**
    * Returns the full list of events
@@ -133,7 +167,7 @@ class PoeLog extends EventEmitter {
   * @param {Buffer} data
   */
   _handleTailStreamData(data) {
-    // Convert buffer to string, split at new lines and remove invalid values
+    /* Convert buffer to string, split at new lines and remove invalid values */
     let lines = _.compact(data.toString().split("\n"));
 
     for(let index in lines) {
@@ -174,10 +208,10 @@ class PoeLog extends EventEmitter {
       if(match && typeof event.parse === "function") {
         let result = event.parse(match);
 
-        // Add event name
+        /* Add event name */
         result = _.assign(result, { "event": eventName });
 
-        // Add timestamp if enabled in options
+        /* Add timestamp if enabled in options */
         if(this.options.timestamps) {
           result = _.assign(result, { "timestamp": this._parseTimestamp(line) });
         }

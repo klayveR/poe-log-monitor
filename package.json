@@ -28,7 +28,6 @@
   },
   "license": "MIT",
   "dependencies": {
-    "line-reader": "^0.4.0",
     "lodash": "^4.17.11",
     "require-dir": "^1.1.0",
     "tail-stream": "^0.3.4"
