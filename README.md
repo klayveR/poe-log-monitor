@@ -2,14 +2,6 @@
 [![NPM version](https://img.shields.io/npm/v/poe-log-monitor.svg)](https://www.npmjs.com/package/poe-log-monitor)
 [![NPM Downloads](https://img.shields.io/npm/dt/poe-log-monitor.svg)](https://www.npmjs.com/package/poe-log-monitor)
 [![NPM License](https://img.shields.io/npm/l/poe-log-monitor.svg)](https://www.npmjs.com/package/poe-log-monitor)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/7f4451528a46499cb7b297e3081e2188)](https://www.codacy.com/app/klayveR/poe-log-monitor?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=klayveR/poe-log-monitor&amp;utm_campaign=Badge_Grade)
-
-## Contents
-
-- [Changelog](https://github.com/klayveR/poe-log-monitor/blob/master/CHANGELOG.md)
-- [Getting Started](#getting-started)
-- [Methods](#methods)
-- [Events](#events)
 
 ## Getting Started
 **Install with npm:**
@@ -17,177 +9,255 @@
 $ npm install poe-log-monitor
 ```
 
-**Usage:**
+**Integration:**
 ```javascript
-var PathOfExileLog = require("poe-log-monitor");
-
-var poeLog = new PathOfExileLog({
-    logfile: "C:/Program Files (x86)/Grinding Gear Games/Path of Exile/logs/Client.txt"
-});
-
-poeLog.on("message", (message) => {
-    console.log("(" + message.chat + ") " + message.player.name + ": " + message.message);
-});
+const PoeLog = require("poe-log-monitor");
 ```
 
-## Methods
+<a name="PoeLog"></a>
 
-### Constructor([options])
-- `options` - An optional object containing some of the following options
-    - `logfile` - The path to Path of Exile's Client.txt
-    	- default: `C:/Program Files (x86)/Grinding Gear Games/Path of Exile/logs/Client.txt`
-    - `interval` - The interval, in milliseconds, to check for changes in the log file
-    	- default: `1000`
+## PoeLog
+**Kind**: global class  
 
-Constructs a new `PathOfExileLog`. If the path to the log file is valid, the script will automatically start monitoring it. You can pause or resume monitoring using the `pause()` or `start()` method respectively.
+* [PoeLog](#PoeLog)
+    * [new PoeLog([options])](#new_PoeLog_new)
+    * [.start()](#PoeLog+start) ⇒ <code>Promise</code>
+    * [.stop()](#PoeLog+stop)
+    * [.parseLog([options])](#PoeLog+parseLog) ⇒ <code>Promise.&lt;Array&gt;</code>
+    * [.getEvents()](#PoeLog+getEvents) ⇒ <code>Array</code>
+    * ["error"](#PoeLog+event_error)
+    * ["age"](#PoeLog+event_age)
+    * ["areaAction"](#PoeLog+event_areaAction)
+    * ["area"](#PoeLog+event_area)
+    * ["away"](#PoeLog+event_away)
+    * ["death"](#PoeLog+event_death)
+    * ["deaths"](#PoeLog+event_deaths)
+    * ["instanceServer"](#PoeLog+event_instanceServer)
+    * ["joinChat"](#PoeLog+event_joinChat)
+    * ["level"](#PoeLog+event_level)
+    * ["login"](#PoeLog+event_login)
+    * ["message"](#PoeLog+event_message)
+    * ["played"](#PoeLog+event_played)
+    * ["remaining"](#PoeLog+event_remaining)
+    * ["trade"](#PoeLog+event_trade)
+    * ["whisper"](#PoeLog+event_whisper)
 
-### pause()
-Pauses monitoring the logfile.
+<a name="new_PoeLog_new"></a>
 
-### start()
-Resumes monitoring the logfile.
+### new PoeLog([options])
 
-### parseLog()
-Parses the full logfile.
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [options] | <code>Object</code> |  | An optional parameter object |
+| [options.logfile] | <code>string</code> | <code>&quot;C:/Program Files (x86)/Grinding Gear Games/Path of Exile/logs/Client.txt&quot;</code> | Path to `Client.txt` log file |
+| [options.timestamps] | <code>boolean</code> | <code>true</code> | Adds timestamps to events |
 
-## Events
+<a name="PoeLog+start"></a>
 
-The parameters listed below each event are stored in an object emitted by the event.
+### poeLog.start() ⇒ <code>Promise</code>
+Starts monitoring the Path of Exile log file
 
-### login
-- `server` - The gateway the player logged into
-- `latency` - The time, in milliseconds, it took to log in
+**Kind**: instance method of [<code>PoeLog</code>](#PoeLog)  
+<a name="PoeLog+stop"></a>
 
-Emitted when the player logs into the game.
+### poeLog.stop()
+Stops monitoring the Path of Exile log file
 
-### instanceServer
-- `address` - Instance server the player connected to
+**Kind**: instance method of [<code>PoeLog</code>](#PoeLog)  
+<a name="PoeLog+parseLog"></a>
 
-Emitted when the player changes the instance server. This can be useful for determining whether a player enters an area instance the player previously entered, or a newly created one.
+### poeLog.parseLog([options]) ⇒ <code>Promise.&lt;Array&gt;</code>
+Parses the entire Client.txt and returns the events in an array
 
-### area
-- `name` - The name of the area that has been entered
-- `type` - The type of the area
-- `info` - An array of objects containing additional information about the area and their variants, if data is available. The emitted object has a different format based on the `type`.
+**Kind**: instance method of [<code>PoeLog</code>](#PoeLog)  
 
-Emitted when the player enters an area. See [AREA.md] for more information about this event.
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [options] | <code>Object</code> |  | An optional parameter object |
+| [options.events] | <code>Array</code> | <code>All events</code> | An array containing the events that should be included |
 
-### areaJoin
-- `player`
-    - `name` - Name of the player who joined the area
+<a name="PoeLog+getEvents"></a>
 
-Emitted when another player enters the area the player is in.
+### poeLog.getEvents() ⇒ <code>Array</code>
+Returns the full list of events
 
-### areaLeave
-- `player`
-    - `name` - Name of the player who joined the area
+**Kind**: instance method of [<code>PoeLog</code>](#PoeLog)  
+<a name="PoeLog+event_error"></a>
 
-Emitted when another player leaves the area the player is in.
+### "error"
+**Kind**: event emitted by [<code>PoeLog</code>](#PoeLog)  
+<a name="PoeLog+event_age"></a>
 
-### joinChat
-- `chat` - Chat which the player joined
-- `channel` - Channel the player joined
-- `language` - Language of the channel
+### "age"
+**Kind**: event emitted by [<code>PoeLog</code>](#PoeLog)  
+**Properties**
 
-Emitted when the player joins a chat channel.
+| Name | Type |
+| --- | --- |
+| days | <code>number</code> | 
+| hours | <code>number</code> | 
+| minutes | <code>number</code> | 
+| seconds | <code>number</code> | 
+| totalSeconds | <code>number</code> | 
 
-### message
-- `chat` - Chat in which the message appeared
-    - Possible values: `global`, `trade`, `guild`, `party`, `local`
-- `player`
-    - `guild` - Guild tag of the player who sent the message, if present
-    - `name` - Name of the player who sent the message
-- `message` - Message the player sent
+<a name="PoeLog+event_areaAction"></a>
 
-Emitted when a message appears in any of the active chat channels.
+### "areaAction"
+**Kind**: event emitted by [<code>PoeLog</code>](#PoeLog)  
+**Properties**
 
-### whisper
-- `direction` - Direction of the whispered message
-    - Possible values: `To`, `From`
-- `player`
-    - `guild` - Guild tag of the player who sent the whisper, if present
-    - `name` - Name of the player who sent the whisper
-- `message` - Message the player sent
+| Name | Type | Description |
+| --- | --- | --- |
+| address | <code>string</code> |  |
+| player.name | <code>string</code> |  |
+| action | <code>string</code> | `leave`, `join` |
 
-Emitted when a whisper is received or sent.
+<a name="PoeLog+event_area"></a>
 
-### death
-- `name` - Name of the player that died
+### "area"
+**Kind**: event emitted by [<code>PoeLog</code>](#PoeLog)  
+**Properties**
 
-Emitted when the player dies.
+| Name | Type |
+| --- | --- |
+| name | <code>string</code> | 
+| type | <code>string</code> | 
+| info | <code>string</code> | 
 
-### level
-- `name` - Name of the player
-- `characterClass` - Character class of the player
-- `level` - Level of the player after level up
+<a name="PoeLog+event_away"></a>
 
-Emitted when the player levels up.
+### "away"
+**Kind**: event emitted by [<code>PoeLog</code>](#PoeLog)  
+**Properties**
 
-### trade
-- `accepted` - `true` if the player accepted the trade
+| Name | Type |
+| --- | --- |
+| type | <code>string</code> | 
+| status | <code>boolean</code> | 
+| autoreply | <code>string</code> | 
 
-Emitted when the player finishes a trade.
+<a name="PoeLog+event_death"></a>
 
-### npcEncounter
-- `name` - Name of the NPC
-- `message` - Dialogue of the NPC
+### "death"
+**Kind**: event emitted by [<code>PoeLog</code>](#PoeLog)  
+**Properties**
 
-Emitted when when the player encounters a talking NPC in the wild.
->⚠ `Output Dialogue To Game` must be activated in the game UI options for this to work.    
+| Name | Type |
+| --- | --- |
+| player.name | <code>string</code> | 
 
->⚠ The list of supported NPCs is currently incomplete. Feel free to add NPCs that a player might encounter in the wild to the `resource/npc.json` file.
+<a name="PoeLog+event_deaths"></a>
 
-### masterEncounter
-- `name` - Name of the Master
-- `message` - Dialogue of the Master
+### "deaths"
+**Kind**: event emitted by [<code>PoeLog</code>](#PoeLog)  
+**Properties**
 
-Emitted when the player encounters a master in an area.
->⚠ `Output Dialogue To Game` must be activated in the game UI options for this to work
+| Name | Type |
+| --- | --- |
+| deaths | <code>number</code> | 
 
-### afk
-- `status` - `true` if the player is AFK
-- `autoreply` - The auto reply set by the player
+<a name="PoeLog+event_instanceServer"></a>
 
-Emitted when the players AFK status changes.
+### "instanceServer"
+**Kind**: event emitted by [<code>PoeLog</code>](#PoeLog)  
+**Properties**
 
-### dnd
-- `status` - `true` if the player enabled DND mode
-- `autoreply` - The auto reply set by the player
+| Name | Type |
+| --- | --- |
+| address | <code>string</code> | 
 
-Emitted when the players changes their DND mode status.
+<a name="PoeLog+event_joinChat"></a>
 
-### deaths
-- `deaths` - Times the player died
+### "joinChat"
+**Kind**: event emitted by [<code>PoeLog</code>](#PoeLog)  
+**Properties**
 
-Emitted when the player uses the `/deaths` command in game.
+| Name | Type | Description |
+| --- | --- | --- |
+| chat | <code>string</code> | `global`, `local`, `trade`, `guild`, `party` |
+| channel | <code>number</code> |  |
+| language | <code>string</code> |  |
 
-### remaining
-- `monsters` - The amount of remaining monsters in an area
+<a name="PoeLog+event_level"></a>
 
-Emitted when the player uses the `/remaining` command in game.
+### "level"
+**Kind**: event emitted by [<code>PoeLog</code>](#PoeLog)  
+**Properties**
 
-### age
-- `days` - Days since the character has been created
-- `hours` - Hours since the character has been created
-- `minutes` - Minutes since the character has been created
-- `seconds` - Seconds since the character has been created
+| Name | Type |
+| --- | --- |
+| player.name | <code>string</code> | 
+| player.class | <code>string</code> | 
+| player.level | <code>number</code> | 
 
-Emitted when the player uses the `/age` command in game.
+<a name="PoeLog+event_login"></a>
 
-### played
-- `days` - Days spent playing the character
-- `hours` - Hours spent playing the character
-- `minutes` - Minutes spent playing the character
-- `seconds` - Seconds spent playing the character
+### "login"
+**Kind**: event emitted by [<code>PoeLog</code>](#PoeLog)  
+**Properties**
 
-Emitted when the player uses the `/played` command in game.
+| Name | Type |
+| --- | --- |
+| address | <code>string</code> | 
+| latency | <code>number</code> | 
 
-### start
+<a name="PoeLog+event_message"></a>
 
-Emitted when the script resumes monitoring the log file. This event emits no additional data.
+### "message"
+**Kind**: event emitted by [<code>PoeLog</code>](#PoeLog)  
+**Properties**
 
-### pause
+| Name | Type | Description |
+| --- | --- | --- |
+| chat | <code>string</code> | `global`, `local`, `trade`, `guild`, `party` |
+| player.guild | <code>string</code> |  |
+| player.name | <code>string</code> |  |
+| text | <code>string</code> |  |
 
-Emitted when the script pauses monitoring the log file. This event emits no additional data.
+<a name="PoeLog+event_played"></a>
 
-[AREA.md]: https://github.com/klayveR/poe-log-monitor/blob/master/AREA.md
+### "played"
+**Kind**: event emitted by [<code>PoeLog</code>](#PoeLog)  
+**Properties**
+
+| Name | Type |
+| --- | --- |
+| days | <code>number</code> | 
+| hours | <code>number</code> | 
+| minutes | <code>number</code> | 
+| seconds | <code>number</code> | 
+| totalSeconds | <code>number</code> | 
+
+<a name="PoeLog+event_remaining"></a>
+
+### "remaining"
+**Kind**: event emitted by [<code>PoeLog</code>](#PoeLog)  
+**Properties**
+
+| Name | Type |
+| --- | --- |
+| remaining | <code>number</code> | 
+
+<a name="PoeLog+event_trade"></a>
+
+### "trade"
+**Kind**: event emitted by [<code>PoeLog</code>](#PoeLog)  
+**Properties**
+
+| Name | Type |
+| --- | --- |
+| accepted | <code>boolean</code> | 
+
+<a name="PoeLog+event_whisper"></a>
+
+### "whisper"
+**Kind**: event emitted by [<code>PoeLog</code>](#PoeLog)  
+**Properties**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| direction | <code>string</code> | `To`, `From` |
+| player.guild | <code>string</code> |  |
+| player.name | <code>string</code> |  |
+| message | <code>string</code> |  |
+

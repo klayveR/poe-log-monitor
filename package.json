@@ -1,8 +1,11 @@
 {
   "name": "poe-log-monitor",
-  "version": "1.2.5",
+  "version": "1.3.0",
   "description": "Monitors Path of Exile's log file and emits events when something happens",
   "main": "index.js",
+  "scripts": {
+    "docs": "jsdoc2md --template README.hbs --files index.js events/*.js > README.md"
+  },
   "keywords": [
     "poe",
     "path of exile",
@@ -25,8 +28,9 @@
   },
   "license": "MIT",
   "dependencies": {
-    "always-tail2": "^1.0.0",
-    "async": "^2.6.1",
-    "lodash": "^4.17.11"
+    "line-reader": "^0.4.0",
+    "lodash": "^4.17.11",
+    "require-dir": "^1.1.0",
+    "tail-stream": "^0.3.4"
   }
 }
