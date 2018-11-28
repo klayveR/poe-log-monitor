@@ -15,7 +15,7 @@ module.exports.parse = (match) => {
     "name": match[1] || null,
     "type": null,
     "info": null
-  }
+  };
 
   let additionalInfo = getAdditionalAreaInfo(match[1]);
   if(additionalInfo) {
