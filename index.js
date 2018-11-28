@@ -114,8 +114,6 @@ class PoeLog extends EventEmitter {
         resolve(events);
       });
     });
-
-    return result;
   }
 
   /**
@@ -288,6 +286,7 @@ class PoeLog extends EventEmitter {
   /**
    * Returns the full list of event names
    *
+   * @private
    * @returns {Array}
    */
   _getEventNames(events) {

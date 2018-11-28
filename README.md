@@ -23,8 +23,8 @@ const PoeLog = require("poe-log-monitor");
     * [new PoeLog([options])](#new_PoeLog_new)
     * [.start()](#PoeLog+start) ⇒ <code>Promise</code>
     * [.stop()](#PoeLog+stop)
-    * [.parseLog([options])](#PoeLog+parseLog) ⇒ <code>Promise.&lt;Array&gt;</code>
     * [.getEvents()](#PoeLog+getEvents) ⇒ <code>Array</code>
+    * [.parseLog([options])](#PoeLog+parseLog) ⇒ <code>Promise.&lt;Array&gt;</code>
     * ["error"](#PoeLog+event_error)
     * ["age"](#PoeLog+event_age)
     * ["areaAction"](#PoeLog+event_areaAction)
@@ -64,6 +64,12 @@ Starts monitoring the Path of Exile log file
 Stops monitoring the Path of Exile log file
 
 **Kind**: instance method of [<code>PoeLog</code>](#PoeLog)  
+<a name="PoeLog+getEvents"></a>
+
+### poeLog.getEvents() ⇒ <code>Array</code>
+Returns the full list of events
+
+**Kind**: instance method of [<code>PoeLog</code>](#PoeLog)  
 <a name="PoeLog+parseLog"></a>
 
 ### poeLog.parseLog([options]) ⇒ <code>Promise.&lt;Array&gt;</code>
@@ -75,14 +81,7 @@ Parses the entire `Client.txt` and returns the events in an array utilizing a re
 | --- | --- | --- | --- |
 | [options] | <code>Object</code> |  | An optional parameter object |
 | [options.events] | <code>Array</code> | <code>All events</code> | An array containing the events that should be included |
-| [options.chunkSize] | <code>number</code> | <code>65536</code> | Bytes per chunk |
 
-<a name="PoeLog+getEvents"></a>
-
-### poeLog.getEvents() ⇒ <code>Array</code>
-Returns the full list of events
-
-**Kind**: instance method of [<code>PoeLog</code>](#PoeLog)  
 <a name="PoeLog+event_error"></a>
 
 ### "error"
