@@ -1,5 +1,5 @@
 {
-  "name": "poe-log-monitor",
+  "name": "@undg/poe-log-monitor",
   "version": "1.2.6",
   "description": "Monitors Path of Exile's log file and emits events when something happens",
   "main": "index.js",
@@ -15,9 +15,7 @@
     "url": "https://github.com/klayveR/poe-log-monitor/issues"
   },
   "author": {
-    "name": "Tobias Hoffmann",
-    "email": "tobiashoffmann7@gmail.com",
-    "url": "http://klayver.de"
+    "name": "undg"
   },
   "repository": {
     "type": "git",
